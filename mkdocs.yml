@@ -1,0 +1,7 @@
+
+site_name: John Telford - mkdocs
+
+
+theme:
+    
+  name: material

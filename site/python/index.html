@@ -1,0 +1,791 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Generative%20Pre-trained%20Transformer%20%28GPT%29/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+    
+    
+      
+        <title>Python - John Telford - mkdocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="John Telford - mkdocs" class="md-header__button md-logo" aria-label="John Telford - mkdocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            John Telford - mkdocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="John Telford - mkdocs" class="md-nav__button md-logo" aria-label="John Telford - mkdocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    John Telford - mkdocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome to MkDocs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Generative%20Pre-trained%20Transformer%20%28GPT%29/" class="md-nav__link">
+        Generative Pre-trained Transformer (GPT)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Python
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pamdas-delete-dataframe-line" class="md-nav__link">
+    Pamdas Delete Dataframe Line
+  </a>
+  
+    <nav class="md-nav" aria-label="Pamdas Delete Dataframe Line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-columns-same-width" class="md-nav__link">
+    Python Columns Same Width
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-columns-width-fits-data" class="md-nav__link">
+    Python Columns Width Fits Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you" class="md-nav__link">
+    You
+  </a>
+  
+    <nav class="md-nav" aria-label="You">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-run-shell-commands" class="md-nav__link">
+    pYthon Run Shell Commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-line-delimited-by-spaces-and-process-each-field" class="md-nav__link">
+    Split Line Delimited By Spaces And Process Each Field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-pick-out-each-field-in-each-line-of-a-file" class="md-nav__link">
+    Python Pick Out Each Field In Each Line Of A File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pandas-name-columns" class="md-nav__link">
+    Pandas Name Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pandas-read-file" class="md-nav__link">
+    Pandas Read File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-files-in-pandas" class="md-nav__link">
+    Reading Files in Pandas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-drop-fields" class="md-nav__link">
+    Python Drop Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop-columns" class="md-nav__link">
+    Drop Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-file-lines" class="md-nav__link">
+    Delete File Lines
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pamdas-delete-dataframe-line" class="md-nav__link">
+    Pamdas Delete Dataframe Line
+  </a>
+  
+    <nav class="md-nav" aria-label="Pamdas Delete Dataframe Line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-columns-same-width" class="md-nav__link">
+    Python Columns Same Width
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-columns-width-fits-data" class="md-nav__link">
+    Python Columns Width Fits Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you" class="md-nav__link">
+    You
+  </a>
+  
+    <nav class="md-nav" aria-label="You">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-run-shell-commands" class="md-nav__link">
+    pYthon Run Shell Commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-line-delimited-by-spaces-and-process-each-field" class="md-nav__link">
+    Split Line Delimited By Spaces And Process Each Field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-pick-out-each-field-in-each-line-of-a-file" class="md-nav__link">
+    Python Pick Out Each Field In Each Line Of A File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pandas-name-columns" class="md-nav__link">
+    Pandas Name Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pandas-read-file" class="md-nav__link">
+    Pandas Read File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-files-in-pandas" class="md-nav__link">
+    Reading Files in Pandas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-drop-fields" class="md-nav__link">
+    Python Drop Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop-columns" class="md-nav__link">
+    Drop Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-file-lines" class="md-nav__link">
+    Delete File Lines
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="python">Python</h1>
+<h2 id="pamdas-delete-dataframe-line">Pamdas Delete Dataframe Line</h2>
+<hr />
+<p>To delete a line from a <code>pandas</code> dataframe, you can use the <code>drop</code> method. For example:</p>
+<pre><code class="language-python">import pandas as pd
+
+df = pd.DataFrame({'A': [0, 1, 2, 3, 4], 
+                   'B': [5, 6, 7, 8, 9], 
+                   'C': [10, 11, 12, 13, 14]})
+
+# Drop row with index value of 2
+df.drop(2, inplace=True)
+</code></pre>
+<p>This will delete the third line from the dataframe and <code>inplace=True</code> is used to make the changes permanent without reassigning the variable.</p>
+<hr />
+<p>The best way to delete a line from a <code>pandas</code> dataframe is by using the <code>Dataframe.drop()</code> method. You can specify a line to be deleted by giving it either the index of the line or a Boolean condition.</p>
+<p>For example, if you wanted to delete the third line in the dataframe, you could use:</p>
+<pre><code class="language-python">dataframe.drop(2)
+</code></pre>
+<p>If you instead wanted to delete lines that contained a certain substring (in this case using regex), you could use:</p>
+<pre><code class="language-python">import re
+
+dataframe[~dataframe['column_name'].str.contains(re.compile('regex'))]
+</code></pre>
+<p>This will return all rows which don't contain the given substring according to the regex pattern.</p>
+<h3 id="python-columns-same-width">Python Columns Same Width</h3>
+<hr />
+<p>It is possible to make the columns in a python table have the same width by using the <code>\ setlength</code> command. To demonstrate this, let's create a simple table with 3 columns.</p>
+<pre><code class="language-py">from tabulate import tabulate
+table = []
+table.append([&quot;Column_1&quot;, &quot;Column_2&quot;, &quot;Column_3&quot;])
+table.append([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;])
+print(tabulate(table, tablefmt=&quot;grid&quot;))
+
+# Output:
+# +------+------+------+
+# | Column_1 | Column_2 | Column_3 |
+# +==========+==========+==========+
+# | a        | b        | c        |
+# +------+------+------+
+
+# To make the columns the same width, use \setlength
+
+\setlength{\tabcolsep}{0.7em}
+print(tabulate(table, tablefmt=&quot;grid&quot;))
+
+# Output: 
+# +-------+-------+-------+
+# | Column_1  | Column_2  | Column_3  |
+# +===========+===========+===========+
+# | a         | b         | c         |
+# +-------+-------+-------+
+</code></pre>
+<h3 id="python-columns-width-fits-data">Python Columns Width Fits Data</h3>
+<hr />
+<p>To make a column in Python so that its width fits the data, you can use <code>.auto_set_column_width()</code> on the worksheet object.</p>
+<p>For example:</p>
+<pre><code>worksheet.auto_set_column_width(0,1)
+</code></pre>
+<p>This will auto-set the first column to its optimal width. To set all the columns to their optimal width, you can use:</p>
+<pre><code>worksheet.auto_set_column_width((0, worksheet.ncols))
+</code></pre>
+<h2 id="you">You</h2>
+<h3 id="python-run-shell-commands">pYthon Run Shell Commands</h3>
+<hr />
+<p>Using Python to run shell commands can be easily achieved using the <code>subprocess</code> library.</p>
+<p>Here is an example of how to use <code>subprocess</code> to run a ping command:</p>
+<pre><code class="language-python">import subprocess
+
+# Run the ping command with a timeout of 5 seconds
+proc = subprocess.Popen([&quot;ping&quot;, &quot;-c&quot;, &quot;4&quot;, &quot;google.com&quot;], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=5) 
+
+# Grab the output from the command
+out, err = proc.communicate()
+
+# Print the output
+print(&quot;Out: &quot;, out.decode(&quot;utf-8&quot;))
+print(&quot;Err: &quot;, err.decode(&quot;utf-8&quot;))
+</code></pre>
+<h3 id="split-line-delimited-by-spaces-and-process-each-field">Split Line Delimited By Spaces And Process Each Field</h3>
+<hr />
+<p>You can achieve your goal by using the following approach:</p>
+<pre><code># Split the line up into a list
+line = line.split(' ')
+
+# Loop through the list
+for field in line:
+    # Do something with each field
+    # (you can define how you want to process it here)
+</code></pre>
+<h3 id="python-pick-out-each-field-in-each-line-of-a-file">Python Pick Out Each Field In Each Line Of A File</h3>
+<hr />
+<p>No problem! You can use the <code>split()</code> method to pick out each field in each line of a file.</p>
+<p>For example, if your file contains this:</p>
+<pre><code>name age address
+Bob 10 123 Main St.
+Mary 12 124 Second Ave.
+</code></pre>
+<p>You can create a loop that reads through each line and applies the <code>split()</code> method to break it up into individual fields. Here's an example of how you could do that:</p>
+<pre><code class="language-python"># Open the file 
+with open('file.txt') as f:
+    # Create a loop that reads each line 
+    for line in f:
+        # Split the line with the space character &quot; &quot; 
+        fields = line.split(&quot; &quot;)
+        # Access the information for each field 
+        name = fields[0]
+        age = fields[1]
+        address = fields[2]
+
+        print(name +&quot; &quot;+ age +&quot; &quot;+ address)
+</code></pre>
+<p>This will output:</p>
+<pre><code>Bob 10 123 Main St.
+Mary 12 124 Second Ave.
+</code></pre>
+<p>Hope that helps!</p>
+<h3 id="pandas-name-columns">Pandas Name Columns</h3>
+<hr />
+<p>You can use the <code>.rename()</code> method to rename pandas columns.</p>
+<p>Example:</p>
+<pre><code>df = pd.DataFrame({'Name': ['John', 'Mike', 'Sarah'], 
+                   'Age': [21, 41, 19]} 
+                  )
+
+# Rename 'Name' column to 'First Name'
+df.rename(columns={'Name': 'First Name'}, inplace=True) 
+</code></pre>
+<p>The <code>inplace</code> parameter is responsible for mutate the existing DataFrame and rename the columns.</p>
+<h3 id="pandas-read-file">Pandas Read File</h3>
+<hr />
+<p>To read a file with pandas, you can use the <code>read_csv</code> function.</p>
+<p>It takes files in a variety of formats and allows you to specify the columns and other variables if you wish. This could be used if you want to name the columns, as you can use the <code>names</code> argument.</p>
+<p>For example: <code>df = pd.read_csv('filename.csv', names=['column1','column2','column3','column4'])</code>.</p>
+<h3 id="reading-files-in-pandas">Reading Files in Pandas</h3>
+<p>The <code>pandas</code> library is equipped with numerous functions to help you load data into your program.</p>
+<p>First, you can <code>read_csv()</code> to import a file containing comma separated values.</p>
+<p>You can also <code>read_table()</code> to import a file containing whitespace delimited values.</p>
+<p>When using the <code>read_csv()</code> and <code>read_table()</code> functions, you can specify the names for the columns of data in the file by using the <code>names</code> parameter. For example:</p>
+<pre><code class="language-python">import pandas as pd
+
+df = pd.read_csv('data.csv', names=['Col1', 'Col2', 'Col3'])
+</code></pre>
+<p>The code above will read from the file <code>data.csv</code> and assign the given column names <code>Col1</code>, <code>Col2</code>, and <code>Col3</code> to each respective column in the file.</p>
+<p>You can also use the <code>header</code> parameter to skip a certain number of lines at the beginning of the file:</p>
+<pre><code class="language-python">df = pd.read_csv('data.csv', header=1, 
+                 names=['Col1', 'Col2', 'Col3'])
+</code></pre>
+<p>In this example, the first line of the file would be skipped, allowing you to specify initial column names.</p>
+<h3 id="python-drop-fields">Python Drop Fields</h3>
+<hr />
+<p>To drop fields/columns from a Python DataFrame, you can use the <code>drop()</code> method of pandas.</p>
+<p>Here's an example:</p>
+<pre><code>import pandas as pd
+
+# Creating a sample DataFrame
+df = pd.DataFrame({
+    'Name': ['John', 'Amy', 'Mike'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'Los Angeles', 'Chicago']
+})
+
+# Dropping the &quot;City&quot; field
+df = df.drop('City', axis=1)
+
+print(df)
+</code></pre>
+<p>In the code above, we import the pandas library and create a sample DataFrame with three fields. Then we use the <code>drop()</code> method to drop the "City" field by specifying its name as the first argument and the value <code>axis=1</code> as the second argument to indicate that we want to drop a column. Finally, we print the resulting DataFrame.</p>
+<p>You can also drop multiple fields at once by passing a list of names to the <code>drop()</code> method:</p>
+<pre><code># Dropping the &quot;Age&quot; and &quot;City&quot; fields
+df = df.drop(['Age', 'City'], axis=1)
+</code></pre>
+<p>This will drop both the "Age" and "City" fields from the DataFrame.</p>
+<h3 id="drop-columns">Drop Columns</h3>
+<p>To drop a column in a pandas dataframe, you can use the <code>drop()</code> method with the <code>columns</code> argument set to the name of the column you want to drop and <code>axis=1</code>. Here's an example:</p>
+<pre><code class="language-python">import pandas as pd
+
+# sample dataframe
+df = pd.DataFrame({
+    'A': [1, 2, 3],
+    'B': [4, 5, 6],
+    'C': [7, 8, 9]
+})
+
+# drop column 'B'
+df = df.drop(columns='B', axis=1)
+</code></pre>
+<p>This will drop the column 'B' from the <code>df</code> dataframe. Note that the <code>drop()</code> method returns a new dataframe, so you need to assign the result to a variable (in this case, we're overwriting the original <code>df</code>).</p>
+<p>Drop Dataframe Row</p>
+<hr />
+<p>To drop a row from a dataframe in Python, we can use the <code>.drop()</code> method. We usually specify <code>axis=0</code> to drop one or more rows.</p>
+<p>The syntax for deleting a single row at a given index, say i, can be written as:</p>
+<pre><code class="language-python">dataframe.drop(i, axis=0)
+</code></pre>
+<p>For example, suppose we have a pandas DataFrame with three columns and want to delete the row with index 2:</p>
+<pre><code class="language-python">import pandas as pd
+
+# create dataframe
+data = {'name': ['Alice', 'Bob', 'Charlie'], 
+        'age': [25, 30, 35],
+        'city': ['New York', 'Paris', 'Berlin']}
+df = pd.DataFrame(data)
+
+# remove row with index 2
+df = df.drop(2, axis=0)
+print(df)
+</code></pre>
+<p>This will output the following:</p>
+<pre><code>      name  age      city
+0    Alice   25  New York
+1      Bob   30     Paris
+</code></pre>
+<p>If you want to drop multiple rows together, you can pass a list of indices to the <code>.drop()</code> function:</p>
+<pre><code class="language-python">df = df.drop([1, 2], axis=0)
+</code></pre>
+<p>This will result in a DataFrame containing only the first row:</p>
+<pre><code>    name  age      city
+0  Alice   25  New York
+</code></pre>
+<h3 id="delete-file-lines">Delete File Lines</h3>
+<hr />
+<p>To delete lines from a file using Python, you can use the following steps:</p>
+<ol>
+<li>Open the File in Read Mode.</li>
+<li>Read all lines from the file into a list.</li>
+<li>Open the same file in Write Mode to overwrite its contents.</li>
+<li>Loop through the lines of the list and write them back to the file, but skip the lines you want to delete.</li>
+</ol>
+<p>Here is an example Python code that deletes lines containing a certain word from a file:</p>
+<pre><code class="language-python">with open('file.txt', 'r') as input_file:
+    # read all lines into a list
+    lines = input_file.readlines()
+
+with open('file.txt', 'w') as output_file:
+    # loop through the lines and write them back to the file, skipping those we want to delete
+    for line in lines:
+        if &quot;word&quot; not in line:
+            output_file.write(line)
+</code></pre>
+<p>In this example, replace <code>file.txt</code> with the name of your file, and <code>"word"</code> with the word or phrase that identifies the lines you want to delete.</p>
+<p>Note: This code will permanently delete the specified lines from the file, so it's recommended to make a backup of the original file before running the code.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>

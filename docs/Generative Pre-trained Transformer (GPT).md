@@ -1,17 +1,16 @@
-# Generative Pre-trained Transformer (GPT)
 
-
-## Generative Pre-learned Transformer
 
 ---
+
+## Generative Pre-learned Transformer
 
 Generative Pre-learned Transformer (GPT) is an artificial intelligence (AI) language model capable of machine learning by processing vast amounts of data, including human language. It was developed by OpenAI and its purpose is to automatically generate human-like text based on inputs provided. GPT's architecture relies on self-supervised learning, which means that it can learn from unstructured data sources without being manually pre-labeled or classified.
 
 The latest version of GPT is GPT-3, which has over 175 billion parameters making it one of the largest models in the industry. Its large size allows it to perform various natural language processing tasks such as translation, summarization, and question answering efficiently. Because of this, GPT-3 has shown exciting promise across various industries, including finance, healthcare, and technology.
 
-## What Is Generative Pre-Learned Transform Mean
-
 ---
+
+## What Is Generative Pre-Learned Transform Mean
 
 Generative Pre-trained Transformer (GPT) is a state-of-the-art language generation model developed by OpenAI. It utilizes deep learning techniques, specifically transformer architecture, to generate human-like natural language text based on input prompts.
 
@@ -21,9 +20,9 @@ One of the notable features of the model is its ability to "continue" generating
 
 GPT has been used in various applications like chatbots, content creation, and text summarization.
 
+---
 
 ## Neural Networks
----
 
 In the field of machine learning and artificial intelligence, Neural Networks (NNs) are algorithms that have the ability to recognize patterns in datasets. They are modeled after the structure and function of the human brain, consisting of interconnected nodes or neurons that process and transmit information.
 
