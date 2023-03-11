@@ -16,4 +16,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-[gen](Generative%20Pre-trained%20Transformer%20(GPT).md)
+[GPT](GPT.md)

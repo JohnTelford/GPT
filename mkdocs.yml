@@ -1,7 +1,5 @@
 
-site_name: John Telford - mkdocs
-
+site_name: John Telford - GPT
 
 theme:
-    
   name: material

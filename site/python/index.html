@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../Generative%20Pre-trained%20Transformer%20%28GPT%29/">
+        <link rel="prev" href="../GPT/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -199,8 +199,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Generative%20Pre-trained%20Transformer%20%28GPT%29/" class="md-nav__link">
-        Generative Pre-trained Transformer (GPT)
+      <a href="../GPT/" class="md-nav__link">
+        GPT
       </a>
     </li>
   
@@ -269,22 +269,9 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#you" class="md-nav__link">
-    You
-  </a>
-  
-    <nav class="md-nav" aria-label="You">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#python-run-shell-commands" class="md-nav__link">
-    pYthon Run Shell Commands
+    Python Run Shell Commands
   </a>
   
 </li>
@@ -334,6 +321,13 @@
           <li class="md-nav__item">
   <a href="#drop-columns" class="md-nav__link">
     Drop Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drop-dataframe-row" class="md-nav__link">
+    Drop Dataframe Row
   </a>
   
 </li>
@@ -406,22 +400,9 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#you" class="md-nav__link">
-    You
-  </a>
-  
-    <nav class="md-nav" aria-label="You">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#python-run-shell-commands" class="md-nav__link">
-    pYthon Run Shell Commands
+    Python Run Shell Commands
   </a>
   
 </li>
@@ -476,6 +457,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#drop-dataframe-row" class="md-nav__link">
+    Drop Dataframe Row
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#delete-file-lines" class="md-nav__link">
     Delete File Lines
   </a>
@@ -506,7 +494,7 @@
 <h1 id="python">Python</h1>
 <h2 id="pamdas-delete-dataframe-line">Pamdas Delete Dataframe Line</h2>
 <hr />
-<p>To delete a line from a <code>pandas</code> dataframe, you can use the <code>drop</code> method. For example:</p>
+<p>To delete a line from a <code>pandas</code> dataframe,  can use the <code>drop</code> method. For example:</p>
 <pre><code class="language-python">import pandas as pd
 
 df = pd.DataFrame({'A': [0, 1, 2, 3, 4], 
@@ -517,19 +505,18 @@ df = pd.DataFrame({'A': [0, 1, 2, 3, 4],
 df.drop(2, inplace=True)
 </code></pre>
 <p>This will delete the third line from the dataframe and <code>inplace=True</code> is used to make the changes permanent without reassigning the variable.</p>
-<hr />
-<p>The best way to delete a line from a <code>pandas</code> dataframe is by using the <code>Dataframe.drop()</code> method. You can specify a line to be deleted by giving it either the index of the line or a Boolean condition.</p>
-<p>For example, if you wanted to delete the third line in the dataframe, you could use:</p>
+<p>The best way to delete a line from a <code>pandas</code> dataframe is by using the <code>Dataframe.drop()</code> method.  can specify a line to be deleted by giving it either the index of the line or a Boolean condition.</p>
+<p>For example, if  wanted to delete the third line in the dataframe,  could use:</p>
 <pre><code class="language-python">dataframe.drop(2)
 </code></pre>
-<p>If you instead wanted to delete lines that contained a certain substring (in this case using regex), you could use:</p>
+<p>If  instead wanted to delete lines that contained a certain substring (in this case using regex),  could use:</p>
 <pre><code class="language-python">import re
 
 dataframe[~dataframe['column_name'].str.contains(re.compile('regex'))]
 </code></pre>
 <p>This will return all rows which don't contain the given substring according to the regex pattern.</p>
-<h3 id="python-columns-same-width">Python Columns Same Width</h3>
 <hr />
+<h3 id="python-columns-same-width">Python Columns Same Width</h3>
 <p>It is possible to make the columns in a python table have the same width by using the <code>\ setlength</code> command. To demonstrate this, let's create a simple table with 3 columns.</p>
 <pre><code class="language-py">from tabulate import tabulate
 table = []
@@ -556,18 +543,17 @@ print(tabulate(table, tablefmt=&quot;grid&quot;))
 # | a         | b         | c         |
 # +-------+-------+-------+
 </code></pre>
-<h3 id="python-columns-width-fits-data">Python Columns Width Fits Data</h3>
 <hr />
-<p>To make a column in Python so that its width fits the data, you can use <code>.auto_set_column_width()</code> on the worksheet object.</p>
+<h3 id="python-columns-width-fits-data">Python Columns Width Fits Data</h3>
+<p>To make a column in Python so that its width fits the data,  can use <code>.auto_set_column_width()</code> on the worksheet object.</p>
 <p>For example:</p>
 <pre><code>worksheet.auto_set_column_width(0,1)
 </code></pre>
-<p>This will auto-set the first column to its optimal width. To set all the columns to their optimal width, you can use:</p>
+<p>This will auto-set the first column to its optimal width. To set all the columns to their optimal width,  can use:</p>
 <pre><code>worksheet.auto_set_column_width((0, worksheet.ncols))
 </code></pre>
-<h2 id="you">You</h2>
-<h3 id="python-run-shell-commands">pYthon Run Shell Commands</h3>
 <hr />
+<h3 id="python-run-shell-commands">Python Run Shell Commands</h3>
 <p>Using Python to run shell commands can be easily achieved using the <code>subprocess</code> library.</p>
 <p>Here is an example of how to use <code>subprocess</code> to run a ping command:</p>
 <pre><code class="language-python">import subprocess
@@ -582,26 +568,26 @@ out, err = proc.communicate()
 print(&quot;Out: &quot;, out.decode(&quot;utf-8&quot;))
 print(&quot;Err: &quot;, err.decode(&quot;utf-8&quot;))
 </code></pre>
-<h3 id="split-line-delimited-by-spaces-and-process-each-field">Split Line Delimited By Spaces And Process Each Field</h3>
 <hr />
-<p>You can achieve your goal by using the following approach:</p>
+<h3 id="split-line-delimited-by-spaces-and-process-each-field">Split Line Delimited By Spaces And Process Each Field</h3>
+<p>can achieve r goal by using the following approach:</p>
 <pre><code># Split the line up into a list
 line = line.split(' ')
 
 # Loop through the list
 for field in line:
     # Do something with each field
-    # (you can define how you want to process it here)
+    # ( can define how  want to process it here)
 </code></pre>
-<h3 id="python-pick-out-each-field-in-each-line-of-a-file">Python Pick Out Each Field In Each Line Of A File</h3>
 <hr />
-<p>No problem! You can use the <code>split()</code> method to pick out each field in each line of a file.</p>
-<p>For example, if your file contains this:</p>
+<h3 id="python-pick-out-each-field-in-each-line-of-a-file">Python Pick Out Each Field In Each Line Of A File</h3>
+<p>No problem!  can use the <code>split()</code> method to pick out each field in each line of a file.</p>
+<p>For example, if r file contains this:</p>
 <pre><code>name age address
 Bob 10 123 Main St.
 Mary 12 124 Second Ave.
 </code></pre>
-<p>You can create a loop that reads through each line and applies the <code>split()</code> method to break it up into individual fields. Here's an example of how you could do that:</p>
+<p>can create a loop that reads through each line and applies the <code>split()</code> method to break it up into individual fields. Here's an example of how  could do that:</p>
 <pre><code class="language-python"># Open the file 
 with open('file.txt') as f:
     # Create a loop that reads each line 
@@ -620,9 +606,9 @@ with open('file.txt') as f:
 Mary 12 124 Second Ave.
 </code></pre>
 <p>Hope that helps!</p>
-<h3 id="pandas-name-columns">Pandas Name Columns</h3>
 <hr />
-<p>You can use the <code>.rename()</code> method to rename pandas columns.</p>
+<h3 id="pandas-name-columns">Pandas Name Columns</h3>
+<p>can use the <code>.rename()</code> method to rename pandas columns.</p>
 <p>Example:</p>
 <pre><code>df = pd.DataFrame({'Name': ['John', 'Mike', 'Sarah'], 
                    'Age': [21, 41, 19]} 
@@ -632,29 +618,30 @@ Mary 12 124 Second Ave.
 df.rename(columns={'Name': 'First Name'}, inplace=True) 
 </code></pre>
 <p>The <code>inplace</code> parameter is responsible for mutate the existing DataFrame and rename the columns.</p>
-<h3 id="pandas-read-file">Pandas Read File</h3>
 <hr />
-<p>To read a file with pandas, you can use the <code>read_csv</code> function.</p>
-<p>It takes files in a variety of formats and allows you to specify the columns and other variables if you wish. This could be used if you want to name the columns, as you can use the <code>names</code> argument.</p>
+<h3 id="pandas-read-file">Pandas Read File</h3>
+<p>To read a file with pandas,  can use the <code>read_csv</code> function.</p>
+<p>It takes files in a variety of formats and allows  to specify the columns and other variables if  wish. This could be used if  want to name the columns, as  can use the <code>names</code> argument.</p>
 <p>For example: <code>df = pd.read_csv('filename.csv', names=['column1','column2','column3','column4'])</code>.</p>
+<hr />
 <h3 id="reading-files-in-pandas">Reading Files in Pandas</h3>
-<p>The <code>pandas</code> library is equipped with numerous functions to help you load data into your program.</p>
-<p>First, you can <code>read_csv()</code> to import a file containing comma separated values.</p>
-<p>You can also <code>read_table()</code> to import a file containing whitespace delimited values.</p>
-<p>When using the <code>read_csv()</code> and <code>read_table()</code> functions, you can specify the names for the columns of data in the file by using the <code>names</code> parameter. For example:</p>
+<p>The <code>pandas</code> library is equipped with numerous functions to help  load data into r program.</p>
+<p>First,  can <code>read_csv()</code> to import a file containing comma separated values.</p>
+<p>can also <code>read_table()</code> to import a file containing whitespace delimited values.</p>
+<p>When using the <code>read_csv()</code> and <code>read_table()</code> functions,  can specify the names for the columns of data in the file by using the <code>names</code> parameter. For example:</p>
 <pre><code class="language-python">import pandas as pd
 
 df = pd.read_csv('data.csv', names=['Col1', 'Col2', 'Col3'])
 </code></pre>
 <p>The code above will read from the file <code>data.csv</code> and assign the given column names <code>Col1</code>, <code>Col2</code>, and <code>Col3</code> to each respective column in the file.</p>
-<p>You can also use the <code>header</code> parameter to skip a certain number of lines at the beginning of the file:</p>
+<p>can also use the <code>header</code> parameter to skip a certain number of lines at the beginning of the file:</p>
 <pre><code class="language-python">df = pd.read_csv('data.csv', header=1, 
                  names=['Col1', 'Col2', 'Col3'])
 </code></pre>
-<p>In this example, the first line of the file would be skipped, allowing you to specify initial column names.</p>
-<h3 id="python-drop-fields">Python Drop Fields</h3>
+<p>In this example, the first line of the file would be skipped, allowing  to specify initial column names.</p>
 <hr />
-<p>To drop fields/columns from a Python DataFrame, you can use the <code>drop()</code> method of pandas.</p>
+<h3 id="python-drop-fields">Python Drop Fields</h3>
+<p>To drop fields/columns from a Python DataFrame,  can use the <code>drop()</code> method of pandas.</p>
 <p>Here's an example:</p>
 <pre><code>import pandas as pd
 
@@ -671,13 +658,13 @@ df = df.drop('City', axis=1)
 print(df)
 </code></pre>
 <p>In the code above, we import the pandas library and create a sample DataFrame with three fields. Then we use the <code>drop()</code> method to drop the "City" field by specifying its name as the first argument and the value <code>axis=1</code> as the second argument to indicate that we want to drop a column. Finally, we print the resulting DataFrame.</p>
-<p>You can also drop multiple fields at once by passing a list of names to the <code>drop()</code> method:</p>
+<p>can also drop multiple fields at once by passing a list of names to the <code>drop()</code> method:</p>
 <pre><code># Dropping the &quot;Age&quot; and &quot;City&quot; fields
 df = df.drop(['Age', 'City'], axis=1)
 </code></pre>
 <p>This will drop both the "Age" and "City" fields from the DataFrame.</p>
 <h3 id="drop-columns">Drop Columns</h3>
-<p>To drop a column in a pandas dataframe, you can use the <code>drop()</code> method with the <code>columns</code> argument set to the name of the column you want to drop and <code>axis=1</code>. Here's an example:</p>
+<p>To drop a column in a pandas dataframe,  can use the <code>drop()</code> method with the <code>columns</code> argument set to the name of the column  want to drop and <code>axis=1</code>. Here's an example:</p>
 <pre><code class="language-python">import pandas as pd
 
 # sample dataframe
@@ -690,9 +677,9 @@ df = pd.DataFrame({
 # drop column 'B'
 df = df.drop(columns='B', axis=1)
 </code></pre>
-<p>This will drop the column 'B' from the <code>df</code> dataframe. Note that the <code>drop()</code> method returns a new dataframe, so you need to assign the result to a variable (in this case, we're overwriting the original <code>df</code>).</p>
-<p>Drop Dataframe Row</p>
+<p>This will drop the column 'B' from the <code>df</code> dataframe. Note that the <code>drop()</code> method returns a new dataframe, so  need to assign the result to a variable (in this case, we're overwriting the original <code>df</code>).</p>
 <hr />
+<h3 id="drop-dataframe-row">Drop Dataframe Row</h3>
 <p>To drop a row from a dataframe in Python, we can use the <code>.drop()</code> method. We usually specify <code>axis=0</code> to drop one or more rows.</p>
 <p>The syntax for deleting a single row at a given index, say i, can be written as:</p>
 <pre><code class="language-python">dataframe.drop(i, axis=0)
@@ -715,21 +702,21 @@ print(df)
 0    Alice   25  New York
 1      Bob   30     Paris
 </code></pre>
-<p>If you want to drop multiple rows together, you can pass a list of indices to the <code>.drop()</code> function:</p>
+<p>If  want to drop multiple rows together,  can pass a list of indices to the <code>.drop()</code> function:</p>
 <pre><code class="language-python">df = df.drop([1, 2], axis=0)
 </code></pre>
 <p>This will result in a DataFrame containing only the first row:</p>
 <pre><code>    name  age      city
 0  Alice   25  New York
 </code></pre>
-<h3 id="delete-file-lines">Delete File Lines</h3>
 <hr />
-<p>To delete lines from a file using Python, you can use the following steps:</p>
+<h3 id="delete-file-lines">Delete File Lines</h3>
+<p>To delete lines from a file using Python,  can use the following steps:</p>
 <ol>
 <li>Open the File in Read Mode.</li>
 <li>Read all lines from the file into a list.</li>
 <li>Open the same file in Write Mode to overwrite its contents.</li>
-<li>Loop through the lines of the list and write them back to the file, but skip the lines you want to delete.</li>
+<li>Loop through the lines of the list and write them back to the file, but skip the lines  want to delete.</li>
 </ol>
 <p>Here is an example Python code that deletes lines containing a certain word from a file:</p>
 <pre><code class="language-python">with open('file.txt', 'r') as input_file:
@@ -742,7 +729,7 @@ with open('file.txt', 'w') as output_file:
         if &quot;word&quot; not in line:
             output_file.write(line)
 </code></pre>
-<p>In this example, replace <code>file.txt</code> with the name of your file, and <code>"word"</code> with the word or phrase that identifies the lines you want to delete.</p>
+<p>In this example, replace <code>file.txt</code> with the name of r file, and <code>"word"</code> with the word or phrase that identifies the lines  want to delete.</p>
 <p>Note: This code will permanently delete the specified lines from the file, so it's recommended to make a backup of the original file before running the code.</p>
 
 
