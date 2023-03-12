@@ -33,17 +33,23 @@ nav:
   - Home: 
     - GPT Conversations: index.md
 
-    - Topic AI: ai_singularity.md
-    - Topic GPT: GPT.md
+    - Topic AI:
+      - Singularity: ai_singularity.md
+      - What is AI: what_is_ai.md
+    
+    - Topic GPT:
+      - GPT: GPT.md
+      - Topic Generalized Learning: generalized_learning.md
+  
     - Topic Python: python.md
 
     - Topic Science:
-      - Maxwell Equations: maxwell.md
-    
-    - Markdown:
-      - Math processing: markdown.md
+        - Maxwell Equations: maxwell.md
+      
+    - Topic Markdown:
+        - Math processing: markdown.md
 
-    - Quantum Mechanics:
+    - Topic Quantum Mechanics:
       - Introduction: quantum.md
       - Quantum Computers: quantum _computers.md
 
