@@ -37,5 +37,9 @@ nav:
 
     - Topic Science:
       - Maxwell Equations: maxwell.md
+    
+    - Markdown:
+      - Math processing: markdown.md
+      
 
 
