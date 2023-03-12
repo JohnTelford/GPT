@@ -1,4 +1,6 @@
-# Welcome to GPT Conversations
+# Welcome to Topics
 
-The conversations with chatGPT are partial transcripts of various topics
+ Topics are partial transcripts of various conversations with [chatGPT](https://openai.com) using the Vscode extension ChatGPT 
+
+
 

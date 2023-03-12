@@ -1,10 +1,7 @@
 
- 
-site_name: John Telford - mkdocs
-
+site_name: John Telford - Topics
 
 theme:
-    
   name: material
 
   features:
@@ -25,13 +22,12 @@ theme:
     primary: teal
     accent: indigo
  
-# Repository
-repo_name: gpt
-repo_url: https://github.com/JohnTelford/gpt.git
-
 # nav tree
-nav: 
+nav:
 #
+  # - Home:
+  #   - GPT : index.md
+  
   - Home: 
     - Welcome to topics: index.md
 
@@ -60,37 +56,23 @@ nav:
     - Topic Block Chain: block_chain.md
 
 plugins:
-    - search:
-      # - git-revision-date-localized:
-      #   type: timeago
+- search:
+  # - git-revision-date-localized:
+  #   type: timeago
       
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.extra
+  - pymdownx.highlight:
+      use_pygments: true
+      auto_title: true
+      linenums: true
   - pymdownx.betterem
   - pymdownx.tasklist:
+      custom_checkbox: true
       clickable_checkbox: true
-  - attr_list
-  - md_in_html 
+  - pymdownx.superfences
 
-  - toc:
-      permalink: 
 
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
 
-  - pymdownx.arithmatex:
-      generic: true
-      
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
-dev_addr: localhost:8000
-
-copyright: Copyright &copy; 2023 John Telford
