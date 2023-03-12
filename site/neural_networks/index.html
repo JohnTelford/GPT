@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../what_is_ai/">
       
       
-        <link rel="next" href="../what_is_ai/">
+        <link rel="next" href="../GPT/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
-        <title>Singularity - John Telford - GPT</title>
+        <title>Neural Networks.md - John Telford - GPT</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ai-singularity" class="md-skip">
+        <a href="#how-do-neural-networks-work" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Singularity
+              Neural Networks.md
             
           </span>
         </div>
@@ -293,48 +293,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Singularity
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ai_singularity/" class="md-nav__link">
         Singularity
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ai-singularity" class="md-nav__link">
-    AI Singularity
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -358,11 +321,48 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../neural_networks/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Neural Networks.md
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Neural Networks.md
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-neural-networks-work" class="md-nav__link">
+    How Do Neural Networks Work
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -653,15 +653,30 @@
 
 
 
-  <h1>Singularity</h1>
+  <h1>Neural Networks.md</h1>
 
 <hr />
-<h2 id="ai-singularity">AI Singularity</h2>
-<p>AI Singularity refers to the hypothetical point in time when artificial intelligences reach an intelligence level that exceeds human-level intelligence and continues to self-improve, creating an exponential increase in technological advancement. It is often portrayed as a future event in science fiction media.</p>
-<p>The idea of AI singularity has been popularized by futurist Ray Kurzweil, who predicts that it will occur in 2045. He believes that AI will become so advanced that it will be able to improve itself faster than humans can keep up, leading to an explosion of technological progress.</p>
-<p>Some experts argue that AI singularity is unlikely to occur or that it may not have the utopian outcome that some predict. There are concerns about the potential risks of powerful AI systems that could potentially outsmart humans or pose existential threats.</p>
-<p>Overall, the concept of AI singularity raises important questions about the future of technology and the potential impact of artificial intelligence on society.</p>
-<hr />
+<h2 id="how-do-neural-networks-work">How Do Neural Networks Work</h2>
+<p>Neural Networks are a set of algorithms designed to recognize patterns. They are inspired by the structure and functioning of the human brain. Neural networks consist of multiple layers of interconnected nodes (artificial neurons) that process and transmit information. Each layer extracts features from the input data, and the output of one layer becomes the input of the next layer until the final output is produced.</p>
+<p>Here are the steps involved in the working of a neural network:</p>
+<ol>
+<li>
+<p><strong>Data preprocessing</strong>: The input data is preprocessed to remove noise, normalize the data, and ensure that the data is in the correct format for processing.</p>
+</li>
+<li>
+<p><strong>Forward propagation</strong>: The input data is fed into the first layer of the neural network, and each neuron processes the data using a weighted sum function and an activation function. The output of one layer becomes the input of the next layer, and this process continues until the final output is produced.</p>
+</li>
+<li>
+<p><strong>Loss calculation</strong>: The difference between the predicted output and the actual output is calculated using a loss function. The goal of training a neural network is to minimize this loss.</p>
+</li>
+<li>
+<p><strong>Backpropagation</strong>: This is the process of adjusting the weights of the connections between the neurons to reduce the loss. This is done by propagating the error backward through the network and updating the weights to improve the accuracy of the predictions.</p>
+</li>
+<li>
+<p><strong>Model evaluation</strong>: Once the neural network is trained, it can be used to make predictions on new data. The accuracy of the model is evaluated using various metrics like precision, recall, and F1 score.</p>
+</li>
+</ol>
+<p>Neural networks have been proven to be highly effective in image recognition, speech recognition, natural language processing, and many other areas where pattern recognition is required. However, they require large amounts of data to train effectively, and they can be computationally expensive to train and use.</p>
 
 
 
