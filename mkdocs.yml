@@ -40,6 +40,10 @@ nav:
     
     - Markdown:
       - Math processing: markdown.md
-      
+
+    - Quantum Mechanics:
+      - Introduction: quantum.md
+
+
 
 
