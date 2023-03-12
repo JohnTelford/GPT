@@ -32,6 +32,8 @@ nav:
   
   - Home: 
     - GPT Conversations: index.md
+
+    - Topic AI: ai_singularity.md
     - Topic GPT: GPT.md
     - Topic Python: python.md
 
