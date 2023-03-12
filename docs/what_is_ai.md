@@ -1,7 +1,7 @@
-what is ai
 
-ChatGPT
--------
+---
+
+### Artificial Intelligence
 
 AI stands for Artificial Intelligence. It refers to the simulation of intelligent behavior in computers and machines that are programmed to complete tasks that would usually require human intelligence, such as problem-solving, decision making, and understanding natural language through speech or text.
 
@@ -15,3 +15,5 @@ AI can be classified into three categories:
     
 
 AI technology has been widely adopted in many sectors such as healthcare, finance, education, manufacturing, transportation, and more.
+
+---

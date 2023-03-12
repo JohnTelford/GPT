@@ -293,20 +293,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai_singularity/" class="md-nav__link">
-        Singularity
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../what_is_ai/" class="md-nav__link">
         What is AI
       </a>
@@ -321,8 +307,50 @@
   
   
     <li class="md-nav__item">
+      <a href="../GPT/" class="md-nav__link">
+        GPT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../neural_networks/" class="md-nav__link">
-        Neural Networks.md
+        Neural Networks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tensor_flow/" class="md-nav__link">
+        Tensor Flow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai_singularity/" class="md-nav__link">
+        Singularity
       </a>
     </li>
   
@@ -364,20 +392,6 @@
           Topic GPT
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../GPT/" class="md-nav__link">
-        GPT
-      </a>
-    </li>
-  
-
-            
           
             
               
@@ -716,7 +730,7 @@
   
     <li class="md-nav__item">
       <a href="../block_chain/" class="md-nav__link">
-        Block Chain
+        Topic Block Chain
       </a>
     </li>
   
@@ -749,128 +763,195 @@
 <h2 id="pamdas-delete-dataframe-line">Pamdas Delete Dataframe Line</h2>
 <hr />
 <p>To delete a line from a <code>pandas</code> dataframe,  can use the <code>drop</code> method. For example:</p>
-<pre><code class="language-python">import pandas as pd
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-df = pd.DataFrame({'A': [0, 1, 2, 3, 4], 
-                   'B': [5, 6, 7, 8, 9], 
-                   'C': [10, 11, 12, 13, 14]})
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> 
+                   <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> 
+                   <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">]})</span>
 
-# Drop row with index value of 2
-df.drop(2, inplace=True)
-</code></pre>
+<span class="c1"># Drop row with index value of 2</span>
+<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <p>This will delete the third line from the dataframe and <code>inplace=True</code> is used to make the changes permanent without reassigning the variable.</p>
 <p>The best way to delete a line from a <code>pandas</code> dataframe is by using the <code>Dataframe.drop()</code> method.  can specify a line to be deleted by giving it either the index of the line or a Boolean condition.</p>
 <p>For example, if  wanted to delete the third line in the dataframe,  could use:</p>
-<pre><code class="language-python">dataframe.drop(2)
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">dataframe</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <p>If  instead wanted to delete lines that contained a certain substring (in this case using regex),  could use:</p>
-<pre><code class="language-python">import re
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
 
-dataframe[~dataframe['column_name'].str.contains(re.compile('regex'))]
-</code></pre>
+<span class="n">dataframe</span><span class="p">[</span><span class="o">~</span><span class="n">dataframe</span><span class="p">[</span><span class="s1">&#39;column_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;regex&#39;</span><span class="p">))]</span>
+</code></pre></div></td></tr></table></div>
 <p>This will return all rows which don't contain the given substring according to the regex pattern.</p>
 <hr />
 <h3 id="python-columns-same-width">Python Columns Same Width</h3>
 <p>It is possible to make the columns in a python table have the same width by using the <code>\ setlength</code> command. To demonstrate this, let's create a simple table with 3 columns.</p>
-<pre><code class="language-py">from tabulate import tabulate
-table = []
-table.append([&quot;Column_1&quot;, &quot;Column_2&quot;, &quot;Column_3&quot;])
-table.append([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;])
-print(tabulate(table, tablefmt=&quot;grid&quot;))
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+<span class="n">table</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;Column_1&quot;</span><span class="p">,</span> <span class="s2">&quot;Column_2&quot;</span><span class="p">,</span> <span class="s2">&quot;Column_3&quot;</span><span class="p">])</span>
+<span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tabulate</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">tablefmt</span><span class="o">=</span><span class="s2">&quot;grid&quot;</span><span class="p">))</span>
 
-# Output:
-# +------+------+------+
-# | Column_1 | Column_2 | Column_3 |
-# +==========+==========+==========+
-# | a        | b        | c        |
-# +------+------+------+
+<span class="c1"># Output:</span>
+<span class="c1"># +------+------+------+</span>
+<span class="c1"># | Column_1 | Column_2 | Column_3 |</span>
+<span class="c1"># +==========+==========+==========+</span>
+<span class="c1"># | a        | b        | c        |</span>
+<span class="c1"># +------+------+------+</span>
 
-# To make the columns the same width, use \setlength
+<span class="c1"># To make the columns the same width, use \setlength</span>
 
-\setlength{\tabcolsep}{0.7em}
-print(tabulate(table, tablefmt=&quot;grid&quot;))
+\<span class="n">setlength</span><span class="p">{</span>\<span class="n">tabcolsep</span><span class="p">}{</span><span class="mf">0.7</span><span class="n">em</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tabulate</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">tablefmt</span><span class="o">=</span><span class="s2">&quot;grid&quot;</span><span class="p">))</span>
 
-# Output: 
-# +-------+-------+-------+
-# | Column_1  | Column_2  | Column_3  |
-# +===========+===========+===========+
-# | a         | b         | c         |
-# +-------+-------+-------+
-</code></pre>
+<span class="c1"># Output: </span>
+<span class="c1"># +-------+-------+-------+</span>
+<span class="c1"># | Column_1  | Column_2  | Column_3  |</span>
+<span class="c1"># +===========+===========+===========+</span>
+<span class="c1"># | a         | b         | c         |</span>
+<span class="c1"># +-------+-------+-------+</span>
+</code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="python-columns-width-fits-data">Python Columns Width Fits Data</h3>
 <p>To make a column in Python so that its width fits the data,  can use <code>.auto_set_column_width()</code> on the worksheet object.</p>
 <p>For example:</p>
-<pre><code>worksheet.auto_set_column_width(0,1)
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>worksheet.auto_set_column_width(0,1)
+</code></pre></div></td></tr></table></div>
 <p>This will auto-set the first column to its optimal width. To set all the columns to their optimal width,  can use:</p>
-<pre><code>worksheet.auto_set_column_width((0, worksheet.ncols))
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>worksheet.auto_set_column_width((0, worksheet.ncols))
+</code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="python-run-shell-commands">Python Run Shell Commands</h3>
 <p>Using Python to run shell commands can be easily achieved using the <code>subprocess</code> library.</p>
 <p>Here is an example of how to use <code>subprocess</code> to run a ping command:</p>
-<pre><code class="language-python">import subprocess
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">subprocess</span>
 
-# Run the ping command with a timeout of 5 seconds
-proc = subprocess.Popen([&quot;ping&quot;, &quot;-c&quot;, &quot;4&quot;, &quot;google.com&quot;], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=5) 
+<span class="c1"># Run the ping command with a timeout of 5 seconds</span>
+<span class="n">proc</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span><span class="s2">&quot;ping&quot;</span><span class="p">,</span> <span class="s2">&quot;-c&quot;</span><span class="p">,</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span> <span class="s2">&quot;google.com&quot;</span><span class="p">],</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> 
 
-# Grab the output from the command
-out, err = proc.communicate()
+<span class="c1"># Grab the output from the command</span>
+<span class="n">out</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">communicate</span><span class="p">()</span>
 
-# Print the output
-print(&quot;Out: &quot;, out.decode(&quot;utf-8&quot;))
-print(&quot;Err: &quot;, err.decode(&quot;utf-8&quot;))
-</code></pre>
+<span class="c1"># Print the output</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Out: &quot;</span><span class="p">,</span> <span class="n">out</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Err: &quot;</span><span class="p">,</span> <span class="n">err</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="split-line-delimited-by-spaces-and-process-each-field">Split Line Delimited By Spaces And Process Each Field</h3>
 <p>can achieve r goal by using the following approach:</p>
-<pre><code># Split the line up into a list
-line = line.split(' ')
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code># Split the line up into a list
+line = line.split(&#39; &#39;)
 
 # Loop through the list
 for field in line:
     # Do something with each field
     # ( can define how  want to process it here)
-</code></pre>
+</code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="python-pick-out-each-field-in-each-line-of-a-file">Python Pick Out Each Field In Each Line Of A File</h3>
 <p>No problem!  can use the <code>split()</code> method to pick out each field in each line of a file.</p>
 <p>For example, if r file contains this:</p>
-<pre><code>name age address
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>name age address
 Bob 10 123 Main St.
 Mary 12 124 Second Ave.
-</code></pre>
+</code></pre></div></td></tr></table></div>
 <p>can create a loop that reads through each line and applies the <code>split()</code> method to break it up into individual fields. Here's an example of how  could do that:</p>
-<pre><code class="language-python"># Open the file 
-with open('file.txt') as f:
-    # Create a loop that reads each line 
-    for line in f:
-        # Split the line with the space character &quot; &quot; 
-        fields = line.split(&quot; &quot;)
-        # Access the information for each field 
-        name = fields[0]
-        age = fields[1]
-        address = fields[2]
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Open the file </span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="c1"># Create a loop that reads each line </span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="c1"># Split the line with the space character &quot; &quot; </span>
+        <span class="n">fields</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+        <span class="c1"># Access the information for each field </span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">fields</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">age</span> <span class="o">=</span> <span class="n">fields</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">address</span> <span class="o">=</span> <span class="n">fields</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 
-        print(name +&quot; &quot;+ age +&quot; &quot;+ address)
-</code></pre>
+        <span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span><span class="s2">&quot; &quot;</span><span class="o">+</span> <span class="n">age</span> <span class="o">+</span><span class="s2">&quot; &quot;</span><span class="o">+</span> <span class="n">address</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <p>This will output:</p>
-<pre><code>Bob 10 123 Main St.
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Bob 10 123 Main St.
 Mary 12 124 Second Ave.
-</code></pre>
+</code></pre></div></td></tr></table></div>
 <p>Hope that helps!</p>
 <hr />
 <h3 id="pandas-name-columns">Pandas Name Columns</h3>
 <p>can use the <code>.rename()</code> method to rename pandas columns.</p>
 <p>Example:</p>
-<pre><code>df = pd.DataFrame({'Name': ['John', 'Mike', 'Sarah'], 
-                   'Age': [21, 41, 19]} 
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>df = pd.DataFrame({&#39;Name&#39;: [&#39;John&#39;, &#39;Mike&#39;, &#39;Sarah&#39;], 
+                   &#39;Age&#39;: [21, 41, 19]} 
                   )
 
-# Rename 'Name' column to 'First Name'
-df.rename(columns={'Name': 'First Name'}, inplace=True) 
-</code></pre>
+# Rename &#39;Name&#39; column to &#39;First Name&#39;
+df.rename(columns={&#39;Name&#39;: &#39;First Name&#39;}, inplace=True) 
+</code></pre></div></td></tr></table></div>
 <p>The <code>inplace</code> parameter is responsible for mutate the existing DataFrame and rename the columns.</p>
 <hr />
 <h3 id="pandas-read-file">Pandas Read File</h3>
@@ -883,86 +964,125 @@ df.rename(columns={'Name': 'First Name'}, inplace=True)
 <p>First,  can <code>read_csv()</code> to import a file containing comma separated values.</p>
 <p>can also <code>read_table()</code> to import a file containing whitespace delimited values.</p>
 <p>When using the <code>read_csv()</code> and <code>read_table()</code> functions,  can specify the names for the columns of data in the file by using the <code>names</code> parameter. For example:</p>
-<pre><code class="language-python">import pandas as pd
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-df = pd.read_csv('data.csv', names=['Col1', 'Col2', 'Col3'])
-</code></pre>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Col1&#39;</span><span class="p">,</span> <span class="s1">&#39;Col2&#39;</span><span class="p">,</span> <span class="s1">&#39;Col3&#39;</span><span class="p">])</span>
+</code></pre></div></td></tr></table></div>
 <p>The code above will read from the file <code>data.csv</code> and assign the given column names <code>Col1</code>, <code>Col2</code>, and <code>Col3</code> to each respective column in the file.</p>
 <p>can also use the <code>header</code> parameter to skip a certain number of lines at the beginning of the file:</p>
-<pre><code class="language-python">df = pd.read_csv('data.csv', header=1, 
-                 names=['Col1', 'Col2', 'Col3'])
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
+                 <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Col1&#39;</span><span class="p">,</span> <span class="s1">&#39;Col2&#39;</span><span class="p">,</span> <span class="s1">&#39;Col3&#39;</span><span class="p">])</span>
+</code></pre></div></td></tr></table></div>
 <p>In this example, the first line of the file would be skipped, allowing  to specify initial column names.</p>
 <hr />
 <h3 id="python-drop-fields">Python Drop Fields</h3>
 <p>To drop fields/columns from a Python DataFrame,  can use the <code>drop()</code> method of pandas.</p>
 <p>Here's an example:</p>
-<pre><code>import pandas as pd
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>import pandas as pd
 
 # Creating a sample DataFrame
 df = pd.DataFrame({
-    'Name': ['John', 'Amy', 'Mike'],
-    'Age': [25, 30, 35],
-    'City': ['New York', 'Los Angeles', 'Chicago']
+    &#39;Name&#39;: [&#39;John&#39;, &#39;Amy&#39;, &#39;Mike&#39;],
+    &#39;Age&#39;: [25, 30, 35],
+    &#39;City&#39;: [&#39;New York&#39;, &#39;Los Angeles&#39;, &#39;Chicago&#39;]
 })
 
 # Dropping the &quot;City&quot; field
-df = df.drop('City', axis=1)
+df = df.drop(&#39;City&#39;, axis=1)
 
 print(df)
-</code></pre>
+</code></pre></div></td></tr></table></div>
 <p>In the code above, we import the pandas library and create a sample DataFrame with three fields. Then we use the <code>drop()</code> method to drop the "City" field by specifying its name as the first argument and the value <code>axis=1</code> as the second argument to indicate that we want to drop a column. Finally, we print the resulting DataFrame.</p>
 <p>can also drop multiple fields at once by passing a list of names to the <code>drop()</code> method:</p>
-<pre><code># Dropping the &quot;Age&quot; and &quot;City&quot; fields
-df = df.drop(['Age', 'City'], axis=1)
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code># Dropping the &quot;Age&quot; and &quot;City&quot; fields
+df = df.drop([&#39;Age&#39;, &#39;City&#39;], axis=1)
+</code></pre></div></td></tr></table></div>
 <p>This will drop both the "Age" and "City" fields from the DataFrame.</p>
 <h3 id="drop-columns">Drop Columns</h3>
 <p>To drop a column in a pandas dataframe,  can use the <code>drop()</code> method with the <code>columns</code> argument set to the name of the column  want to drop and <code>axis=1</code>. Here's an example:</p>
-<pre><code class="language-python">import pandas as pd
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-# sample dataframe
-df = pd.DataFrame({
-    'A': [1, 2, 3],
-    'B': [4, 5, 6],
-    'C': [7, 8, 9]
-})
+<span class="c1"># sample dataframe</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+    <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="p">})</span>
 
-# drop column 'B'
-df = df.drop(columns='B', axis=1)
-</code></pre>
+<span class="c1"># drop column &#39;B&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <p>This will drop the column 'B' from the <code>df</code> dataframe. Note that the <code>drop()</code> method returns a new dataframe, so  need to assign the result to a variable (in this case, we're overwriting the original <code>df</code>).</p>
 <hr />
 <h3 id="drop-dataframe-row">Drop Dataframe Row</h3>
 <p>To drop a row from a dataframe in Python, we can use the <code>.drop()</code> method. We usually specify <code>axis=0</code> to drop one or more rows.</p>
 <p>The syntax for deleting a single row at a given index, say i, can be written as:</p>
-<pre><code class="language-python">dataframe.drop(i, axis=0)
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">dataframe</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <p>For example, suppose we have a pandas DataFrame with three columns and want to delete the row with index 2:</p>
-<pre><code class="language-python">import pandas as pd
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-# create dataframe
-data = {'name': ['Alice', 'Bob', 'Charlie'], 
-        'age': [25, 30, 35],
-        'city': ['New York', 'Paris', 'Berlin']}
-df = pd.DataFrame(data)
+<span class="c1"># create dataframe</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Charlie&#39;</span><span class="p">],</span> 
+        <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">],</span>
+        <span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="s1">&#39;Paris&#39;</span><span class="p">,</span> <span class="s1">&#39;Berlin&#39;</span><span class="p">]}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
-# remove row with index 2
-df = df.drop(2, axis=0)
-print(df)
-</code></pre>
+<span class="c1"># remove row with index 2</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <p>This will output the following:</p>
-<pre><code>      name  age      city
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>      name  age      city
 0    Alice   25  New York
 1      Bob   30     Paris
-</code></pre>
+</code></pre></div></td></tr></table></div>
 <p>If  want to drop multiple rows together,  can pass a list of indices to the <code>.drop()</code> function:</p>
-<pre><code class="language-python">df = df.drop([1, 2], axis=0)
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <p>This will result in a DataFrame containing only the first row:</p>
-<pre><code>    name  age      city
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>    name  age      city
 0  Alice   25  New York
-</code></pre>
+</code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="delete-file-lines">Delete File Lines</h3>
 <p>To delete lines from a file using Python,  can use the following steps:</p>
@@ -973,16 +1093,24 @@ print(df)
 <li>Loop through the lines of the list and write them back to the file, but skip the lines  want to delete.</li>
 </ol>
 <p>Here is an example Python code that deletes lines containing a certain word from a file:</p>
-<pre><code class="language-python">with open('file.txt', 'r') as input_file:
-    # read all lines into a list
-    lines = input_file.readlines()
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">input_file</span><span class="p">:</span>
+    <span class="c1"># read all lines into a list</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">input_file</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 
-with open('file.txt', 'w') as output_file:
-    # loop through the lines and write them back to the file, skipping those we want to delete
-    for line in lines:
-        if &quot;word&quot; not in line:
-            output_file.write(line)
-</code></pre>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">output_file</span><span class="p">:</span>
+    <span class="c1"># loop through the lines and write them back to the file, skipping those we want to delete</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s2">&quot;word&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+            <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <p>In this example, replace <code>file.txt</code> with the name of r file, and <code>"word"</code> with the word or phrase that identifies the lines  want to delete.</p>
 <p>Note: This code will permanently delete the specified lines from the file, so it's recommended to make a backup of the original file before running the code.</p>
 

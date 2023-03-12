@@ -32,12 +32,13 @@ nav:
     - GPT Conversations: index.md
 
     - Topic AI:
-      - Singularity: ai_singularity.md
       - What is AI: what_is_ai.md
+      - GPT: GPT.md
       - Neural Networks: neural_networks.md
+      - Tensor Flow: tensor_flow.md
+      - Singularity: ai_singularity.md
     
     - Topic GPT:
-      - GPT: GPT.md
       - Topic Generalized Learning: generalized_learning.md
   
     - Topic Python: python.md
@@ -53,5 +54,25 @@ nav:
       - Quantum Computers: quantum _computers.md
 
     - Topic Block Chain: block_chain.md
+
+plugins:
+- search:
+  # - git-revision-date-localized:
+  #   type: timeago
+      
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.extra
+  - pymdownx.highlight:
+      use_pygments: true
+      auto_title: true
+      linenums: true
+  - pymdownx.betterem
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.superfences
+
 
 
