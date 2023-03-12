@@ -34,7 +34,7 @@ nav:
     - Topic AI:
       - Singularity: ai_singularity.md
       - What is AI: what_is_ai.md
-      - Neural Networks.md: neural_networks.md
+      - Neural Networks: neural_networks.md
     
     - Topic GPT:
       - GPT: GPT.md
