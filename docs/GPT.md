@@ -74,4 +74,4 @@ $\mu_0$ is the permeability of free space
 
 These equations are used extensively in the field of electromagnetism and have many practical applications in the areas of electronics, communications, and power generation.
 
-`
+---

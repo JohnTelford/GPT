@@ -14,17 +14,28 @@ theme:
     - navigation.tracking
     - search.highlight
     - search.suggest
-    - toc.follow``
+    - toc.follow
     - toc.integrate
+
+  palette:
+
+    primary: teal
+    accent: indigo
+ 
+
 
 # nav tree
 nav:
 #
-  - Home:
-    - GPT : index.md
+  # - Home:
+  #   - GPT : index.md
   
-  - GPT Conversations:
+  - Home: 
+    - GPT Conversations: index.md
     - Topic GPT: GPT.md
     - Topic Python: python.md
+
+    - Topic Science:
+      - Maxwell Equations: maxwell.md
 
 
