@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../ai_singularity/">
+        <link rel="prev" href="../forward_propagation/">
       
       
-        <link rel="next" href="../forward_propagation/">
+        <link rel="next" href="../backward_propagation/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
-        <title>Topic Generalized Learning - John Telford - mkdocs</title>
+        <title>Loss Calculation - John Telford - mkdocs</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#generalized-learning" class="md-skip">
+        <a href="#you" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Topic Generalized Learning
+              Loss Calculation
             
           </span>
         </div>
@@ -423,48 +423,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Topic Generalized Learning
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../generalized_learning/" class="md-nav__link">
         Topic Generalized Learning
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#generalized-learning" class="md-nav__link">
-    Generalized Learning
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -488,11 +451,55 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../loss_calculation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Loss Calculation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Loss Calculation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#you" class="md-nav__link">
+    You
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    ChatGPT
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -750,27 +757,20 @@
 
 
 
-  <h1>Topic Generalized Learning</h1>
+  <h1>Loss Calculation</h1>
 
-<hr />
-<h2 id="generalized-learning">Generalized Learning</h2>
-<p>Generalized Learning refers to the ability of a machine learning model to apply what it has learned from the training data to new, unseen data accurately.</p>
-<p>A model that can generalize well is expected to perform well on data that it has never seen before, making it more reliable for predictions in real-world applications.</p>
-<p>Overfitting is one of the common challenges in achieving generalization. It occurs when a model learns patterns in the training data that are not applicable to new and diverse data. To avoid overfitting, techniques such as regularization, early stopping, and cross-validation can be used.</p>
-<p>Other ways to improve generalized learning include:</p>
-<ul>
-<li>
-<p><strong>Increasing the dataset</strong>: Having more training data can help the model learn better, as it will have access to more diverse samples that capture different characteristics of the target variable.</p>
-</li>
-<li>
-<p><strong>Data Augmentation</strong>: By transforming and generating new data from the existing dataset, we can create a more robust and varied set of examples for the model to learn from.</p>
-</li>
-<li>
-<p><strong>Ensemble Methods</strong>: We could leverage multiple models and combine their predictions to make a better overall prediction. Each model will provide its strengths based on the nuances between them.</p>
-</li>
-</ul>
-<p>Overall, the ability of a model to generalize well is an important metric of its performance in real-world applications that involve noisy data and variations.</p>
-<hr />
+<h2 id="you">You</h2>
+<p>loss calculation example</p>
+<h2 id="chatgpt">ChatGPT</h2>
+<p>Sure, here's an example of calculating loss:</p>
+<p>Let's say we have a model that predicts housing prices based on features like the number of bedrooms, square footage, and location. We have a dataset of 1000 houses with their actual selling prices and corresponding features.</p>
+<p>Our model is a simple linear regression that looks like this:</p>
+<p><code>predicted_price = w0 + w1*bedrooms + w2*square_footage + w3*location</code></p>
+<p>To train the model, we use the mean squared error (MSE) as our loss function:</p>
+<p><code>loss = (1/N) * ∑(i=1 to N) (actual_price_i - predicted_price_i)^2</code></p>
+<p>Where <code>N</code> is the number of houses in our dataset, <code>actual_price_i</code> is the actual selling price of the i-th house, and <code>predicted_price_i</code> is the predicted selling price of the i-th house using our model.</p>
+<p>During training, we adjust the weights <code>w0</code>, <code>w1</code>, <code>w2</code>, and <code>w3</code> to minimize the loss function using an optimization algorithm like gradient descent.</p>
+<p>Once the model is trained, we can evaluate its performance on a test set of houses by calculating the MSE between the actual selling prices and predicted selling prices on the test set. The lower the MSE, the better the performance of our model.</p>
 
 
 

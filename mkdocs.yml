@@ -44,7 +44,9 @@ nav:
     
     - Topic GPT:
       - Topic Generalized Learning: generalized_learning.md
-      - Back Propagation: 
+      - Forward Propagation: forward_propagation.md
+      - Loss Calculation: loss_calculation.md
+      - Back Propagation: backward_propagation.md
   
     - Topic Python: python.md
 
