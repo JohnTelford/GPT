@@ -9,17 +9,13 @@
       
       
       
-        <link rel="prev" href="../GPT/">
-      
-      
-        <link rel="next" href="../tensor_flow/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
-        <title>Neural Networks - John Telford - mkdocs</title>
+        <title>Backword propagation - John Telford - mkdocs</title>
       
     
     
@@ -67,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-do-neural-networks-work" class="md-skip">
+        <a href="#backward-propagation" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Neural Networks
+              Backword propagation
             
           </span>
         </div>
@@ -170,15 +166,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link md-tabs__link--active">
+      <a href=".." class="md-tabs__link">
         Home
       </a>
     </li>
@@ -243,20 +237,18 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
       
       
       
-        <label class="md-nav__link" for="__nav_1" tabindex="0" aria-expanded="true">
+        <label class="md-nav__link" for="__nav_1" tabindex="0" aria-expanded="false">
           Home
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -286,22 +278,20 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
       
       
       
-        <label class="md-nav__link" for="__nav_1_2" tabindex="0" aria-expanded="true">
+        <label class="md-nav__link" for="__nav_1_2" tabindex="0" aria-expanded="false">
           Topic AI
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -345,109 +335,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Neural Networks
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../neural_networks/" class="md-nav__link">
         Neural Networks
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-do-neural-networks-work" class="md-nav__link">
-    How Do Neural Networks Work
-  </a>
-  
-    <nav class="md-nav" aria-label="How Do Neural Networks Work">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#forward-propagation" class="md-nav__link">
-    Forward propagation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#loss-calculation" class="md-nav__link">
-    Loss calculation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#backpropagation" class="md-nav__link">
-    Backpropagation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#backward-propagation-example" class="md-nav__link">
-    Backward Propagation Example
-  </a>
-  
-    <nav class="md-nav" aria-label="Backward Propagation Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-forward-propagation" class="md-nav__link">
-    Step 1: Forward Propagation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-calculate-losserror" class="md-nav__link">
-    Step 2: Calculate Loss/Error
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-backward-propagation" class="md-nav__link">
-    Step 3: Backward Propagation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -769,151 +661,75 @@
 
 
 
-  <h1>Neural Networks</h1>
+  <h1>Backword propagation</h1>
 
 <hr />
-<h2 id="how-do-neural-networks-work">How Do Neural Networks Work</h2>
-<p>Neural Networks are a set of algorithms designed to recognize patterns. They are inspired by the structure and functioning of the human brain. Neural networks consist of multiple layers of interconnected nodes (artificial neurons) that process and transmit information. Each layer extracts features from the input data, and the output of one layer becomes the input of the next layer until the final output is produced.</p>
-<p>Here are the steps involved in the working of a neural network:</p>
-<ol>
-<li>
-<p><strong>Data preprocessing</strong>: The input data is preprocessed to remove noise, normalize the data, and ensure that the data is in the correct format for processing.</p>
-</li>
-<li>
-<p><strong>Forward propagation</strong>: The input data is fed into the first layer of the neural network, and each neuron processes the data using a weighted sum function and an activation function. The output of one layer becomes the input of the next layer, and this process continues until the final output is produced.</p>
-</li>
-<li>
-<p><strong>Loss calculation</strong>: The difference between the predicted output and the actual output is calculated using a loss function. The goal of training a neural network is to minimize this loss.</p>
-</li>
-<li>
-<p><strong>Backpropagation</strong>: This is the process of adjusting the weights of the connections between the neurons to reduce the loss. This is done by propagating the error backward through the network and updating the weights to improve the accuracy of the predictions.</p>
-</li>
-<li>
-<p><strong>Model evaluation</strong>: Once the neural network is trained, it can be used to make predictions on new data. The accuracy of the model is evaluated using various metrics like precision, recall, and F1 score.</p>
-</li>
-</ol>
-<p>Neural networks have been proven to be highly effective in image recognition, speech recognition, natural language processing, and many other areas where pattern recognition is required. However, they require large amounts of data to train effectively, and they can be computationally expensive to train and use.</p>
-<hr />
-<h3 id="forward-propagation">Forward propagation</h3>
-<p>Neural network forward propagation is the process of moving input data through the neural network to produce an output. The following steps explain how this process works in detail:</p>
-<ol>
-<li>
-<p>Input layer:<br />
-    The input layer receives the raw input data that is to be processed by the neural network.</p>
-</li>
-<li>
-<p>Hidden layers:<br />
-    The hidden layers are the intermediate layers between the input and output layers, where neurons perform computations on the input data using weighted connections.</p>
-</li>
-<li>
-<p>Activation function:<br />
-    Activation functions are applied to the weighted sum of inputs and biases at each neuron in the hidden layers. This helps to introduce non-linearity into the model and make it capable of learning more complex relationships in the data.</p>
-</li>
-<li>
-<p>Output layer:<br />
-    The output layer produces the final predictions or results of the neural network based on the computations performed in the previous layers.</p>
-</li>
-<li>
-<p>Loss function:<br />
-    The loss function measures the difference between the predicted output and the actual output for a given set of input data.</p>
-</li>
-<li>
-<p>Back-propagation:<br />
-    Back-propagation is the process of computing the gradients of the loss function with respect to the weights and biases of the neural network. This is required for updating the weights and biases during training, so that the model can learn from the errors and improve its accuracy.</p>
-</li>
-<li>
-<p>Output:<br />
-    The final output is produced after the neural network has completed the forward propagation process, and this output depends on the weights of the network and the specific input data that was used.</p>
-</li>
-</ol>
-<hr />
-<h3 id="loss-calculation">Loss calculation</h3>
-<p>In Neural Networks, loss calculation is a process where the network predicts an output and calculates the difference between this predicted output and the actual output. This difference is known as the loss or error. The aim of training a neural network is to minimize this loss value through adjustment of the network's parameters.</p>
-<p>There are various methods to calculate the loss depending on the problem type. For instance, common loss functions used in classification problems include cross-entropy loss, hinge loss, and softmax loss. In regression problems, commonly-used measures include mean squared error (MSE), mean absolute error (MAE) and Huber loss.</p>
-<p>In summary, the choice of the loss function depends on the objective of the model being trained, and it is essential to choose the right one for effective training.</p>
-<hr />
-<h3 id="backpropagation">Backpropagation</h3>
-<p>Backpropagation is the process by which neural networks can learn and adjust their parameters, such as weights and biases, in order to minimize the error or loss function that measures the difference between the predicted output and the actual output. In other words, backpropagation is a method for determining how much each parameter contributed to the overall error and updating them accordingly.</p>
-<p>Steps of Backpropagation</p>
-<p>The backpropagation algorithm consists of several steps:</p>
-<ol>
-<li>
-<p><strong>Forward Propagation</strong>: Compute the forward pass through the network to generate the predicted outputs.</p>
-</li>
-<li>
-<p><strong>Calculate Loss/Error</strong>: Compute the difference between the predicted outputs and the true outputs.</p>
-</li>
-<li>
-<p><strong>Backward Propagation</strong>: Compute the derivatives of the loss function with respect to each parameter in the network using chain rule.</p>
-</li>
-<li>
-<p><strong>Update Parameters</strong>: Update the parameters of the network using gradient descent or other optimization algorithms.</p>
-</li>
-</ol>
-<h3 id="backward-propagation-example">Backward Propagation Example</h3>
-<p>Let's take an example of a simple neural network with one hidden layer.</p>
-<div class="highlight"><pre><span></span><code>      x1          w1_1       w2_1        y1
-       o -----o(+)-----o(+)-----o
-               |        | 
-      x2       |        |          y2
-       o -----o(+)-----o(+)-----o      
-               |        |
-               b1       b2
-</code></pre></div>
+<h2 id="backward-propagation">Backward Propagation</h2>
+<h3 id="example">Example</h3>
+<p>Backward propagation, also known as backpropagation or simply "backprop," is an algorithm used in deep learning to train neural networks by adjusting the weights and biases of the neurons. It is called "backward" because it begins at the output layer and works backwards through the layers until it reaches the input layer.</p>
+<p>Here's a simple example to illustrate how backward propagation works:</p>
+<p>Suppose we have a neural network with one hidden layer that takes two inputs, x1 and x2, and produces one output, y. The network has the following weights and biases:</p>
 <ul>
-<li>We have two input features <code>x1</code> and <code>x2</code>.</li>
-<li>The first layer has two neurons, which are connected to the input features via weights <code>w1_1</code> and <code>w2_1</code>, respectively.</li>
-<li>The output of the first layer goes through a relu activation function before being passed to the second (output) layer.</li>
-<li>The second layer has two neurons, which are connected to the first layer via weights <code>w1_2</code> and <code>w2_2</code>, respectively.</li>
-<li>The outputs <code>y1</code> and <code>y2</code> represent the predictions of the network.</li>
+<li>w1 = 0.5</li>
+<li>w2 = -0.3</li>
+<li>b1 = 0.4</li>
+<li>w3 = 0.2</li>
+<li>b2 = 0.1</li>
 </ul>
-<h4 id="step-1-forward-propagation">Step 1: Forward Propagation</h4>
-<p>We start by computing the forward pass of our network given some inputs. Let's say we have inputs <code>x1 = 0.5</code> and <code>x2 = -1</code>.</p>
-<div class="highlight"><pre><span></span><code>       x1=0.5          w1_1=0.2       w2_1=-0.8        y1
-        o -----o(0.5*0.2)-----o(-0.4)-----o(relu(0))--&gt; y1=0
-                  |          | 
-       x2=-1       |          |               y2
-        o -----o(-1*-0.7)----o(-0.6)-----o(relu(0))--&gt; y2=0
-                  |          |
-                 b1=-0.3    b2=0.1
+<p>We use this neural network to predict the output of a certain input (x1=1, x2=0). Suppose the actual output is y_true = 1.0.</p>
+<p>Forward Propagation:<br />
+To make a prediction, we start with the first layer and calculate the weighted sum and apply the activation function (ReLU) to obtain the hidden layer outputs. Then, we do the same for the output layer to get the predicted value <code>y_pred</code>.</p>
+<div class="highlight"><pre><span></span><code>z1 = x1*w1 + x2*w2 + b1
+h1 = ReLU(z1)
+z2 = h1*w3 + b2
+y_pred = z2
 </code></pre></div>
-<p><strong>First Layer:</strong> For simplicity, let's calculate the first neuron output only (i.e., <code>y1</code>). We can compute this as follows:</p>
+<p>where <code>ReLU</code> is the rectified linear unit activation function defined as <code>max(0,x)</code>.</p>
+<p>This gives us:</p>
 <ul>
-<li>
-<p>Weighted Sum:</p>
-<div class="highlight"><pre><span></span><code>z1_1 = x1*w1_1 + x2*w2_1 = 0.5*0.2 + (-1)*(-0.8) = 1.1
-</code></pre></div>
-</li>
-<li>
-<p>Activation Function:</p>
-<div class="highlight"><pre><span></span><code>y1 = max(0,z1_1 + b1) = max(0,1.1-0.3) = 0.8
-</code></pre></div>
-</li>
+<li>z1 = 0.5*1 + (-0.3)*0 + 0.4 = 0.9</li>
+<li>h1 = max(0, z1) = 0.9</li>
+<li>z2 = 0.9*0.2 + 0.1 = 0.28</li>
+<li>y_pred = z2 = 0.28</li>
 </ul>
-<p>Similarly, we can calculate the output of the second neuron (i.e., <code>y2</code>) as follows:</p>
+<p>Calculate the Loss:<br />
+To determine how good our prediction is, we need to define a loss function to measure the error between the predicted value and the true value. Here we use the mean squared error (MSE) loss function:</p>
+<div class="highlight"><pre><span></span><code>J = (y_pred - y_true)**2
+</code></pre></div>
+<p>So, in this case, the loss would be:</p>
 <ul>
-<li>
-<p>Weighted Sum:</p>
-<div class="highlight"><pre><span></span><code>z2_1 = x1*w1_2 + x2*w2_2 = 0.5*(-0.7) + (-1)*0.4 = -0.85
-</code></pre></div>
-</li>
-<li>
-<p>Activation Function:</p>
-<div class="highlight"><pre><span></span><code>y2 = max(0,z2_1 + b2) = max(0,-0.85+0.1) = 0.0
-</code></pre></div>
-</li>
+<li>J = (0.28 - 1.0)^2 = 0.5184</li>
 </ul>
-<p>Thus, our predicted output is: <code>[0, 0]</code>.</p>
-<h4 id="step-2-calculate-losserror">Step 2: Calculate Loss/Error</h4>
-<p>To train our neural network, we need to define a loss or error function that quantifies the difference between the predicted output and the true output. For simplicity, let's assume that our true output is <code>[1, 0]</code>. We can then use squared error loss:</p>
-<div class="highlight"><pre><span></span><code>L(y_true, y_pred) = (y_true - y_pred)^2
-                   = (1-0)^2 + (0-0)^2
-                   = 1
+<p>Update Weights Using Backward Propagation:<br />
+To improve the performance of the neural network, we need to adjust the weights and biases so that the predicted output is closer to the true output. To do this, we use gradient descent to update the weights and biases based on the calculated the gradient of the loss function i.e. partial derivatives of the loss function with respect to each weight and bias parameter.</p>
+<p>Firstly, let's calculate the gradients step-by-step.</p>
+<p>Partial derivative of <code>J</code> with respect to <code>z2</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/dz2 = 2*(y_pred - y_true) * 1 = 2*(-0.72) = -1.44
 </code></pre></div>
-<h4 id="step-3-backward-propagation">Step 3: Backward Propagation</h4>
-<p>Having computed our loss, we now want to update the weights and biases of our network in such a way that the loss decreases. To do this, we need to compute the gradients of the loss with respect to each weight and bias.</p>
-<p>Here is a graphical representation of our neural network with all the partial derivatives added:</p>
-<div class="highlight"><pre><span></span><code>                                    ———dw1 
+<p>Partial derivative of <code>J</code> with respect to <code>w3</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_w3 = dJ/d_z2 * dz2/d_w3 = dJ/d_z2 * h1 = -1.20648
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>b2</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/db2 = dJ/d_z2 * dz2/db2 = dJ/d_z2 * 1 = -1.44
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>h1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_h1 = dJ/d_z2 * dz2/d_h1 = dJ/d_z2 * w3 = -0.288
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>z1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_z1 = dJ/d_h1 * dh1/d_z1 = dJ/d_h1 if z1&gt;0 else 0 = -0.288
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>w1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_w1 = dJ/d_z1 * dz1/d_w1 = dJ/d_z1 * x1 = -0.288
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>w2</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_w2 = dJ/d_z1 * dz1/d_w2 = dJ/d_z1 * x2 = 0
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>b1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/db1 = dJ/d_z1 * dz1/db1 = dJ/d_z1 * 1 = -0.288
+</code></pre></div>
+<p>Now we can update the weights and biases using the following formulas:</p>
+<div class="highlight"><pre><span></span><code>New weight_i = Old weight_i - Learning_rate * (gradient of loss function with respect to weight_i)
+New 
 </code></pre></div>
 
 
