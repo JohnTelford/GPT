@@ -1,6 +1,6 @@
 
  
-site_name: John Telford - mkdocs
+site_name: John Telford - Topics
 
 
 theme:
@@ -18,7 +18,7 @@ theme:
     - search.highlight
     - search.suggest
     - toc.follow
-    - toc.integrate
+    # - toc.integrate
 
   palette:
 
@@ -33,33 +33,33 @@ repo_url: https://github.com/JohnTelford/gpt.git
 nav: 
 #
   - Home: 
-    - Welcome to topics: index.md
+    - Welcome: index.md
 
-    - Topic AI:
+    - AI:
       - What is AI: what_is_ai.md
-      - GPT: GPT.md
       - Neural Networks: neural_networks.md
       - Tensor Flow: tensor_flow.md
       - Singularity: ai_singularity.md
     
-    - Topic GPT:
+    # - GPT:
+      - GPT: GPT.md
       - Topic Generalized Learning: generalized_learning.md
       - Forward Propagation: forward_propagation.md
       - Loss Calculation: loss_calculation.md
       - Back Propagation: backward_propagation.md
   
-    - Topic Python: python.md
+    - Python: python.md
 
-    - Topic Science:
+    - Science:
         - Maxwell Equations: maxwell.md
         - Theory of Relativity: theory_of_relativity.md
-      
-    - Topic Markdown:
+        - Quantum Mechanics:
+          - Introduction: quantum.md
+          - Quantum Computers: quantum _computers.md
+     
+    - Markdown:
         - Math processing: markdown.md
 
-    - Topic Quantum Mechanics:
-      - Introduction: quantum.md
-      - Quantum Computers: quantum _computers.md
 
     - Topic Block Chain: block_chain.md
 
@@ -78,8 +78,8 @@ markdown_extensions:
   - attr_list
   - md_in_html 
 
-  - toc:
-      permalink: 
+  # - toc:
+  #     permalink: 
 
   - pymdownx.superfences:
       custom_fences:
@@ -95,6 +95,6 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-dev_addr: localhost:8000
+dev_addr: localhost:8001
 
 copyright: Copyright &copy; 2023 John Telford

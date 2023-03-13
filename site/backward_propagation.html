@@ -9,24 +9,24 @@
       
       
       
-        <link rel="prev" href="../forward_propagation/">
+        <link rel="prev" href="loss_calculation.html">
       
       
-        <link rel="next" href="../backward_propagation/">
+        <link rel="next" href="python.html">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
-        <title>Loss Calculation - John Telford - mkdocs</title>
+        <title>Back Propagation - John Telford - Topics</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.558e4712.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
       
       
 
@@ -42,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#you" class="md-skip">
+        <a href="#backward-propagation" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="John Telford - mkdocs" class="md-header__button md-logo" aria-label="John Telford - mkdocs" data-md-component="logo">
+    <a href="." title="John Telford - Topics" class="md-header__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -96,13 +96,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            John Telford - mkdocs
+            John Telford - Topics
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Loss Calculation
+              Back Propagation
             
           </span>
         </div>
@@ -178,7 +178,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link md-tabs__link--active">
+      <a href="index.html" class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     </li>
@@ -214,13 +214,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="John Telford - mkdocs" class="md-nav__button md-logo" aria-label="John Telford - mkdocs" data-md-component="logo">
+    <a href="." title="John Telford - Topics" class="md-nav__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    John Telford - mkdocs
+    John Telford - Topics
   </label>
   
     <div class="md-nav__source">
@@ -274,8 +274,8 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        Welcome to topics
+      <a href="index.html" class="md-nav__link">
+        Welcome
       </a>
     </li>
   
@@ -300,14 +300,14 @@
       
       
         <label class="md-nav__link" for="__nav_1_2" tabindex="0" aria-expanded="false">
-          Topic AI
+          AI
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Topic AI" data-md-level="2">
+      <nav class="md-nav" aria-label="AI" data-md-level="2">
         <label class="md-nav__title" for="__nav_1_2">
           <span class="md-nav__icon md-icon"></span>
-          Topic AI
+          AI
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -317,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what_is_ai/" class="md-nav__link">
+      <a href="what_is_ai.html" class="md-nav__link">
         What is AI
       </a>
     </li>
@@ -331,21 +331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../GPT/" class="md-nav__link">
-        GPT
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../neural_networks/" class="md-nav__link">
+      <a href="neural_networks.html" class="md-nav__link">
         Neural Networks
       </a>
     </li>
@@ -359,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tensor_flow/" class="md-nav__link">
+      <a href="tensor_flow.html" class="md-nav__link">
         Tensor Flow
       </a>
     </li>
@@ -373,7 +359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai_singularity/" class="md-nav__link">
+      <a href="ai_singularity.html" class="md-nav__link">
         Singularity
       </a>
     </li>
@@ -408,14 +394,14 @@
       
       
         <label class="md-nav__link" for="__nav_1_3" tabindex="0" aria-expanded="true">
-          Topic GPT
+          GPT
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Topic GPT" data-md-level="2">
+      <nav class="md-nav" aria-label="GPT" data-md-level="2">
         <label class="md-nav__title" for="__nav_1_3">
           <span class="md-nav__icon md-icon"></span>
-          Topic GPT
+          GPT
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -425,7 +411,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../generalized_learning/" class="md-nav__link">
+      <a href="GPT.html" class="md-nav__link">
+        GPT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="generalized_learning.html" class="md-nav__link">
         Topic Generalized Learning
       </a>
     </li>
@@ -439,8 +439,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../forward_propagation/" class="md-nav__link">
+      <a href="forward_propagation.html" class="md-nav__link">
         Forward Propagation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="loss_calculation.html" class="md-nav__link">
+        Loss Calculation
       </a>
     </li>
   
@@ -461,12 +475,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Loss Calculation
+          Back Propagation
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Loss Calculation
+      <a href="backward_propagation.html" class="md-nav__link md-nav__link--active">
+        Back Propagation
       </a>
       
         
@@ -483,16 +497,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#you" class="md-nav__link">
-    You
+  <a href="#backward-propagation" class="md-nav__link">
+    Backward Propagation
+  </a>
+  
+    <nav class="md-nav" aria-label="Backward Propagation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#chatgpt" class="md-nav__link">
-    ChatGPT
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -500,20 +520,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../backward_propagation/" class="md-nav__link">
-        Back Propagation
-      </a>
     </li>
   
 
@@ -532,8 +538,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
-        Topic Python
+      <a href="python.html" class="md-nav__link">
+        Python
       </a>
     </li>
   
@@ -558,14 +564,14 @@
       
       
         <label class="md-nav__link" for="__nav_1_5" tabindex="0" aria-expanded="false">
-          Topic Science
+          Science
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Topic Science" data-md-level="2">
+      <nav class="md-nav" aria-label="Science" data-md-level="2">
         <label class="md-nav__title" for="__nav_1_5">
           <span class="md-nav__icon md-icon"></span>
-          Topic Science
+          Science
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -575,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maxwell/" class="md-nav__link">
+      <a href="maxwell.html" class="md-nav__link">
         Maxwell Equations
       </a>
     </li>
@@ -589,9 +595,71 @@
   
   
     <li class="md-nav__item">
-      <a href="../theory_of_relativity/" class="md-nav__link">
+      <a href="theory_of_relativity.html" class="md-nav__link">
         Theory of Relativity
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_5_3" type="checkbox" id="__nav_1_5_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_5_3" tabindex="0" aria-expanded="false">
+          Quantum Mechanics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quantum Mechanics" data-md-level="3">
+        <label class="md-nav__title" for="__nav_1_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Quantum Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quantum.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quantum%20_computers.html" class="md-nav__link">
+        Quantum Computers
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -622,14 +690,14 @@
       
       
         <label class="md-nav__link" for="__nav_1_6" tabindex="0" aria-expanded="false">
-          Topic Markdown
+          Markdown
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Topic Markdown" data-md-level="2">
+      <nav class="md-nav" aria-label="Markdown" data-md-level="2">
         <label class="md-nav__title" for="__nav_1_6">
           <span class="md-nav__icon md-icon"></span>
-          Topic Markdown
+          Markdown
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -639,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markdown/" class="md-nav__link">
+      <a href="markdown.html" class="md-nav__link">
         Math processing
       </a>
     </li>
@@ -659,72 +727,8 @@
   
   
   
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_7" type="checkbox" id="__nav_1_7" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1_7" tabindex="0" aria-expanded="false">
-          Topic Quantum Mechanics
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Topic Quantum Mechanics" data-md-level="2">
-        <label class="md-nav__title" for="__nav_1_7">
-          <span class="md-nav__icon md-icon"></span>
-          Topic Quantum Mechanics
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../quantum/" class="md-nav__link">
-        Introduction
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../quantum%20_computers/" class="md-nav__link">
-        Quantum Computers
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../block_chain/" class="md-nav__link">
+      <a href="block_chain.html" class="md-nav__link">
         Topic Block Chain
       </a>
     </li>
@@ -757,20 +761,76 @@
 
 
 
-  <h1>Loss Calculation</h1>
+  <h1>Back Propagation</h1>
 
-<h2 id="you">You</h2>
-<p>loss calculation example</p>
-<h2 id="chatgpt">ChatGPT</h2>
-<p>Sure, here's an example of calculating loss:</p>
-<p>Let's say we have a model that predicts housing prices based on features like the number of bedrooms, square footage, and location. We have a dataset of 1000 houses with their actual selling prices and corresponding features.</p>
-<p>Our model is a simple linear regression that looks like this:</p>
-<p><code>predicted_price = w0 + w1*bedrooms + w2*square_footage + w3*location</code></p>
-<p>To train the model, we use the mean squared error (MSE) as our loss function:</p>
-<p><code>loss = (1/N) * ∑(i=1 to N) (actual_price_i - predicted_price_i)^2</code></p>
-<p>Where <code>N</code> is the number of houses in our dataset, <code>actual_price_i</code> is the actual selling price of the i-th house, and <code>predicted_price_i</code> is the predicted selling price of the i-th house using our model.</p>
-<p>During training, we adjust the weights <code>w0</code>, <code>w1</code>, <code>w2</code>, and <code>w3</code> to minimize the loss function using an optimization algorithm like gradient descent.</p>
-<p>Once the model is trained, we can evaluate its performance on a test set of houses by calculating the MSE between the actual selling prices and predicted selling prices on the test set. The lower the MSE, the better the performance of our model.</p>
+<hr />
+<h2 id="backward-propagation">Backward Propagation</h2>
+<h3 id="example">Example</h3>
+<p>Backward propagation, also known as backpropagation or simply "backprop," is an algorithm used in deep learning to train neural networks by adjusting the weights and biases of the neurons. It is called "backward" because it begins at the output layer and works backwards through the layers until it reaches the input layer.</p>
+<p>Here's a simple example to illustrate how backward propagation works:</p>
+<p>Suppose we have a neural network with one hidden layer that takes two inputs, x1 and x2, and produces one output, y. The network has the following weights and biases:</p>
+<ul>
+<li>w1 = 0.5</li>
+<li>w2 = -0.3</li>
+<li>b1 = 0.4</li>
+<li>w3 = 0.2</li>
+<li>b2 = 0.1</li>
+</ul>
+<p>We use this neural network to predict the output of a certain input (x1=1, x2=0). Suppose the actual output is y_true = 1.0.</p>
+<p>Forward Propagation:<br />
+To make a prediction, we start with the first layer and calculate the weighted sum and apply the activation function (ReLU) to obtain the hidden layer outputs. Then, we do the same for the output layer to get the predicted value <code>y_pred</code>.</p>
+<div class="highlight"><pre><span></span><code>z1 = x1*w1 + x2*w2 + b1
+h1 = ReLU(z1)
+z2 = h1*w3 + b2
+y_pred = z2
+</code></pre></div>
+<p>where <code>ReLU</code> is the rectified linear unit activation function defined as <code>max(0,x)</code>.</p>
+<p>This gives us:</p>
+<ul>
+<li>z1 = 0.5*1 + (-0.3)*0 + 0.4 = 0.9</li>
+<li>h1 = max(0, z1) = 0.9</li>
+<li>z2 = 0.9*0.2 + 0.1 = 0.28</li>
+<li>y_pred = z2 = 0.28</li>
+</ul>
+<p>Calculate the Loss:<br />
+To determine how good our prediction is, we need to define a loss function to measure the error between the predicted value and the true value. Here we use the mean squared error (MSE) loss function:</p>
+<div class="highlight"><pre><span></span><code>J = (y_pred - y_true)**2
+</code></pre></div>
+<p>So, in this case, the loss would be:</p>
+<ul>
+<li>J = (0.28 - 1.0)^2 = 0.5184</li>
+</ul>
+<p>Update Weights Using Backward Propagation:<br />
+To improve the performance of the neural network, we need to adjust the weights and biases so that the predicted output is closer to the true output. To do this, we use gradient descent to update the weights and biases based on the calculated the gradient of the loss function i.e. partial derivatives of the loss function with respect to each weight and bias parameter.</p>
+<p>Firstly, let's calculate the gradients step-by-step.</p>
+<p>Partial derivative of <code>J</code> with respect to <code>z2</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/dz2 = 2*(y_pred - y_true) * 1 = 2*(-0.72) = -1.44
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>w3</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_w3 = dJ/d_z2 * dz2/d_w3 = dJ/d_z2 * h1 = -1.20648
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>b2</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/db2 = dJ/d_z2 * dz2/db2 = dJ/d_z2 * 1 = -1.44
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>h1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_h1 = dJ/d_z2 * dz2/d_h1 = dJ/d_z2 * w3 = -0.288
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>z1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_z1 = dJ/d_h1 * dh1/d_z1 = dJ/d_h1 if z1&gt;0 else 0 = -0.288
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>w1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_w1 = dJ/d_z1 * dz1/d_w1 = dJ/d_z1 * x1 = -0.288
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>w2</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_w2 = dJ/d_z1 * dz1/d_w2 = dJ/d_z1 * x2 = 0
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>b1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/db1 = dJ/d_z1 * dz1/db1 = dJ/d_z1 * 1 = -0.288
+</code></pre></div>
+<p>Now we can update the weights and biases using the following formulas:</p>
+<div class="highlight"><pre><span></span><code>New weight_i = Old weight_i - Learning_rate * (gradient of loss function with respect to weight_i)
+New 
+</code></pre></div>
 
 
 
@@ -812,12 +872,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation:top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation:top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow", "toc.integrate"], "search": "assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
+      <script src="assets/javascripts/bundle.51d95adb.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
