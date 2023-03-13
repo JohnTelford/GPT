@@ -35,33 +35,33 @@ nav:
   - Home: 
     - Welcome: index.md
 
-    - AI:
+    - -AI:
       - What is AI: what_is_ai.md
       - Neural Networks: neural_networks.md
       - Tensor Flow: tensor_flow.md
       - Singularity: ai_singularity.md
-    
-    # - GPT:
       - GPT: GPT.md
       - Topic Generalized Learning: generalized_learning.md
       - Forward Propagation: forward_propagation.md
       - Loss Calculation: loss_calculation.md
       - Back Propagation: backward_propagation.md
-  
-    - Python: python.md
 
-    - Science:
+    - -Security: 
+      - 2FA TOTP: 2fa_totp.md
+      - Block Chain: block_chain.md
+
+    - -Software:
+      - Python: python.md
+      - Markdown Math processing: markdown.md
+
+    - -Science:
         - Maxwell Equations: maxwell.md
         - Theory of Relativity: theory_of_relativity.md
         - Quantum Mechanics:
           - Introduction: quantum.md
           - Quantum Computers: quantum _computers.md
      
-    - Markdown:
-        - Math processing: markdown.md
 
-
-    - Topic Block Chain: block_chain.md
 
 plugins:
     - search:

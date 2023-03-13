@@ -3,38 +3,6 @@
 
 If you need to display mathematical expressions or equations in a Markdown document, there are different options available. Here are some of them:
 
-### LaTeX syntax
-
-One popular way to write math in Markdown is by using the LaTeX syntax. You can enclose your math expression between dollar signs $\\textbf{($$...$$)}$, or between a pair of backslashes and parentheses: $\\textbf{(\\(...\\))}$. For example:
-
-$$  
-\\sum\_{i=1}^n i^2 = \\frac{n(n+1)(2n+1)}{6}  
-$$
-
-or
-
-\\begin{align\*}  
-x &= 2y + z \\  
-3y &= x + 4z \\  
-&= 2y + 2z + 4z \\  
-&= 2y + 6z  
-\\end{align\*}
-
-will produce
-
-$$  
-\\sum\_{i=1}^n i^2 = \\frac{n(n+1)(2n+1)}{6}  
-$$
-
-\\begin{align\*}  
-x &= 2y + z \\  
-3y &= x + 4z \\  
-&= 2y + 2z + 4z \\  
-&= 2y + 6z  
-\\end{align\*}
-
-Many mathematical symbols and operators are available in LaTeX, so it's quite versatile.
-
 ### MathJax
 
 Another option is to use MathJax, which is a JavaScript library that renders math in your browser. You can include it in your Markdown document like this at the top of your Markdown file:

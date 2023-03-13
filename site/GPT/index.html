@@ -9,24 +9,24 @@
       
       
       
-        <link rel="prev" href="forward_propagation.html">
+        <link rel="prev" href="../ai_singularity/">
       
       
-        <link rel="next" href="backward_propagation.html">
+        <link rel="next" href="../generalized_learning/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
-        <title>Loss Calculation - John Telford - Topics</title>
+        <title>GPT - John Telford - Topics</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.558e4712.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
       
       
 
@@ -42,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#loss-calculation-example" class="md-skip">
+        <a href="#generative-pre-learned-transformer" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="John Telford - Topics" class="md-header__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
+    <a href=".." title="John Telford - Topics" class="md-header__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Loss Calculation
+              GPT
             
           </span>
         </div>
@@ -178,7 +178,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="index.html" class="md-tabs__link md-tabs__link--active">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     </li>
@@ -210,11 +210,9 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="John Telford - Topics" class="md-nav__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
+    <a href=".." title="John Telford - Topics" class="md-nav__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -274,101 +272,9 @@
   
   
     <li class="md-nav__item">
-      <a href="index.html" class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Welcome
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1_2" tabindex="0" aria-expanded="false">
-          AI
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="AI" data-md-level="2">
-        <label class="md-nav__title" for="__nav_1_2">
-          <span class="md-nav__icon md-icon"></span>
-          AI
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="what_is_ai.html" class="md-nav__link">
-        What is AI
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="neural_networks.html" class="md-nav__link">
-        Neural Networks
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="tensor_flow.html" class="md-nav__link">
-        Tensor Flow
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ai_singularity.html" class="md-nav__link">
-        Singularity
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -389,19 +295,19 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" checked>
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_1_3" tabindex="0" aria-expanded="true">
-          GPT
+        <label class="md-nav__link" for="__nav_1_2" tabindex="0" aria-expanded="true">
+          -AI
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="GPT" data-md-level="2">
-        <label class="md-nav__title" for="__nav_1_3">
+      <nav class="md-nav" aria-label="-AI" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
           <span class="md-nav__icon md-icon"></span>
-          GPT
+          -AI
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -411,8 +317,8 @@
   
   
     <li class="md-nav__item">
-      <a href="GPT.html" class="md-nav__link">
-        GPT
+      <a href="../what_is_ai/" class="md-nav__link">
+        What is AI
       </a>
     </li>
   
@@ -425,8 +331,8 @@
   
   
     <li class="md-nav__item">
-      <a href="generalized_learning.html" class="md-nav__link">
-        Topic Generalized Learning
+      <a href="../neural_networks/" class="md-nav__link">
+        Neural Networks
       </a>
     </li>
   
@@ -439,8 +345,22 @@
   
   
     <li class="md-nav__item">
-      <a href="forward_propagation.html" class="md-nav__link">
-        Forward Propagation
+      <a href="../tensor_flow/" class="md-nav__link">
+        Tensor Flow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai_singularity/" class="md-nav__link">
+        Singularity
       </a>
     </li>
   
@@ -461,12 +381,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Loss Calculation
+          GPT
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="loss_calculation.html" class="md-nav__link md-nav__link--active">
-        Loss Calculation
+      <a href="./" class="md-nav__link md-nav__link--active">
+        GPT
       </a>
       
         
@@ -483,8 +403,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loss-calculation-example" class="md-nav__link">
-    Loss Calculation Example
+  <a href="#generative-pre-learned-transformer" class="md-nav__link">
+    Generative Pre-learned Transformer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-generative-pre-learned-transform-mean" class="md-nav__link">
+    What Is Generative Pre-Learned Transform Mean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#neural-networks" class="md-nav__link">
+    Neural Networks
   </a>
   
 </li>
@@ -504,7 +438,49 @@
   
   
     <li class="md-nav__item">
-      <a href="backward_propagation.html" class="md-nav__link">
+      <a href="../generalized_learning/" class="md-nav__link">
+        Topic Generalized Learning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../forward_propagation/" class="md-nav__link">
+        Forward Propagation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loss_calculation/" class="md-nav__link">
+        Loss Calculation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backward_propagation/" class="md-nav__link">
         Back Propagation
       </a>
     </li>
@@ -524,10 +500,124 @@
   
   
   
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_3" tabindex="0" aria-expanded="false">
+          -Security
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="-Security" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          -Security
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="python.html" class="md-nav__link">
+      <a href="../2fa_totp/" class="md-nav__link">
+        2FA TOTP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_chain/" class="md-nav__link">
+        Block Chain
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_4" type="checkbox" id="__nav_1_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_4" tabindex="0" aria-expanded="false">
+          -Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="-Software" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          -Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
         Python
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown/" class="md-nav__link">
+        Markdown Math processing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -551,14 +641,14 @@
       
       
         <label class="md-nav__link" for="__nav_1_5" tabindex="0" aria-expanded="false">
-          Science
+          -Science
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Science" data-md-level="2">
+      <nav class="md-nav" aria-label="-Science" data-md-level="2">
         <label class="md-nav__title" for="__nav_1_5">
           <span class="md-nav__icon md-icon"></span>
-          Science
+          -Science
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -568,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maxwell.html" class="md-nav__link">
+      <a href="../maxwell/" class="md-nav__link">
         Maxwell Equations
       </a>
     </li>
@@ -582,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="theory_of_relativity.html" class="md-nav__link">
+      <a href="../theory_of_relativity/" class="md-nav__link">
         Theory of Relativity
       </a>
     </li>
@@ -623,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quantum.html" class="md-nav__link">
+      <a href="../quantum/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -637,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quantum%20_computers.html" class="md-nav__link">
+      <a href="../quantum%20_computers/" class="md-nav__link">
         Quantum Computers
       </a>
     </li>
@@ -659,70 +749,6 @@
 
             
           
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_6" type="checkbox" id="__nav_1_6" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1_6" tabindex="0" aria-expanded="false">
-          Markdown
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Markdown" data-md-level="2">
-        <label class="md-nav__title" for="__nav_1_6">
-          <span class="md-nav__icon md-icon"></span>
-          Markdown
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="markdown.html" class="md-nav__link">
-        Math processing
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="block_chain.html" class="md-nav__link">
-        Topic Block Chain
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -736,6 +762,51 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generative-pre-learned-transformer" class="md-nav__link">
+    Generative Pre-learned Transformer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-generative-pre-learned-transform-mean" class="md-nav__link">
+    What Is Generative Pre-Learned Transform Mean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#neural-networks" class="md-nav__link">
+    Neural Networks
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -748,19 +819,34 @@
 
 
 
-  <h1>Loss Calculation</h1>
+  <h1>GPT</h1>
 
 <hr />
-<h2 id="loss-calculation-example">Loss Calculation Example</h2>
-<p>Sure, here's an example of calculating loss:</p>
-<p>Let's say we have a model that predicts housing prices based on features like the number of bedrooms, square footage, and location. We have a dataset of 1000 houses with their actual selling prices and corresponding features.</p>
-<p>Our model is a simple linear regression that looks like this:</p>
-<p><code>predicted_price = w0 + w1*bedrooms + w2*square_footage + w3*location</code></p>
-<p>To train the model, we use the mean squared error (MSE) as our loss function:</p>
-<p><code>loss = (1/N) * ∑(i=1 to N) (actual_price_i - predicted_price_i)^2</code></p>
-<p>Where <code>N</code> is the number of houses in our dataset, <code>actual_price_i</code> is the actual selling price of the i-th house, and <code>predicted_price_i</code> is the predicted selling price of the i-th house using our model.</p>
-<p>During training, we adjust the weights <code>w0</code>, <code>w1</code>, <code>w2</code>, and <code>w3</code> to minimize the loss function using an optimization algorithm like gradient descent.</p>
-<p>Once the model is trained, we can evaluate its performance on a test set of houses by calculating the MSE between the actual selling prices and predicted selling prices on the test set. The lower the MSE, the better the performance of our model.</p>
+<h2 id="generative-pre-learned-transformer">Generative Pre-learned Transformer</h2>
+<p>Generative Pre-learned Transformer (GPT) is an artificial intelligence (AI) language model capable of machine learning by processing vast amounts of data, including human language. It was developed by OpenAI and its purpose is to automatically generate human-like text based on inputs provided. GPT's architecture relies on self-supervised learning, which means that it can learn from unstructured data sources without being manually pre-labeled or classified.</p>
+<p>The latest version of GPT is GPT-3, which has over 175 billion parameters making it one of the largest models in the industry. Its large size allows it to perform various natural language processing tasks such as translation, summarization, and question answering efficiently. Because of this, GPT-3 has shown exciting promise across various industries, including finance, healthcare, and technology.</p>
+<hr />
+<h2 id="what-is-generative-pre-learned-transform-mean">What Is Generative Pre-Learned Transform Mean</h2>
+<p>Generative Pre-trained Transformer (GPT) is a state-of-the-art language generation model developed by OpenAI. It utilizes deep learning techniques, specifically transformer architecture, to generate human-like natural language text based on input prompts.</p>
+<p>The training phase of the model involves unsupervised learning on large amounts of text data, allowing it to learn patterns and relationships within the language corpus. Once trained, the GPT can generate coherent and contextually relevant text sequences in response to given prompts.</p>
+<p>One of the notable features of the model is its ability to "continue" generating new text based on its previous generated output, creating a long streak of coherent text without requiring a new prompt from the user.</p>
+<p>GPT has been used in various applications like chatbots, content creation, and text summarization.</p>
+<hr />
+<h2 id="neural-networks">Neural Networks</h2>
+<p>In the field of machine learning and artificial intelligence, Neural Networks (NNs) are algorithms that have the ability to recognize patterns in datasets. They are modeled after the structure and function of the human brain, consisting of interconnected nodes or neurons that process and transmit information.</p>
+<p>Structure
+A neural network typically consists of three types of layers: input layer, hidden layer, and output layer.</p>
+<p>The input layer is responsible for receiving and encoding the input data, which can be numerical, categorical, or image data.
+The hidden layer(s) perform computational tasks based on the input data, and through training, learn to identify relevant features within the input data by adjusting the weights and biases associated with each neuron.
+The output layer provides a prediction or classification based on this learned information.
+Training
+Neural networks need to be trained using large datasets of labeled examples. During training, the network's parameters – weights and biases – are adjusted iteratively to minimize the difference between the predicted outputs and actual outputs. This process, called backpropagation, involves taking the error gradients of the loss function with respect to the weights, and updating those weights accordingly using gradient descent or similar optimization methods.</p>
+<p>Applications
+Neural networks have been successfully applied in a wide range of applications, including computer vision, natural language processing, speech recognition, and other areas where pattern recognition or classification is needed.</p>
+<p>That conservatism stemmed in part from the unpredictability of the neural network, the computing paradigm that modern AI is based on, which is inspired by the human brain. Instead of the traditional approach to computer programming, which relies on precise sets of instructions yielding predictable results, neural networks effectively teach themselves to spot patterns in data. The more data and computing power these networks are fed, the more capable they tend to become.</p>
+<p>In the early 2010s, Silicon Valley woke up to the idea that neural networks were a far more promising route to powerful AI than old-school programming. But the early AIs were painfully susceptible to parroting the biases in their training data: spitting out misinformation and hate speech. When Microsoft unveiled its chatbot Tay in 2016, it took less than 24 hours for it to tweet “Hitler was right I hate the jews” and that feminists should “all die and burn in hell.” OpenAI’s 2020 predecessor to ChatGPT exhibited similar levels of racism and misogyny.</p>
+<p>The AI boom really began to take off around 2020, turbocharged by several crucial breakthroughs in neural-network design, the growing availability of data, and the willingness of tech companies to pay for gargantuan levels of computing power. But the weak spots remained, and the history of embarrassing AI stumbles made many companies, including Google, Meta, and OpenAI, mostly reluctant to publicly release their cutting-edge models. In April 2022, OpenAI announced Dall-E 2, a text-to-image AI model that could generate photorealistic imagery. But it initially restricted the release to a waitlist of “trusted” users, whose usage would, OpenAI said, help it to “understand and address the biases that DALL·E has inherited from its training data.”</p>
+<hr />
 
 
 
@@ -802,12 +888,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation:top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow", "toc.integrate"], "search": "assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation:top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.51d95adb.min.js"></script>
+      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
