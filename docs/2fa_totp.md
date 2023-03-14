@@ -28,3 +28,9 @@ Here’s how the process typically works:
 5.  If the code is correct, access is granted.
 
 This adds an extra layer of security to verify the user's identity, making it difficult for attackers to gain access even if they have the user's username and password.
+
+### Security
+
+Unlike passwords, TOTP codes are single-use, so a compromised credential is only valid for a limited time. However, users must enter TOTP codes into an authentication page, which creates the potential for phishing attacks. Due to the short window in which TOTP codes are valid, attackers must proxy the credentials in real time.
+
+TOTP credentials are also based on a shared secret known to both the client and the server, creating multiple locations from which a secret can be stolen. An attacker with access to this shared secret could generate new, valid TOTP codes at will. This can be a particular problem if the attacker breaches a large authentication database.

@@ -1,6 +1,6 @@
 # Python 
 
-## Pamdas Delete Dataframe Line
+## Pandas Delete Dataframe Line
 
 
 ---
