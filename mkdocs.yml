@@ -10,7 +10,7 @@ theme:
   features:
     - header.autohide
     - navigation.instant
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation:top
@@ -35,7 +35,7 @@ nav:
   - Home: 
     - Welcome: index.md
 
-    - -AI:
+    - (AI):
       - What is AI: what_is_ai.md
       - Neural Networks: neural_networks.md
       - Tensor Flow: tensor_flow.md
@@ -46,18 +46,18 @@ nav:
       - Loss Calculation: loss_calculation.md
       - Back Propagation: backward_propagation.md
 
-    - -Security: 
+    - (Security): 
       - 2FA TOTP: 2fa_totp.md
       - Block Chain: block_chain.md
 
-    - -Software:
+    - (Software):
       - Python: python.md
       - Markdown Math processing: markdown.md
 
-    - -Science:
+    - (Science):
         - Maxwell Equations: maxwell.md
         - Theory of Relativity: theory_of_relativity.md
-        - Quantum Mechanics:
+        - Quantum Mechanics: 
           - Introduction: quantum.md
           - Quantum Computers: quantum _computers.md
      
