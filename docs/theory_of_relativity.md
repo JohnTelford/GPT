@@ -7,7 +7,7 @@ Albert Einstein's theory of relativity is a fundamental theory in physics. It pr
 
 ---
 
-## Special Relativity
+### Special Relativity
 
 Special relativity deals with the laws of physics in inertial frames of reference, or those frames that are moving at a constant velocity relative to one another. The theory assumes that the speed of light is always constant, no matter how fast or slow the observer is moving relative to the light source. This leads to some strange phenomena, such as time dilation (time seems to move slower for objects moving at high speeds) and length contraction (objects appear shorter when they are moving at high speeds).
 

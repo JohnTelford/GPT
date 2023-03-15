@@ -14,21 +14,21 @@ Insert
 New
 import numpy as np
 
-# Define input layer
+### Define input layer
 inputs = np.array([0.5, 0.3, 0.2])
 
-# Initialize weights and biases
+### Initialize weights and biases
 weights_hidden = np.array([[0.4, 0.2, -0.1], [-0.3, 0.1, 0.2]])
 biases_hidden = np.array([0.1, 0.2])
 
 weights_output = np.array([0.3, -0.2])
 bias_output = 0.05
 
-# Define sigmoid activation function
+### Define sigmoid activation function
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
-# Perform forward propagation
+### Perform forward propagation
 hidden_layer = sigmoid(np.dot(weights_hidden, inputs) + biases_hidden)
 output_layer = sigmoid(np.dot(weights_output, hidden_layer) + bias_output)
 

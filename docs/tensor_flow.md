@@ -1,9 +1,7 @@
 
 ---
 
-### What Is Tensor
-
-Before we dive into TensorFlow, let's discuss what exactly a tensor is.
+## What Is Tensor
 
 A tensor is a mathematical object that represents data in multiple dimensions. For example, a scalar could be considered a 0-dimensional tensor, a vector a 1-dimensional tensor, a matrix a 2-dimensional tensor, and so on.
 
@@ -15,12 +13,9 @@ In summary: A tensor is a mathematical object used to represent data in multiple
 
 ### What Is Tensorflow
 
-**TensorFlow** is an open-source software library developed and supported by Google that is widely used for the development of machine learning models. It was built to make it easier for developers to create, train, and deploy machine learning models through a flexible and efficient computation framework. TensorFlow allows for the creation and execution of computational graphs that represent complex mathematical algorithms in a way that can be easily visualized and optimized. It supports a wide range of machine learning techniques such as neural networks, decision trees, clustering, and regression among others, making it a powerful tool for solving a variety of real-world problems across different domains. TensorFlow is compatible with many programming languages, including Python, C++, and Java, which makes it accessible to a large community of developers worldwide.
+TensorFlow is an open-source software library developed and supported by Google that is widely used for the development of machine learning models. It was built to make it easier for developers to create, train, and deploy machine learning models through a flexible and efficient computation framework. TensorFlow allows for the creation and execution of computational graphs that represent complex mathematical algorithms in a way that can be easily visualized and optimized. It supports a wide range of machine learning techniques such as neural networks, decision trees, clustering, and regression among others, making it a powerful tool for solving a variety of real-world problems across different domains. TensorFlow is compatible with many programming languages, including Python, C++, and Java, which makes it accessible to a large community of developers worldwide.
 
 ---
-
-
- 
 
 ### Python Tensor TensorFlow
 
@@ -28,7 +23,7 @@ TensorFlow is an open-source software library for dataflow and differentiable pr
 
 Developed by engineers and researchers at Google, TensorFlow was first released in 2015 and has since become one of the most popular libraries for building and training machine learning models.
 
-### What is a Tensor?
+### Tensor Example
 
 In the context of TensorFlow (and more generally in Linear Algebra), a tensor refers to a multidimensional array. A scalar is a single number, a vector consists of an array of numbers arranged in a line, matrices are 2-dimensional arrays of numbers, while tensors can have N number of dimensions.
 
