@@ -34,6 +34,7 @@ nav:
 #
   - Home: 
     - Welcome: index.md
+    - (Hype Curve): hype_curve.md
 
     - (AI):
       - What is AI: what_is_ai.md
@@ -79,7 +80,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       clickable_checkbox: true
   - attr_list
-  - md_in_html 
+  - md_in_html
+  - def_list
 
   # - toc:
   #     permalink: 
