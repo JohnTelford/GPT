@@ -37,6 +37,7 @@ nav:
 
     - (AI):
       - What is AI: what_is_ai.md
+      - ELIZA: some_ai_history/eliza.md
       - Neural Networks: neural_networks.md
       - Tensor Flow: tensor_flow.md
       - Singularity: ai_singularity.md
@@ -46,14 +47,6 @@ nav:
       - Loss Calculation: loss_calculation.md
       - Back Propagation: backward_propagation.md
 
-    - (Security): 
-      - 2FA TOTP: 2fa_totp.md
-      - Block Chain: block_chain.md
-
-    - (Software):
-      - Python: python.md
-      - Markdown Math processing: markdown.md
-
     - (Science):
         - Maxwell Equations: maxwell.md
         - Theory of Relativity: theory_of_relativity.md
@@ -61,6 +54,14 @@ nav:
           - Introduction: quantum.md
           - Quantum Computers: quantum _computers.md
      
+    - (Security): 
+      - 2FA TOTP: 2fa_totp.md
+      - Block Chain: block_chain.md
+
+    - (Software):
+          - Python: python.md
+          - Markdown Math processing: markdown.md
+
 
 
 plugins:
