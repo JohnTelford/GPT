@@ -38,6 +38,7 @@ nav:
 
     - (AI):
       - What is AI: what_is_ai.md
+      - AI Hype Curve: ai-hype-curve.md
       - ELIZA: some_ai_history/eliza.md
       - GPT: GPT.md
       - Topic Generalized Learning: generalized_learning.md
@@ -100,6 +101,6 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-dev_addr: localhost:8000
+dev_addr: localhost:8002
 
 copyright: Copyright &copy; 2023 John Telford
