@@ -9,24 +9,24 @@
       
       
       
-        <link rel="prev" href="../neural_networks/">
+        <link rel="prev" href="../../ai_singularity/">
       
       
-        <link rel="next" href="../loss_calculation/">
+        <link rel="next" href="../../maxwell/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
-        <title>Forward Propagation - John Telford - Topics</title>
+        <title>Electric Vehicles - John Telford - Topics</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c4a75a56.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4a75a56.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -42,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#forward-propagation" class="md-skip">
+        <a href="#what-are-self-driving-cars" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="John Telford - Topics" class="md-header__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
+    <a href="../.." title="John Telford - Topics" class="md-header__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Forward Propagation
+              Electric Vehicles
             
           </span>
         </div>
@@ -178,7 +178,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     </li>
@@ -212,7 +212,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="John Telford - Topics" class="md-nav__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
+    <a href="../.." title="John Telford - Topics" class="md-nav__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -272,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Welcome
       </a>
     </li>
@@ -286,7 +286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hype_curve/" class="md-nav__link">
+      <a href="../../hype_curve/" class="md-nav__link">
         (Hype Curve)
       </a>
     </li>
@@ -298,16 +298,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
       
       
       
@@ -316,7 +314,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_3">
           <span class="md-nav__icon md-icon"></span>
           (AI)
@@ -329,7 +327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what_is_ai/" class="md-nav__link">
+      <a href="../../what_is_ai/" class="md-nav__link">
         What is AI
       </a>
     </li>
@@ -343,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai-hype-curve/" class="md-nav__link">
+      <a href="../../ai-hype-curve/" class="md-nav__link">
         AI Hype Curve
       </a>
     </li>
@@ -357,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../some_ai_history/eliza/" class="md-nav__link">
+      <a href="../../some_ai_history/eliza/" class="md-nav__link">
         ELIZA
       </a>
     </li>
@@ -371,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../GPT/" class="md-nav__link">
+      <a href="../../GPT/" class="md-nav__link">
         GPT
       </a>
     </li>
@@ -385,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generalized_learning/" class="md-nav__link">
+      <a href="../../generalized_learning/" class="md-nav__link">
         Generalized Learning
       </a>
     </li>
@@ -399,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../neural_networks/" class="md-nav__link">
+      <a href="../../neural_networks/" class="md-nav__link">
         Neural Networks
       </a>
     </li>
@@ -411,89 +409,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Forward Propagation
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../forward_propagation/" class="md-nav__link">
         Forward Propagation
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#forward-propagation" class="md-nav__link">
-    Forward Propagation
-  </a>
-  
-    <nav class="md-nav" aria-label="Forward Propagation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#define-input-layer" class="md-nav__link">
-    Define input layer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#initialize-weights-and-biases" class="md-nav__link">
-    Initialize weights and biases
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#define-sigmoid-activation-function" class="md-nav__link">
-    Define sigmoid activation function
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#perform-forward-propagation" class="md-nav__link">
-    Perform forward propagation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -505,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loss_calculation/" class="md-nav__link">
+      <a href="../../loss_calculation/" class="md-nav__link">
         Loss Calculation
       </a>
     </li>
@@ -519,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../backward_propagation/" class="md-nav__link">
+      <a href="../../backward_propagation/" class="md-nav__link">
         Back Propagation
       </a>
     </li>
@@ -533,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../parameters/" class="md-nav__link">
+      <a href="../../parameters/" class="md-nav__link">
         Parameters
       </a>
     </li>
@@ -547,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tensor_flow/" class="md-nav__link">
+      <a href="../../tensor_flow/" class="md-nav__link">
         Tensor Flow
       </a>
     </li>
@@ -561,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai_singularity/" class="md-nav__link">
+      <a href="../../ai_singularity/" class="md-nav__link">
         Singularity
       </a>
     </li>
@@ -580,14 +500,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" checked>
       
       
       
@@ -596,7 +518,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_1_4">
           <span class="md-nav__icon md-icon"></span>
           (Self-Driving Vehichles)
@@ -607,11 +529,102 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ev/self_driving/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Electric Vehicles
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Electric Vehicles
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-self-driving-cars" class="md-nav__link">
+    What Are Self Driving Cars
+  </a>
+  
+    <nav class="md-nav" aria-label="What Are Self Driving Cars">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-levels-of-autonomous-vehicles" class="md-nav__link">
+    What Are The Levels Of Autonomous Vehicles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#are-autonomous-vehicles-safe" class="md-nav__link">
+    Are Autonomous Vehicles Safe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radar-and-lidar" class="md-nav__link">
+    Radar And Lidar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-sensor" class="md-nav__link">
+    Visual Sensor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-self-driving-trucks" class="md-nav__link">
+    What Are Self Driving Trucks
+  </a>
+  
+    <nav class="md-nav" aria-label="What Are Self Driving Trucks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#are-autonomous-trucks-safe" class="md-nav__link">
+    Are Autonomous Trucks Safe
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -657,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maxwell/" class="md-nav__link">
+      <a href="../../maxwell/" class="md-nav__link">
         Maxwell Equations
       </a>
     </li>
@@ -671,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../theory_of_relativity/" class="md-nav__link">
+      <a href="../../theory_of_relativity/" class="md-nav__link">
         Theory of Relativity
       </a>
     </li>
@@ -685,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../space_time/" class="md-nav__link">
+      <a href="../../space_time/" class="md-nav__link">
         Space-Time
       </a>
     </li>
@@ -726,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quantum/" class="md-nav__link">
+      <a href="../../quantum/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -740,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quantum%20_computers/" class="md-nav__link">
+      <a href="../../quantum%20_computers/" class="md-nav__link">
         Quantum Computers
       </a>
     </li>
@@ -795,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2fa_totp/" class="md-nav__link">
+      <a href="../../2fa_totp/" class="md-nav__link">
         2FA TOTP
       </a>
     </li>
@@ -809,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../block_chain/" class="md-nav__link">
+      <a href="../../block_chain/" class="md-nav__link">
         Block Chain
       </a>
     </li>
@@ -857,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../python/" class="md-nav__link">
         Python
       </a>
     </li>
@@ -871,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markdown/" class="md-nav__link">
+      <a href="../../markdown/" class="md-nav__link">
         Markdown Math processing
       </a>
     </li>
@@ -917,44 +930,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#forward-propagation" class="md-nav__link">
-    Forward Propagation
+  <a href="#what-are-self-driving-cars" class="md-nav__link">
+    What Are Self Driving Cars
   </a>
   
-    <nav class="md-nav" aria-label="Forward Propagation">
+    <nav class="md-nav" aria-label="What Are Self Driving Cars">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#define-input-layer" class="md-nav__link">
-    Define input layer
+  <a href="#what-are-the-levels-of-autonomous-vehicles" class="md-nav__link">
+    What Are The Levels Of Autonomous Vehicles
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#initialize-weights-and-biases" class="md-nav__link">
-    Initialize weights and biases
+  <a href="#are-autonomous-vehicles-safe" class="md-nav__link">
+    Are Autonomous Vehicles Safe
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#define-sigmoid-activation-function" class="md-nav__link">
-    Define sigmoid activation function
+  <a href="#radar-and-lidar" class="md-nav__link">
+    Radar And Lidar
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#perform-forward-propagation" class="md-nav__link">
-    Perform forward propagation
+  <a href="#visual-sensor" class="md-nav__link">
+    Visual Sensor
   </a>
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-self-driving-trucks" class="md-nav__link">
+    What Are Self Driving Trucks
+  </a>
+  
+    <nav class="md-nav" aria-label="What Are Self Driving Trucks">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#are-autonomous-trucks-safe" class="md-nav__link">
+    Are Autonomous Trucks Safe
   </a>
   
 </li>
@@ -982,61 +1008,77 @@
   
 
 
-  <h1>Forward Propagation</h1>
+  <h1>Electric Vehicles</h1>
 
-<p>-</p>
-<h2 id="forward-propagation">Forward Propagation</h2>
-<p>Forward propagation is the process of feeding a set of inputs through a neural network to obtain an output prediction. Each layer in the network performs a series of mathematical operations on the input data to generate a new set of outputs that are passed on to the next layer.</p>
-<p>The process continues until the data reaches the final layer, also known as the output layer, where the final prediction is generated. During forward propagation, no learning or updating of weights occurs, and the output is solely based on the initial input values and the weights of the neurons.</p>
-<p>Here's an example of forward propagation for a simple neural network with one hidden layer:</p>
-<p>Copy
-Insert
-New
-import numpy as np</p>
-<h3 id="define-input-layer">Define input layer</h3>
-<p>inputs = np.array([0.5, 0.3, 0.2])</p>
-<h3 id="initialize-weights-and-biases">Initialize weights and biases</h3>
-<p>weights_hidden = np.array([[0.4, 0.2, -0.1], [-0.3, 0.1, 0.2]])
-biases_hidden = np.array([0.1, 0.2])</p>
-<p>weights_output = np.array([0.3, -0.2])
-bias_output = 0.05</p>
-<h3 id="define-sigmoid-activation-function">Define sigmoid activation function</h3>
-<p>def sigmoid(x):
-    return 1 / (1 + np.exp(-x))</p>
-<h3 id="perform-forward-propagation">Perform forward propagation</h3>
-<p>hidden_layer = sigmoid(np.dot(weights_hidden, inputs) + biases_hidden)
-output_layer = sigmoid(np.dot(weights_output, hidden_layer) + bias_output)</p>
-<p>print(output_layer)
-In this example, we start by defining our input layer consisting of three neurons. We then initialize the weights and biases for our hidden layer and output layer using numpy arrays.</p>
-<p>We define the sigmoid function as our activation function and use it to perform the forward propagation calculations for each layer. Finally, we print out the output prediction generated by our neural network.</p>
 <hr />
-<h3 id="example">Example</h3>
-<p>Sure, here is an example for forward propagation:</p>
-<p>Suppose we have a neural network with one input layer (2 nodes), one hidden layer (3 nodes), and one output layer (1 node) which we want to use to predict the price of a house based on its size in square feet and the number of bedrooms.</p>
-<p>Our input variables are x1 (size in sq ft) and x2 (number of bedrooms) and we want to predict the price of a house y.</p>
-<p>The weights connecting the input layer to the hidden layer are w1 = 0.8, w2 = -0.5, w3 = 0.2, w4 = 1.0, w5 = 0.4, w6 = -0.6 and the bias terms for the hidden layer nodes are b1 = 0.3, b2 = -0.1, b3 = 0.9.</p>
-<p>The weights connecting the hidden layer to the output layer are w7 = 0.5, w8 = -1.0, w9 = 0.3 and the bias term for the output layer node is b4 = 0.2.</p>
-<p>The equations for computing the activation values for the hidden layer nodes are:</p>
-<p>z1 = x1 * w1 + x2 * w2 + b1
-a1 = sigmoid(z1)</p>
-<p>z2 = x1 * w3 + x2 * w4 + b2
-a2 = relu(z2)</p>
-<p>z3 = x1 * w5 + x2 * w6 + b3
-a3 = tanh(z3)</p>
-<p>where sigmoid, relu, and tanh are the activation functions applied to the weighted sum inputs.</p>
-<p>The equation for computing the activation value for the output layer node is:</p>
-<p>z4 = a1 * w7 + a2 * w8 + a3 * w9 + b4
-y = z4</p>
-<p>We can now plug in some numerical values for the input features and compute the predicted price using forward propagation. For example, if the size of our house is 2000 sq ft and it has 3 bedrooms, then we have:</p>
-<p>z1 = 2000 * 0.8 + 3 * (-0.5) + 0.3 = 1600.3
-a1 = sigmoid(z1) = 0.999</p>
-<p>z2 = 2000 * 0.2 + 3 * 1.0 + (-0.1) = 599.9
-a2 = relu(z2) = max(0, 599.9) = 599.9</p>
-<p>z3 = 2000 * 0.4 + 3 * (-0.6) + 0.9 = 888.9
-a3 = tanh(z3) = tanh(888.9) = 1.0</p>
-<p>z4 = 0.999 * 0.5 + 599.9 * (-1.0) + 1.0 * 0.3 + 0.2 = -598.3
-y = z4 = -598.3</p>
-<p>So, the predicted price for this house is negative, which doesn't make much sense. This could be due to issues with the neural network architecture, the choice of activation functions, or the training data. We would need to investigate further and potentially adjust our model to improve its predictions.</p>
+<h2 id="what-are-self-driving-cars">What Are Self Driving Cars</h2>
+<p>Self-driving cars, also known as autonomous vehicles, are cars that are capable of sensing their environment and navigating without the need for human input. They use a combination of sensors, cameras, radar, and other technologies to perceive their surroundings, make decisions, and navigate roads safely.</p>
+<p>Self-driving cars are designed to operate without human intervention or with minimal human supervision. They are typically equipped with advanced software and hardware systems that allow them to perceive their environment, understand traffic patterns, and make decisions based on that information. The goal of self-driving cars is to make transportation safer, more efficient, and more convenient by reducing accidents, traffic congestion, and the need for human intervention while driving.</p>
+<hr />
+<h3 id="what-are-the-levels-of-autonomous-vehicles">What Are The Levels Of Autonomous Vehicles</h3>
+<p>There are generally five levels of autonomous vehicles, defined by the Society of Automotive Engineers (SAE):</p>
+<ul>
+<li>
+<p>Level 0: No Automation - The driver is in complete control of the vehicle with no automation or assistance.</p>
+</li>
+<li>
+<p>Level 1: Driver Assistance - The vehicle has some driver assistance features, such as cruise control, lane departure warnings, or automatic braking.</p>
+</li>
+<li>Level 2: Partial Automation - The vehicle can control steering, acceleration, and braking, but the driver must still be alert and ready to take control if necessary.</li>
+<li>Level 3: Conditional Automation - The vehicle can handle most driving tasks, but the driver must still be ready to intervene when prompted by the system.</li>
+<li>Level 4: High Automation - The vehicle is capable of handling all driving tasks under specific conditions or in certain environments, and the driver may not need to be attentive at all times.</li>
+<li>Level 5: Full Automation - The vehicle can handle all driving tasks in all environments, and there is no need for a human driver.</li>
+</ul>
+<hr />
+<h3 id="are-autonomous-vehicles-safe">Are Autonomous Vehicles Safe</h3>
+<p>Autonomous vehicles are designed to improve safety on the road by reducing the number of accidents caused by human error. However, like any new technology, there are still safety concerns associated with autonomous vehicles.</p>
+<p>Overall, autonomous vehicles have the potential to be safer than human-driven vehicles because they are not subject to human error, such as distraction, fatigue, or impairment. Autonomous vehicles are equipped with sensors and advanced software that allow them to perceive their environment and make decisions based on that information.</p>
+<p>However, there have been some incidents involving autonomous vehicles, including accidents that have resulted in injuries or fatalities. These incidents highlight the need for continued research and development to improve the safety of autonomous vehicles.</p>
+<p>It's important to note that even with the best technology, accidents can still occur due to factors such as weather conditions, unexpected obstacles on the road, or mechanical failures. As with any technology, it's important to ensure that autonomous vehicles are thoroughly tested and regulated to ensure their safety on the road.</p>
+<hr />
+<h3 id="radar-and-lidar">Radar And Lidar</h3>
+<p>Radar and LiDAR are two types of sensors commonly used in autonomous vehicles to help detect and navigate their environment.</p>
+<p>Radar, which stands for Radio Detection and Ranging, is a sensor that uses radio waves to detect objects and their distance from the vehicle. Radar sensors can detect the speed and direction of objects, such as other vehicles, pedestrians, or cyclists, and can provide information about their distance from the vehicle. This information can help the vehicle's software make decisions about speed, braking, and steering.</p>
+<p>LiDAR, which stands for Light Detection and Ranging, is a sensor that uses laser light to create a 3D map of the vehicle's surroundings. LiDAR sensors emit laser pulses that bounce off surrounding objects and return to the sensor, providing precise information about the distance, size, and shape of objects in the environment. This information can be used to create a detailed map of the environment and help the vehicle's software navigate safely and avoid obstacles.</p>
+<p>Both radar and LiDAR sensors can work together to provide a more comprehensive understanding of the environment around the vehicle. By combining the data from multiple sensors, the vehicle's software can build a detailed and accurate picture of its surroundings and make decisions about navigation, speed, and safety.</p>
+<hr />
+<h3 id="visual-sensor">Visual Sensor</h3>
+<p>Visual sensors are another type of sensor used in autonomous vehicles to detect and navigate the environment. Visual sensors typically use cameras to capture images and video of the vehicle's surroundings, which are then processed by the vehicle's software to create a 3D map of the environment.</p>
+<p>Visual sensors can provide valuable information about the vehicle's environment, such as lane markings, traffic signals, signs, and other objects. This information can be used to help the vehicle navigate safely and make decisions about speed, braking, and steering.</p>
+<p>In addition to traditional cameras, some autonomous vehicles also use thermal imaging cameras, which detect heat signatures to help detect objects in low-light or poor weather conditions.</p>
+<p>While visual sensors can provide a wealth of information about the environment, they also have limitations. For example, they may struggle in poor weather conditions, such as heavy rain or snow, or in areas with poor lighting. Additionally, visual sensors may be subject to issues such as glare or reflections, which can impact their accuracy.</p>
+<p>Despite these limitations, visual sensors remain an important part of autonomous vehicle technology and are often used in conjunction with other types of sensors, such as radar and LiDAR, to create a comprehensive understanding of the vehicle's surroundings.</p>
+<hr />
+<h2 id="what-are-self-driving-trucks">What Are Self Driving Trucks</h2>
+<p>Autonomous trucks are self-driving vehicles that can transport goods without the need for a human driver. These trucks use various sensors, cameras, and GPS technology to navigate roads and highways safely while avoiding obstacles.</p>
+<p>The implementation of self-driving trucks has the potential to revolutionize the transportation industry. It could significantly reduce the cost of transporting goods and increase delivery speed. Autonomous trucks can operate 24/7 without the need for breaks, reducing shipping times and improving efficiency.</p>
+<p>However, autonomous trucks also raise concerns about job displacement, as many truck drivers may be replaced by self-driving vehicles. Additionally, there are also concerns about safety and cybersecurity risks associated with these types of vehicles.</p>
+<p>Overall, the implementation of autonomous trucks holds both benefits and challenges. While it has the potential to improve efficiency and reduce costs, it must also be implemented in a responsible and safe manner.</p>
+<p>Autonomous trucks are intended to ultimately have better safety records than those with human drivers. Let's discuss the safety aspects of autonomous trucks below:</p>
+<p>Safety Benefits of Autonomous Trucks:
+Fewer road accidents: Human errors such as driver fatigue, distracted driving, and reckless behaviors are some of the most frequent reasons for automobile incidents. Autonomous vehicles use sensors and cameras to evaluate the surroundings, which could assist in reducing such mishaps caused by human error.</p>
+<p>Increased accuracy: Automation helps maintain precise routes and speeds, as well as reduce the need for sudden stops or turns that might cause sudden disruption on the road.</p>
+<p>Improved response time: Self-driving vehicles can respond to changes in traffic patterns faster than their human counterparts.</p>
+<p>Predictive Maintenance: Autonomous trucks equipped with IoT technology can proactively detect maintenance issues before they become serious, lowering the risk of breakdowns or accidents caused by equipment failure.</p>
+<p>Challenges with Autonomous Trucks Safety
+System failures: A glitch in the cameras or sensors used by autonomous trucks may result in incorrect decisions being made by the vehicle. However, autonomous trucks utilize redundant systems to keep operations running normally, ensuring safety, even in challenging circumstances.</p>
+<p>Adapting to weather and infrastructure: Autonomous vehicles are constantly evolving to adapt to changing conditions, such as adjusting sensitivity settings on cameras or sensors during inclement weather. However, changing road conditions, construction, and infrastructure can still pose challenges for autonomous vehicle technology when it is unable to collect sufficient data to make the correct decision.</p>
+<p>Conclusion:
+While autonomous trucks have several safety advantages over traditional human-driven vehicles, there is always a chance of occasional glitches or unexpected events. The safety benefits outweigh the drawbacks when evaluated as a whole, and considerable investment is being made towards advancing this technology to make it safer and more reliable.</p>
+<hr />
+<h3 id="are-autonomous-trucks-safe">Are Autonomous Trucks Safe</h3>
+<p>Autonomous trucks are intended to ultimately have better safety records than those with human drivers. Let's discuss the safety aspects of autonomous trucks below:</p>
+<p>Safety Benefits of Autonomous Trucks:
+Fewer road accidents: Human errors such as driver fatigue, distracted driving, and reckless behaviors are some of the most frequent reasons for automobile incidents. Autonomous vehicles use sensors and cameras to evaluate the surroundings, which could assist in reducing such mishaps caused by human error.</p>
+<p>Increased accuracy: Automation helps maintain precise routes and speeds, as well as reduce the need for sudden stops or turns that might cause sudden disruption on the road.</p>
+<p>Improved response time: Self-driving vehicles can respond to changes in traffic patterns faster than their human counterparts.</p>
+<p>Predictive Maintenance: Autonomous trucks equipped with IoT technology can proactively detect maintenance issues before they become serious, lowering the risk of breakdowns or accidents caused by equipment failure.</p>
+<p>Challenges with Autonomous Trucks Safety
+System failures: A glitch in the cameras or sensors used by autonomous trucks may result in incorrect decisions being made by the vehicle. However, autonomous trucks utilize redundant systems to keep operations running normally, ensuring safety, even in challenging circumstances.</p>
+<p>Adapting to weather and infrastructure: Autonomous vehicles are constantly evolving to adapt to changing conditions, such as adjusting sensitivity settings on cameras or sensors during inclement weather. However, changing road conditions, construction, and infrastructure can still pose challenges for autonomous vehicle technology when it is unable to collect sufficient data to make the correct decision.</p>
+<p>Conclusion:
+While autonomous trucks have several safety advantages over traditional human-driven vehicles, there is always a chance of occasional glitches or unexpected events. The safety benefits outweigh the drawbacks when evaluated as a whole, and considerable investment is being made towards advancing this technology to make it safer and more reliable.</p>
+<hr />
 
 
 
@@ -1078,12 +1120,12 @@ y = z4 = -598.3</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation:top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation:top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.efa0ade1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.efa0ade1.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
