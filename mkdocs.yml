@@ -41,7 +41,7 @@ nav:
       - AI Hype Curve: ai-hype-curve.md
       - ELIZA: some_ai_history/eliza.md
       - GPT: GPT.md
-      - Topic Generalized Learning: generalized_learning.md
+      - Generalized Learning: generalized_learning.md
       - Neural Networks: neural_networks.md
       - Forward Propagation: forward_propagation.md
       - Loss Calculation: loss_calculation.md
