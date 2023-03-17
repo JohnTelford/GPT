@@ -48,7 +48,7 @@ In addition to the bosons, QFT also describes the behavior of particles known as
 
 One of the major successes of QFT is the development of the Standard Model, which is a theory that describes the interactions of all known elementary particles and the forces that govern them. The Standard Model has been extensively tested and is considered to be one of the most successful theories in physics. However, QFT is still an active area of research, and many physicists are working to extend it to include gravity and other phenomena that are not currently explained by the Standard Model.
 
-
+---
 
 
 Regenerate response
