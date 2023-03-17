@@ -33,7 +33,7 @@ The Sun rotates on its axis with an equatorial rotation speed of about 25.05 day
 
 ---
 
-## How Does Are Photon Created In The Sun
+## How Are Photon Created In The Sun
 
 A photon is a quantum of electromagnetic radiation, and it is created in the Sun through a process known as nuclear fusion. In the core of the Sun, where temperatures and pressures are extremely high, hydrogen nuclei (protons) collide and fuse together to form helium nuclei. During this fusion process, some of the mass is converted into energy in the form of photons.
 
