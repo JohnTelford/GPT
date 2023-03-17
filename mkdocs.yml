@@ -50,9 +50,6 @@ nav:
       - Tensor Flow: tensor_flow.md
       - Singularity: ai_singularity.md
 
-    - (Self-Driving Vehichles): 
-      - Electric Vehicles: ev/self_driving.md
-
     - (Science):
       - Maxwell Equations: maxwell.md
       - Theory of Relativity: theory_of_relativity.md
@@ -64,6 +61,10 @@ nav:
     - (Security): 
       - 2FA TOTP: 2fa_totp.md
       - Block Chain: block_chain.md
+
+    - (Self-Driving Vehichles): 
+      - Self-Driving Cars: ev/self_driving_cars.md
+      - Self-Driving Trucks: ev/self_driving_trucks.md
 
     - (Software):
       - Python: python.md
@@ -104,6 +105,6 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-dev_addr: localhost:8003
+dev_addr: localhost:8001
 
 copyright: Copyright &copy; 2023 John Telford
