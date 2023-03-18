@@ -9,24 +9,24 @@
       
       
       
-        <link rel="prev" href="../forward_propagation/">
+        <link rel="prev" href="../ev_video/">
       
       
-        <link rel="next" href="../backward_propagation/">
+        <link rel="next" href="../../python/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
-        <title>Loss Calculation - John Telford - Topics</title>
+        <title>Autonomous Vehicles Black Box - John Telford - Topics</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c4a75a56.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4a75a56.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -42,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,11 +66,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#loss-calculation-example" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +78,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="John Telford - Topics" class="md-header__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
+    <a href="../.." title="John Telford - Topics" class="md-header__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Loss Calculation
+              Autonomous Vehicles Black Box
             
           </span>
         </div>
@@ -178,7 +173,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     </li>
@@ -212,7 +207,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="John Telford - Topics" class="md-nav__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
+    <a href="../.." title="John Telford - Topics" class="md-nav__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -272,7 +267,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Welcome
       </a>
     </li>
@@ -286,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hype_curve/" class="md-nav__link">
+      <a href="../../hype_curve/" class="md-nav__link">
         (Hype Curve)
       </a>
     </li>
@@ -298,16 +293,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
       
       
       
@@ -316,7 +309,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_3">
           <span class="md-nav__icon md-icon"></span>
           (AI)
@@ -329,7 +322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what_is_ai/" class="md-nav__link">
+      <a href="../../what_is_ai/" class="md-nav__link">
         What is AI
       </a>
     </li>
@@ -343,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai-hype-curve/" class="md-nav__link">
+      <a href="../../ai-hype-curve/" class="md-nav__link">
         AI Hype Curve
       </a>
     </li>
@@ -357,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../some_ai_history/eliza/" class="md-nav__link">
+      <a href="../../some_ai_history/eliza/" class="md-nav__link">
         ELIZA
       </a>
     </li>
@@ -371,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../GPT/" class="md-nav__link">
+      <a href="../../GPT/" class="md-nav__link">
         GPT
       </a>
     </li>
@@ -385,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generalized_learning/" class="md-nav__link">
+      <a href="../../generalized_learning/" class="md-nav__link">
         Generalized Learning
       </a>
     </li>
@@ -399,7 +392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../neural_networks/" class="md-nav__link">
+      <a href="../../neural_networks/" class="md-nav__link">
         Neural Networks
       </a>
     </li>
@@ -413,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../forward_propagation/" class="md-nav__link">
+      <a href="../../forward_propagation/" class="md-nav__link">
         Forward Propagation
       </a>
     </li>
@@ -425,48 +418,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Loss Calculation
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../loss_calculation/" class="md-nav__link">
         Loss Calculation
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#loss-calculation-example" class="md-nav__link">
-    Loss Calculation Example
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -478,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../backward_propagation/" class="md-nav__link">
+      <a href="../../backward_propagation/" class="md-nav__link">
         Back Propagation
       </a>
     </li>
@@ -492,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../parameters/" class="md-nav__link">
+      <a href="../../parameters/" class="md-nav__link">
         Parameters
       </a>
     </li>
@@ -506,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tensor_flow/" class="md-nav__link">
+      <a href="../../tensor_flow/" class="md-nav__link">
         Tensor Flow
       </a>
     </li>
@@ -520,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai_singularity/" class="md-nav__link">
+      <a href="../../ai_singularity/" class="md-nav__link">
         Singularity
       </a>
     </li>
@@ -568,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maxwell/" class="md-nav__link">
+      <a href="../../maxwell/" class="md-nav__link">
         Maxwell Equations
       </a>
     </li>
@@ -582,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../theory_of_relativity/" class="md-nav__link">
+      <a href="../../theory_of_relativity/" class="md-nav__link">
         Theory of Relativity
       </a>
     </li>
@@ -596,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../space_time/" class="md-nav__link">
+      <a href="../../space_time/" class="md-nav__link">
         Space-Time
       </a>
     </li>
@@ -637,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quantum/" class="md-nav__link">
+      <a href="../../quantum/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -651,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quantum%20_computers/" class="md-nav__link">
+      <a href="../../quantum%20_computers/" class="md-nav__link">
         Quantum Computers
       </a>
     </li>
@@ -706,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2fa_totp/" class="md-nav__link">
+      <a href="../../2fa_totp/" class="md-nav__link">
         2FA TOTP
       </a>
     </li>
@@ -720,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../block_chain/" class="md-nav__link">
+      <a href="../../block_chain/" class="md-nav__link">
         Block Chain
       </a>
     </li>
@@ -739,14 +695,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
       
       
       
@@ -755,7 +713,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_1_6">
           <span class="md-nav__icon md-icon"></span>
           ( Autonomous Vehicles)
@@ -768,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev/self_driving_cars/" class="md-nav__link">
+      <a href="../self_driving_cars/" class="md-nav__link">
         Autonomous Cars
       </a>
     </li>
@@ -782,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev/self_driving_trucks/" class="md-nav__link">
+      <a href="../self_driving_trucks/" class="md-nav__link">
         Autonomous Trucks
       </a>
     </li>
@@ -796,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ev/ev_video/" class="md-nav__link">
+      <a href="../ev_video/" class="md-nav__link">
         Autonomous Vehicles Video
       </a>
     </li>
@@ -808,11 +766,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ev/ev_black_box/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Autonomous Vehicles Black Box
       </a>
+      
     </li>
   
 
@@ -858,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../python/" class="md-nav__link">
         Python
       </a>
     </li>
@@ -872,7 +838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markdown/" class="md-nav__link">
+      <a href="../../markdown/" class="md-nav__link">
         Markdown Math processing
       </a>
     </li>
@@ -893,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gpt_4_miscelanous/misc/" class="md-nav__link">
+      <a href="../../gpt_4_miscelanous/misc/" class="md-nav__link">
         (Misc)
       </a>
     </li>
@@ -925,21 +891,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#loss-calculation-example" class="md-nav__link">
-    Loss Calculation Example
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -956,19 +907,16 @@
   
 
 
-  <h1>Loss Calculation</h1>
+  <h1>Autonomous Vehicles Black Box</h1>
 
 <hr />
-<h2 id="loss-calculation-example">Loss Calculation Example</h2>
-<p>Sure, here's an example of calculating loss:</p>
-<p>Let's say we have a model that predicts housing prices based on features like the number of bedrooms, square footage, and location. We have a dataset of 1000 houses with their actual selling prices and corresponding features.</p>
-<p>Our model is a simple linear regression that looks like this:</p>
-<p><code>predicted_price = w0 + w1*bedrooms + w2*square_footage + w3*location</code></p>
-<p>To train the model, we use the mean squared error (MSE) as our loss function:</p>
-<p><code>loss = (1/N) * ∑(i=1 to N) (actual_price_i - predicted_price_i)^2</code></p>
-<p>Where <code>N</code> is the number of houses in our dataset, <code>actual_price_i</code> is the actual selling price of the i-th house, and <code>predicted_price_i</code> is the predicted selling price of the i-th house using our model.</p>
-<p>During training, we adjust the weights <code>w0</code>, <code>w1</code>, <code>w2</code>, and <code>w3</code> to minimize the loss function using an optimization algorithm like gradient descent.</p>
-<p>Once the model is trained, we can evaluate its performance on a test set of houses by calculating the MSE between the actual selling prices and predicted selling prices on the test set. The lower the MSE, the better the performance of our model.</p>
+<!-- ## Autonomous Vehicles Black Box  -->
+
+<p>Yes, many autonomous vehicles have a "black box" similar to those found in airplanes, which is designed to record and store important information about the vehicle's operation.</p>
+<p>The black box in an autonomous vehicle typically consists of a data recorder that captures a range of data, including sensor readings, GPS coordinates, and other information about the vehicle's performance and behavior. This data can be used to analyze the vehicle's performance and identify any issues that may have contributed to an accident or malfunction.</p>
+<p>The use of black boxes in autonomous vehicles is becoming increasingly common, as regulators and manufacturers recognize the importance of gathering accurate and detailed data about the operation of these vehicles. The data collected by these devices can be used to improve the safety and reliability of autonomous vehicles, as well as to inform regulatory and policy decisions related to their operation.</p>
+<p>However, it's important to note that the specific requirements for black boxes in autonomous vehicles can vary depending on the jurisdiction and the specific type of vehicle in question. Some jurisdictions may require more or less extensive data collection, and some types of autonomous vehicles may have different data collection needs based on their design and intended use.</p>
+<hr />
 
 
 
@@ -1010,12 +958,12 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation:top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation:top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.efa0ade1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.efa0ade1.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

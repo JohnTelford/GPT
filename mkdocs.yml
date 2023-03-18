@@ -62,9 +62,11 @@ nav:
       - 2FA TOTP: 2fa_totp.md
       - Block Chain: block_chain.md
 
-    - (Self-Driving Vehichles): 
-      - Self-Driving Cars: ev/self_driving_cars.md
-      - Self-Driving Trucks: ev/self_driving_trucks.md
+    - ( Autonomous Vehicles): 
+      - Autonomous Cars: ev/self_driving_cars.md
+      - Autonomous Trucks: ev/self_driving_trucks.md
+      - Autonomous Vehicles Video: ev/ev_video.md
+      - Autonomous Vehicles Black Box: ev/ev_black_box.md
 
     - (Software):
       - Python: python.md
