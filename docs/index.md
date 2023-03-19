@@ -1,9 +1,10 @@
 # Welcome to Topics
 
-!!! Note "Version
-    v0.0.1 
-
+!!! note
     
+    Last update: March 19, 2023
+    
+
 Some topics are edited transcripts of conversations with the [OpenAI](https://openai.com) [chatGPT](https://chat.openai.com) or [Vscode](https://code.visualstudio.com/) extension [ChatGPT](https://marketplace.visualstudio.com/items?itemName=gencay.vscode-chatgpt) and OpenAI website.
 
 Some [OpenAI](https://openai.com) limitations are:
