@@ -34,7 +34,7 @@ nav:
 #
   - Topics Home: 
     - (Welcome): index.md
-    - (Hype Curve): hype_curve.md
+    - Hype Curve: hype_curve.md
 
     - (AI):
       - What is AI: Topics/AI/what_is_ai.md
@@ -53,7 +53,7 @@ nav:
       - Singularity: Topics/AI/ai_singularity.md
 
     - (Astronomy):
-      - Neutrion: Topics/Astronomy/neutrino.md
+      - Neutrino: Topics/Astronomy/neutrino.md
       - Sun: Topics/Astronomy/sun.md
 
     - (Autonomous Vehicles): 
@@ -91,7 +91,7 @@ nav:
     - (Telecom):
       - Cellular Networks: Topics/Telecom/cellular_networks.md
 
-    - (Misc): gpt_4_miscelanous/misc.md
+    # - (Misc): gpt_4_miscelanous/misc.md
 
 plugins:
     - search:
