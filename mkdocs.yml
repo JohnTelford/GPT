@@ -36,37 +36,42 @@ nav:
     - Welcome: index.md
     - (Hype Curve): hype_curve.md
 
+    - (Autonomous Vehicles): 
+      - Autonomous Cars: ev/self_driving_cars.md
+      - Autonomous Trucks: ev/self_driving_trucks.md
+      - Autonomous Vehicles Video: ev/ev_video.md
+      - Autonomous Vehicles Black Box: ev/ev_black_box.md
+
     - (AI):
-      - What is AI: what_is_ai.md
-      - AI Hype Curve: ai-hype-curve.md
-      - ELIZA: some_ai_history/eliza.md
-      - GPT: GPT.md
-      - Generalized Learning: generalized_learning.md
-      - Neural Networks: neural_networks.md
-      - Forward Propagation: forward_propagation.md
-      - Loss Calculation: loss_calculation.md
-      - Back Propagation: backward_propagation.md
-      - Parameters: parameters.md
-      - Tensor Flow: tensor_flow.md
-      - Singularity: ai_singularity.md
+      - What is AI: Topics/AI/what_is_ai.md
+      - AI Hype Curve: Topics/AI/ai-hype-curve.md
+      - ELIZA: Topics/AI/eliza.md
+      - GPT: Topics/AI/GPT.md
+      - Generalized Learning: Topics/AI/generalized_learning.md
+      - Neural Networks: Topics/AI/neural_networks.md
+      - Forward Propagation: Topics/AI/forward_propagation.md
+      - Loss Calculation: Topics/AI/loss_calculation.md
+      - Back Propagation: Topics/AI/backward_propagation.md
+      - Parameters: Topics/AI/parameters.md
+      - Tensor Flow: Topics/AI/tensor_flow.md
+      - Singularity: Topics/AI/ai_singularity.md
+
+    - (Electronics):
+      - Nonlinear_modulation: Topics/Electronics/nonlinear_modulation.md
 
     - (Science):
-      - Maxwell Equations: maxwell.md
-      - Theory of Relativity: theory_of_relativity.md
-      - Space-Time: space_time.md 
+      - Maxwell Equations: Topics/Science/maxwell.md
+      - Neurons: Topics/Science/neutrino.md
+      - Theory of Relativity: Topics/Science/theory_of_relativity.md
+      - Space-Time: Topics/Science/space_time.md 
       - Quantum Mechanics: 
-        - Introduction: quantum.md
-        - Quantum Computers: quantum _computers.md
+        - Introduction: Topics/Science/quantum.md
+        - Quantum Computers: Topics/Science/quantum _computers.md
      
     - (Security): 
       - 2FA TOTP: 2fa_totp.md
       - Block Chain: block_chain.md
 
-    - ( Autonomous Vehicles): 
-      - Autonomous Cars: ev/self_driving_cars.md
-      - Autonomous Trucks: ev/self_driving_trucks.md
-      - Autonomous Vehicles Video: ev/ev_video.md
-      - Autonomous Vehicles Black Box: ev/ev_black_box.md
 
     - (Software):
       - Python: python.md
@@ -107,6 +112,6 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-dev_addr: localhost:8002
+dev_addr: localhost:8000
 
 copyright: Copyright &copy; 2023 John Telford
