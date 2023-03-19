@@ -178,7 +178,7 @@ Overall, bosons play a fundamental role in the behavior of subatomic particles a
 
 ---
 
-## How Do Bosons Create Mass
+### How Do Bosons Create Mass
 
 Bosons themselves do not create mass. Rather, the Higgs boson, which is a type of boson, is responsible for the creation of mass in particles.
 

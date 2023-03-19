@@ -32,8 +32,8 @@ repo_url: https://github.com/JohnTelford/gpt.git
 # nav tree
 nav: 
 #
-  - Home: 
-    - Welcome: index.md
+  - Topics Home: 
+    - (Welcome): index.md
     - (Hype Curve): hype_curve.md
 
     - (Autonomous Vehicles): 
@@ -57,9 +57,11 @@ nav:
       - Singularity: Topics/AI/ai_singularity.md
 
     - (Electronics):
-      - Nonlinear_modulation: Topics/Electronics/nonlinear_modulation.md
+      - Nonlinear Modulation: Topics/Electronics/nonlinear_modulation.md
+      - Software Defined Radio: Topics/Electronics/software_defined_radio.md
 
     - (Science):
+      - Boson: Topics/Science/boson.md
       - Maxwell Equations: Topics/Science/maxwell.md
       - Neurons: Topics/Science/neutrino.md
       - Theory of Relativity: Topics/Science/theory_of_relativity.md
