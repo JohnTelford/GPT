@@ -54,7 +54,6 @@ While autonomous trucks have several safety advantages over traditional human-dr
 
 ---
 
-
 ### Conclusion
 
 While autonomous trucks have several safety advantages over traditional human-driven vehicles, there is always a chance of occasional glitches or unexpected events. The safety benefits outweigh the drawbacks when evaluated as a whole, and considerable investment is being made towards advancing this technology to make it safer and more reliable.

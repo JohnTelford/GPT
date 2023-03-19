@@ -16,6 +16,8 @@ Some [OpenAI](https://openai.com) limitations are:
     - Limited knowledge of world and events after 2021
 
 - Other topics are from pursuing what’s new and improved in the ever changing  Electronics, Internet, Science, and Software industries. Checking out what’s new or not, a pipe dream or not, or what’s new and improved
+  
+- 
    
 - The [Hype Curve](hype_curve.md) helps separate reality from fiction. Keep it in mind when reading Topics
 
