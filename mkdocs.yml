@@ -88,6 +88,9 @@ nav:
       - Markdown Math processing: Topics/Software/markdown.md
       - NZB Files: Topics/Software/nzb_files.md
 
+    - (Telecom):
+      - Cellular Networks: Topics/Telecom/cellular_networks.md
+
     - (Misc): gpt_4_miscelanous/misc.md
 
 plugins:
