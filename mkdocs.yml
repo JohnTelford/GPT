@@ -95,8 +95,8 @@ nav:
 
 plugins:
     - search:
-      # - git-revision-date-localized:
-      #   type: timeago
+    - git-revision-date-localized:
+        type: date
       
 markdown_extensions:
   - admonition
