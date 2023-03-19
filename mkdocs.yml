@@ -36,15 +36,6 @@ nav:
     - (Welcome): index.md
     - (Hype Curve): hype_curve.md
 
-    - (Astronomy): 
-      - Sun: Topics/Astronomy/sun.md
-
-    - (Autonomous Vehicles): 
-      - Autonomous Cars: Topics/Autonomous_Vehicles/self_driving_cars.md
-      - Autonomous Trucks: Topics/Autonomous_Vehicles/self_driving_trucks.md
-      - Autonomous Vehicles Video: Topics/Autonomous_Vehicles/ev_video.md
-      - Autonomous Vehicles Black Box: Topics/Autonomous_Vehicles/ev_black_box.md
-
     - (AI):
       - What is AI: Topics/AI/what_is_ai.md
       - AI Hype Curve: Topics/AI/ai-hype-curve.md
@@ -52,6 +43,7 @@ nav:
       - GPT: Topics/AI/GPT.md
       - Large Language Model: Topics/AI/llm.md
       - Generalized Learning: Topics/AI/generalized_learning.md
+      - Generative Pre-Learning Transform: Topics/AI/generative_pre_learning_transform.md
       - Neural Networks: Topics/AI/neural_networks.md
       - Forward Propagation: Topics/AI/forward_propagation.md
       - Loss Calculation: Topics/AI/loss_calculation.md
@@ -59,6 +51,16 @@ nav:
       - Parameters: Topics/AI/parameters.md
       - Tensor Flow: Topics/AI/tensor_flow.md
       - Singularity: Topics/AI/ai_singularity.md
+
+    - (Astronomy):
+      - Neutrion: Topics/Astronomy/neutrino.md
+      - Sun: Topics/Astronomy/sun.md
+
+    - (Autonomous Vehicles): 
+      - Autonomous Cars: Topics/Autonomous_Vehicles/self_driving_cars.md
+      - Autonomous Trucks: Topics/Autonomous_Vehicles/self_driving_trucks.md
+      - Autonomous Vehicles Video: Topics/Autonomous_Vehicles/ev_video.md
+      - Autonomous Vehicles Black Box: Topics/Autonomous_Vehicles/ev_black_box.md
 
     - (Electronics):
       - Nonlinear Modulation: Topics/Electronics/nonlinear_modulation.md
@@ -71,8 +73,9 @@ nav:
       - Theory of Relativity: Topics/Science/theory_of_relativity.md
       - Space-Time: Topics/Science/space_time.md 
       - Quantum Mechanics: 
-        - Introduction: Topics/Science/quantum.md
-        - Quantum Computers: Topics/Science/quantum _computers.md
+        - Introduction: Topics/Science/Quantum/quantum.md
+        - Quantum Computers: Topics/Science/Quantum/quantum _computers.md
+        - Quantum Field Theory: Topics/Science/Quantum/quantum_field_theory.md
      
     - (Security): 
       - 2FA TOTP: Topics/Security/2fa_totp.md
@@ -83,6 +86,7 @@ nav:
     - (Software):
       - Python: Topics/Software/python.md
       - Markdown Math processing: Topics/Software/markdown.md
+      - NZB Files: Topics/Software/nzb_files.md
 
     - (Misc): gpt_4_miscelanous/misc.md
 
@@ -119,6 +123,6 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-dev_addr: localhost:8000
+dev_addr: localhost:8001
 
 copyright: Copyright &copy; 2023 John Telford
