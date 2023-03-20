@@ -10,7 +10,7 @@ theme:
   features:
     - header.autohide
     - navigation.instant
-    - navigation.footer
+    - navigation.footer/sabnzbd/
     # - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -34,7 +34,7 @@ repo_url: https://github.com/JohnTelford/gpt.git
 nav: 
 #
   - Topics Home: 
-    - (Welcome): index.md
+    - Welcome: index.md
     - Hype Curve: hype_curve.md
 
     - (AI):
@@ -67,8 +67,9 @@ nav:
       - Nonlinear Modulation: Topics/Electronics/nonlinear_modulation.md
       - Software Defined Radio: Topics/Electronics/software_defined_radio.md
 
-    - (Science):
+    - (Science / Physics):
       - Boson: Topics/Science/boson.md
+      - Math: Topics/Science/Physics/physics_made_up.md
       - Maxwell Equations: Topics/Science/maxwell.md
       - Neurons: Topics/Science/neutrino.md
       - Theory of Relativity: Topics/Science/theory_of_relativity.md
