@@ -4,6 +4,8 @@
     
     Early Beta
     
+    v0.0.2
+
     Last update: March 19, 2023
     
 
