@@ -69,6 +69,10 @@ nav:
       - Nonlinear Modulation: Topics/Electronics/nonlinear_modulation.md
       - Software Defined Radio: Topics/Electronics/software_defined_radio.md
 
+    - (Health):
+      - Why Do We Yawn: Topics/Health/yawn.md
+      - What Is Cellulitis: Topics/Health/cellulitis.md
+
     - (Science / Physics):
       - Boson: Topics/Science/boson.md
       - Math: Topics/Science/Physics/physics_made_up.md

@@ -1,7 +1,7 @@
 
 ---
 
-## What Are Neutrino
+## What Are Neutrinos
 
 Neutrinos are subatomic particles that are similar to electrons but have no electric charge and a very small mass, which makes them difficult to detect. They are often produced in high-energy nuclear reactions, such as those that occur in the sun or in supernovae, and are also created in certain types of radioactive decay.
 
