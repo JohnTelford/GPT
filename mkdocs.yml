@@ -9,11 +9,13 @@ theme:
 
   features:
     - header.autohide
+    # - navigation.expand
     - navigation.instant
-    - navigation.footer/sabnzbd/
+    - navigation.tracking
+    - navigation.footer
     # - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation:top
     - navigation.tracking
     - search.highlight
@@ -33,7 +35,7 @@ repo_url: https://github.com/JohnTelford/gpt.git
 # nav tree
 nav: 
 #
-  - Topics Home: 
+  - Home: 
     - Welcome: index.md
     - Hype Curve: hype_curve.md
 
@@ -71,7 +73,7 @@ nav:
       - Boson: Topics/Science/boson.md
       - Math: Topics/Science/Physics/physics_made_up.md
       - Maxwell Equations: Topics/Science/maxwell.md
-      - Neutrino: Topics/Science/neutrino.md
+      - Neutrino: Topics/Astronomy/neutrino.md
       - Theory of Relativity: Topics/Science/theory_of_relativity.md
       - Space-Time: Topics/Science/space_time.md 
       - Quantum Mechanics: 
