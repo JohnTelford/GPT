@@ -4,9 +4,9 @@
     
     Early Beta
     
-    v0.0.5
+    v0.0.6
 
-    Last update: March 20, 2023
+    Last update: March 21, 2023
     
 The purpose of this website is quickly accessing topics of interest to me, and possible others
 
