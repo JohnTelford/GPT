@@ -73,6 +73,8 @@ nav:
       - Why Do We Yawn: Topics/Health/yawn.md
       - What Is Cellulitis: Topics/Health/cellulitis.md
 
+    - (Metaverse): Topics/Meta/metaverse.md
+
     - (Science / Physics):
       - Boson: Topics/Science/boson.md
       - Math: Topics/Science/Physics/physics_made_up.md
@@ -98,6 +100,8 @@ nav:
 
     - (Telecom):
       - Cellular Networks: Topics/Telecom/cellular_networks.md
+      - 5G: Topics/Telecom/5g.md
+      - 6G: Topics/Telecom/6g.md
 
     # - (Misc): gpt_4_miscelanous/misc.md
 
