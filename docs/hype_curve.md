@@ -9,7 +9,7 @@
 
 ---
 
-![Hype Curve](/img/hype-curve.png)
+![Hype Curve](/img/hype_curve.png)
 
 **Hype Curve**
 

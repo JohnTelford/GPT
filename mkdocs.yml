@@ -41,9 +41,9 @@ nav:
 
     - (AI):
       - What is AI: Topics/AI/what_is_ai.md
-      - AI Hype Curve: Topics/AI/ai-hype-curve.md
       - ELIZA: Topics/AI/eliza.md
       - GPT: Topics/AI/GPT.md
+      - AI Hype Curve: img/ai_hype.png
       - Large Language Model: Topics/AI/llm.md
       - Generalized Learning: Topics/AI/generalized_learning.md
       - Generative Pre-Learning Transform: Topics/AI/generative_pre_learning_transform.md
@@ -138,6 +138,6 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-dev_addr: localhost:8001
+dev_addr: localhost:8002
 
 copyright: Copyright &copy; 2023 John Telford

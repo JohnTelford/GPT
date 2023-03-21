@@ -2,4 +2,3 @@ Artificial Intelligence (AI) has been on the hype curve for several years now, a
 
 In recent years, AI has moved into the "**Trough of Disillusionment**" stage, as the reality of the technology sets in, and there is a recognition that many of the initial promises and expectations were overblown. However, despite this temporary setback, many experts believe that AI is on track to move into the "**Slope of Enlightenment**" and "**Plateau of Productivity**" stages in the coming years, as the technology continues to mature and its true value becomes more apparent.
 
-
