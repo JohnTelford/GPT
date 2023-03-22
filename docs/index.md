@@ -4,11 +4,11 @@
     
     Early Beta
     
-    v0.0.6
+    v0.0.7
 
-    Last update: March 21, 2023
+    Last update: March 22, 2023
     
-The purpose of this website is quickly accessing topics of interest to me, and possible others
+The purpose of this website is quick access to topics of interest to me, and possible others
 
 Some topics are edited transcripts of conversations with the [OpenAI](https://openai.com) [chatGPT-4](https://chat.openai.com) product
 
