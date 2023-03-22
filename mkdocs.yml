@@ -64,6 +64,7 @@ nav:
       - Autonomous Trucks: Topics/Autonomous_Vehicles/self_driving_trucks.md
       - Autonomous Vehicles Video: Topics/Autonomous_Vehicles/ev_video.md
       - Autonomous Vehicles Black Box: Topics/Autonomous_Vehicles/ev_black_box.md
+      - 5G - Autonomous Vehicles: Topics/Autonomous_Vehicles/5g.md
 
     - (Electronics):
       - Nonlinear Modulation: Topics/Electronics/nonlinear_modulation.md
@@ -76,17 +77,16 @@ nav:
     - (Metaverse): Topics/Meta/metaverse.md
 
     - (Science / Physics):
-      - Boson: Topics/Science/boson.md
       - Math: Topics/Science/Physics/physics_made_up.md
       - Maxwell Equations: Topics/Science/maxwell.md
       - Neutrino: Topics/Astronomy/neutrino.md
       - Theory of Relativity: Topics/Science/theory_of_relativity.md
       - Space-Time: Topics/Science/space_time.md 
       - Quantum Mechanics: 
-        - Introduction: Topics/Science/Quantum/quantum.md
-        - Quantum Computers: Topics/Science/Quantum/quantum _computers.md
-        - Quantum Field Theory: Topics/Science/Quantum/quantum_field_theory.md
-        - Boson: Topics/Science/Quantum/boson.md
+        - Introduction: Topics/Science/Quantum_Mechanics/quantum.md
+        - Quantum Computers: Topics/Science/Quantum_Mechanics/quantum _computers.md
+        - Quantum Field Theory: Topics/Science/Quantum_Mechanics/quantum_field_theory.md
+        - Boson: Topics/Science/Quantum_Mechanics/boson.md
      
     - (Security): 
       - 2FA TOTP: Topics/Security/2fa_totp.md
