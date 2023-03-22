@@ -86,6 +86,7 @@ nav:
         - Introduction: Topics/Science/Quantum/quantum.md
         - Quantum Computers: Topics/Science/Quantum/quantum _computers.md
         - Quantum Field Theory: Topics/Science/Quantum/quantum_field_theory.md
+        - Boson: Topics/Science/Quantum/boson.md
      
     - (Security): 
       - 2FA TOTP: Topics/Security/2fa_totp.md
@@ -100,6 +101,7 @@ nav:
 
     - (Telecom):
       - Cellular Networks: Topics/Telecom/cellular_networks.md
+      - 4G: Topics/Telecom/4g.md
       - 5G: Topics/Telecom/5g.md
       - 6G: Topics/Telecom/6g.md
 
