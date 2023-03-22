@@ -73,6 +73,8 @@ nav:
     - (Health):
       - Why Do We Yawn: Topics/Health/yawn.md
       - What Is Cellulitis: Topics/Health/cellulitis.md
+      - What is Pilonidal Cyst: Topics/Health/pilonidal.md
+      - What is Quadriceps Rupture: Topics/Health/quadriceps.md
 
     - (Metaverse): Topics/Meta/metaverse.md
 
@@ -106,12 +108,11 @@ nav:
       - 6G: Topics/Telecom/6g.md
 
     - (UNIX):
-      - USENET: Topics/UNIX/usenet.md
       - UNIX: Topics/UNIX/unix.md
+      - USENET: Topics/UNIX/usenet.md
       - macOS: Topics/UNIX/macos.md
       - Linux: Topics/UNIX/linux.md
 
-    # - (Misc): gpt_4_miscelanous/misc.md
 
 plugins:
     - search:
