@@ -100,6 +100,8 @@ nav:
       - Python: Topics/Software/python.md
       - Markdown Math processing: Topics/Software/markdown.md
       - NZB Files: Topics/Software/nzb_files.md
+      - VScode: Topics/Software/vscode.md
+      - Material for MkDocs: Topics/Software/material_for_mkdocs.md
 
     - (Telecom):
       - Cellular Networks: Topics/Telecom/cellular_networks.md
