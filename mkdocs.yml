@@ -102,7 +102,8 @@ nav:
       - NZB Files: Topics/Software/nzb_files.md
       - VScode: Topics/Software/vscode.md
       - Material for MkDocs: Topics/Software/material_for_mkdocs.md
-
+      - Web Languages: Topics/Software/web_languages.md
+      
     - (Telecom):
       - Cellular Networks: Topics/Telecom/cellular_networks.md
       - 4G: Topics/Telecom/4g.md
