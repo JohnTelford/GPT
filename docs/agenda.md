@@ -2,7 +2,7 @@
     - Welcome: index.md
     - Hype Curve: hype_curve.md
 
-    - (AI)
+    - (AI):
       - What is AI
       - ELIZA
       - GPT
