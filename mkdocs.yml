@@ -115,6 +115,7 @@ nav:
       - Servers: Topics/Web/web_server.md
 
     - (UNIX):
+      - UNIX History: Topics/UNIX/history.md
       - UNIX: Topics/UNIX/unix.md
       - USENET: Topics/UNIX/usenet.md
       - macOS: Topics/UNIX/macos.md
