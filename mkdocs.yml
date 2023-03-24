@@ -110,6 +110,10 @@ nav:
       - 5G: Topics/Telecom/5g.md
       - 6G: Topics/Telecom/6g.md
 
+    - (Web): 
+      - Browsers: Topics/Web/web_browser.md
+      - Servers: Topics/Web/web_server.md
+
     - (UNIX):
       - UNIX: Topics/UNIX/unix.md
       - USENET: Topics/UNIX/usenet.md
