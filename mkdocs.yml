@@ -52,7 +52,6 @@ nav:
       - Loss Calculation: Topics/AI/loss_calculation.md
       - Back Propagation: Topics/AI/backward_propagation.md
       - Parameters: Topics/AI/parameters.md
-      - Tensor Flow: Topics/AI/tensor_flow.md
       - Singularity: Topics/AI/ai_singularity.md
 
     - (Astronomy):
@@ -78,6 +77,10 @@ nav:
 
     - (Metaverse): Topics/Meta/metaverse.md
 
+    - (Python):
+      - Python Pandas: Topics/Python/python_pandas.md
+      - Tensor Flow: Topics/AI/tensor_flow.md
+
     - (Science / Physics):
       - Math: Topics/Science/Physics/physics_made_up.md
       - Maxwell Equations: Topics/Science/maxwell.md
@@ -97,12 +100,12 @@ nav:
 
 
     - (Software):
-      - Python: Topics/Software/python.md
+      # - Python: Topics/Software/python.md
       - Markdown Math processing: Topics/Software/markdown.md
       - NZB Files: Topics/Software/nzb_files.md
       - VScode: Topics/Software/vscode.md
       - Material for MkDocs: Topics/Software/material_for_mkdocs.md
-      - Web Languages: Topics/Software/web_languages.md
+      # - Web Languages: Topics/Software/web_languages.md
       
     - (Telecom):
       - Cellular Networks: Topics/Telecom/cellular_networks.md
@@ -121,6 +124,8 @@ nav:
       - macOS: Topics/UNIX/macos.md
       - Linux: Topics/UNIX/linux.md
 
+    - (Utilities):
+      - Mac: Topics/UNIX/macos.md
 
 plugins:
     - search:
