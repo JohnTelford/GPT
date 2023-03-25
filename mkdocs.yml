@@ -131,7 +131,8 @@ nav:
       - Linux: Topics/UNIX/linux.md
 
     - (Utilities):
-      - Mac: Topics/UNIX/macos.md
+      - Mac: Topics/Utilities/mac.md
+      - Rust: Topics/Utilities/rust.md
 
 plugins:
     - search:

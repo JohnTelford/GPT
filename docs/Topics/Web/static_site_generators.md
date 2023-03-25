@@ -42,7 +42,7 @@ Docusaurus by Facebook is a very popular documentation generator and a good choi
 
 #### Advantages
 
-Very powerful, customizable and extendable
+Very powerful, customizable and extendable.
 Provides many components that aid in technical writing
 Large and rich ecosystem, backed by Facebook
 
@@ -61,7 +61,7 @@ Jekyll is probably one of the most mature and widespread static site generators 
 #### Advantages
 
 Battle-tested, rich ecosystem, many themes to choose from.
-Brings great capabilities for blogging (permalinks, tags, etc.)
+Brings great capabilities for blogging (permalinks, tags, etc.).
 Generates a SEO-friendly site, similar to Material for MkDocs
 
 #### Challenges

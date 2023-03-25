@@ -375,6 +375,6 @@ with open('file.txt', 'w') as output_file:
             output_file.write(line)
 ```
 
-In this example, replace `file.txt` with the name of r file, and `"word"` with the word or phrase that identifies the lines  want to delete.
+In this example, replace `file.txt` with the name of r file, and `word` with the word or phrase that identifies the lines  want to delete.
 
 Note: This code will permanently delete the specified lines from the file, so it's recommended to make a backup of the original file before running the code.
