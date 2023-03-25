@@ -80,6 +80,7 @@ nav:
     - (Python):
       - Python Pandas: Topics/Python/python_pandas.md
       - Tensor Flow: Topics/AI/tensor_flow.md
+      - Jupyter : Topics/Python/jupyter.md
 
     - (Science / Physics):
       - Math: Topics/Science/Physics/physics_made_up.md
@@ -104,7 +105,7 @@ nav:
       - Markdown Math processing: Topics/Software/markdown.md
       - NZB Files: Topics/Software/nzb_files.md
       - VScode: Topics/Software/vscode.md
-      - Material for MkDocs: Topics/Software/material_for_mkdocs.md
+      # - Material for MkDocs: Topics/Software/material_for_mkdocs.md
       # - Web Languages: Topics/Software/web_languages.md
       
     - (Telecom):
@@ -116,6 +117,11 @@ nav:
     - (Web): 
       - Browsers: Topics/Web/web_browser.md
       - Servers: Topics/Web/web_server.md
+      - HTML: Topics/Web/html.md
+      - CSS: Topics/Web/css.md
+      - JavaScript: Topics/Web/javascript.md
+      - React: Topics/Web/react.md
+      - Static Site Generators: Topics/Web/static_site_generators.md
 
     - (UNIX):
       - UNIX History: Topics/UNIX/history.md
