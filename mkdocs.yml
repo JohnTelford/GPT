@@ -43,7 +43,7 @@ nav:
       - What is AI: Topics/AI/what_is_ai.md
       - ELIZA: Topics/AI/eliza.md
       - GPT: Topics/AI/GPT.md
-      - AI Hype Curve: img/ai_hype.png
+      - AI Hype Curve: Topics/AI/ai_hype_curve.md
       - Large Language Model: Topics/AI/llm.md
       - Generalized Learning: Topics/AI/generalized_learning.md
       - Generative Pre-Learning Transform: Topics/AI/generative_pre_learning_transform.md

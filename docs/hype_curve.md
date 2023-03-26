@@ -5,13 +5,13 @@
 
 ---
 
-- The Hype Curve helps separate reality from fiction. Keep it in mind when reading Topics
+>The Hype Curve helps separate reality from fiction. Keep it in mind when reading Topics
 
 ---
 
-![Hype Curve](/img/hype_curve.png)
-
-**Hype Curve**
+| ![Hype Curve](/img/hype_curve.png "Hype Curve")
+|:--:|
+| <b>Hype Curve</b>
 
 ---
 
