@@ -28,3 +28,32 @@ bash
 Copy code
 sum_of_dollars_rounded = round(df['dollars'].sum(), 2)
 This will round the sum to two decimal places. You can adjust the number of decimal places by changing the second argument of the round() function.
+
+---
+
+pandas remove currency dollar signs and commas
+To remove dollar signs and commas from a pandas DataFrame column containing currency values, you can use the str.replace() method. Here's an example:
+
+bash
+Copy code
+import pandas as pd
+
+# create a sample DataFrame
+df = pd.DataFrame({'Amount': ['$1,000.00', '$2,500.50', '$500.75']})
+
+# remove dollar signs and commas
+df['Amount'] = df['Amount'].str.replace('$', '').str.replace(',', '')
+
+print(df)
+This will output the following DataFrame:
+
+yaml
+Copy code
+    Amount
+0  1000.00
+1  2500.50
+2   500.75
+In the code above, we first import pandas and create a sample DataFrame with a column called 'Amount' containing currency values. We then use the str.replace() method twice to remove the dollar signs and commas from the 'Amount' column. The first call to str.replace() removes the dollar signs ('$') and the second call removes the commas (','). We assign the result of these operations back to the 'Amount' column, overwriting the original values.
+
+---
+
