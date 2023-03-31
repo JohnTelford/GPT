@@ -73,6 +73,10 @@
 
 -   [Python Standard Library](https://docs.python.org/3/library/)
 
+-   [Python Regular Expression Operations](https://docs.python.org/3/library/re.html)
+
+
+
 ---
 
 ## Data Analysis
