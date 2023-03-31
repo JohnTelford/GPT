@@ -1,0 +1,432 @@
+<!DOCTYPE html>  
+<html lang="US">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>sort_url_list</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+/*
+  This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
+  Please leave this notice in place, along with any additional credits below.
+  ---------------------------------------------------------------
+  Title: Highlighter
+  Author: Gordon Brander http://gordonbrander.com
+  Description: Minimal theme with careful typographic scale and highlighed bold.
+*/
+/* http://retinart.net/typography/typographicscale/ */
+html {
+  background: #fff;
+  color: #444;
+  font: 16px/1.5 "Fira Sans OT", "Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin-top: 36px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h2 {
+  border-bottom: 3px solid #ddd;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 24px;
+  padding-bottom: 6px;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+h4 {
+  color: #777;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h5, h6 {
+  color: #888;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+hr {
+  background: #ddd;
+  border: 0;
+  height: 3px;
+  margin: 36px 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3593d9;
+}
+
+.footnote {
+  color: #0d6ea1;
+  font-size: .8em;
+  vertical-align: super;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+table,
+blockquote,
+dl,
+ul,
+ol {
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+
+li ul,
+li ol {
+  margin-bottom: 6px;
+}
+
+b,
+strong {
+  background: #ffff60;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #000;
+}
+
+caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr {
+  border-spacing: 0;
+}
+
+table {
+  border: 1px solid rgba(0,0,0,0.25);
+  border-collapse: collapse;
+  display: table;
+  empty-cells: hide;
+  padding: 0;
+  table-layout: fixed;
+}
+
+caption {
+  display: table-caption;
+  font-weight: 700;
+}
+
+col {
+  display: table-column;
+}
+
+colgroup {
+  display: table-column-group;
+}
+
+tbody {
+  display: table-row-group;
+}
+
+tfoot {
+  display: table-footer-group;
+}
+
+thead {
+  display: table-header-group;
+}
+
+td,th {
+  display: table-cell;
+}
+
+tr {
+  display: table-row;
+}
+
+table th,table td {
+  font-size: 1.1em;
+  line-height: 23px;
+  padding: 0 1em;
+}
+
+table thead {
+  background: rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+table tbody {
+  background: rgba(0,0,0,0.05);
+}
+
+table tfoot {
+  background: rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.15);
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+figure {
+  display: inline-block;
+  position: relative;
+  margin: 1em 0 2em;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  background: white;
+  color: #666;
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  width: 98%;
+  padding: 1%;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.poetry pre {
+  display: block;
+  font-family: Georgia, Garamond, serif;
+  font-style: italic;
+}
+
+blockquote {
+  color: #666;
+  margin: 0 18px 18px;
+}
+
+sup, sub, a.footnote {
+  font-size: 1.4ex;
+  height: 0;
+  line-height: 1;
+  position: relative;
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
+  top: -1px;
+}
+
+dt,th {
+  font-weight: 700;
+}
+
+table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd) {
+  background: rgba(255,255,255,0.06);
+}
+
+table tr:nth-child(even),table td:nth-child(even) {
+  background: rgba(200,200,200,0.25);
+}
+
+@media print {
+  body {
+    overflow: auto;
+  }
+
+  img,pre,blockquote,table,figure,p {
+    page-break-inside: avoid;
+  }
+
+  #wrapper {
+    background: #fff;
+    color: #303030;
+  }
+}
+
+@media screen {
+  .inverted #wrapper,.inverted {
+    background: rgba(37, 42, 42, 1);
+  }
+
+  .inverted hr {
+    border-color: rgba(51, 63, 64, 1) !important;
+  }
+
+  .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted pre,.inverted code,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt {
+    color: #eee !important;
+  }
+
+  .inverted table tr:nth-child(odd),.inverted table th:nth-child(odd),.inverted table td:nth-child(odd) {
+    background: none;
+  }
+
+  .inverted a {
+    color: rgba(172, 209, 213, 1);
+  }
+
+  #wrapper {
+    padding: 20px;
+  }
+
+  ::selection {
+    background: rgba(157, 193, 200,.5);
+  }
+
+  h1::selection {
+    background-color: rgba(45, 156, 208, .3);
+  }
+
+  h2::selection {
+    background-color: rgba(90, 182, 224, .3);
+  }
+
+  h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection {
+    background-color: rgba(133, 201, 232, .3);
+  }
+
+  code::selection {
+    background-color: rgba(0,0,0,.7);
+    color: #eee;
+  }
+
+  code span::selection {
+    background-color: rgba(0,0,0,.7) !important;
+    color: #eee !important;
+  }
+
+  a::selection {
+    background-color: rgba(255, 230, 102,.2);
+  }
+
+  .inverted a::selection {
+    background-color: rgba(255, 230, 102,.6);
+  }
+
+  td::selection,th::selection,caption::selection {
+    background-color: rgba(180, 237, 95, .5);
+  }
+}#mkreplaced-toc{list-style-position:inside;padding:0;margin:0 0 0 1rem;list-style-type:none}#mkreplaced-toc li::before{content:''}#mkreplaced-toc li{font-size:1rem;line-height:1.25;font-weight:normal}#mkreplaced-toc li ul{font-size:1.3rem;font-weight:300;padding:.5rem 0;margin:0 0 0 1rem}#mkreplaced-toc li.missing{list-style-type:none !important}#mkreplaced-toc.max-1 ul,#mkreplaced-toc.max1 ul{display:none}#mkreplaced-toc.max-2 ul ul,#mkreplaced-toc.max2 ul ul{display:none}#mkreplaced-toc.max-3 ul ul ul,#mkreplaced-toc.max3 ul ul ul{display:none}#mkreplaced-toc.max-4 ul ul ul ul,#mkreplaced-toc.max4 ul ul ul ul{display:none}#mkreplaced-toc.max-5 ul ul ul ul ul,#mkreplaced-toc.max5 ul ul ul ul ul{display:none}.mk-rtl{direction:rtl;text-align:right}body.mkkatex-number-equations{counter-reset:eqnum}body.mkkatex-number-equations .katex-display{position:relative}body.mkkatex-number-equations .katex-display::after{counter-increment:eqnum;content:"(" counter(eqnum) ")";position:absolute;left:0;top:25%}body.mkkatex-number-equations.mkkatex-number-equations-right .katex-display::after{right:0;left:auto}.mkprinting,.mkprinting #wrapper{height:auto;margin-bottom:0;padding-bottom:0}.hideProgress #generated-toc,.hideProgress #firstdiff,.hideProgress #toc-title,.hideProgress #mkdocumentprogress,.hideProgress #mkincludechart,.hideProgress #mkprogressbar1,.hideProgress #mkprogressbar2,.hideProgress b.bookmark,.hideProgress .mkscrollmeter,.hideProgress #alllinks,.hideProgress #criticnav,.hideProgress .popup,.hideProgress #progressindicator,.hideProgress #mkautoscroll,.mkprinting #generated-toc,.mkprinting #firstdiff,.mkprinting #toc-title,.mkprinting #mkdocumentprogress,.mkprinting #mkincludechart,.mkprinting #mkprogressbar1,.mkprinting #mkprogressbar2,.mkprinting b.bookmark,.mkprinting .mkscrollmeter,.mkprinting #alllinks,.mkprinting #criticnav,.mkprinting .popup,.mkprinting #progressindicator,.mkprinting #mkautoscroll{display:none !important}.hideProgress .mkstyledtag,.mkprinting .mkstyledtag{display:none}.mkcolor-grammar-error,.mkcolor-spell-error{background:none;border-bottom:none}.mkprinting.mkshowcomments .mkstyledtag{display:inline;background:#ccc;padding:3px 9px;border-radius:20px;font-size:1}@media print{body{background:white;line-height:1.4}html,body,#wrapper{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-perspective:none !important;-webkit-text-size-adjust:none;border:0;box-sizing:border-box;float:none;margin:0;max-width:100%;padding:0;margin-top:0;width:auto}.critic #wrapper mark.crit{background-color:#fffd38 !important;text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6{page-break-after:avoid}p,h2,h3{orphans:3;widows:3}section{page-break-before:avoid}pre>code{white-space:pre;word-break:break-word}#generated-toc,#firstdiff,#toc-title,#mkdocumentprogress,#mkincludechart,#mkprogressbar1,#mkprogressbar2,.mkscrollmeter,#alllinks,.popup{display:none !important}.suppressprintlinks a{border-bottom:none !important;color:inherit !important;cursor:default !important;text-decoration:none !important}.hrefafterlinktext #wrapper a:link:after,.hrefafterlinktext #wrapper a:visited:after{content:" (" attr(href) ") ";font-size:90%;opacity:.9}.nocodebreak pre{page-break-inside:avoid}img,table,figure{page-break-inside:avoid}.breakfootnotes .footnotes{page-break-before:always}.breakfootnotes .footnotes hr{display:none}#mktoctitle{display:block}#print-title{border-bottom:solid 1px #666;display:block}#wrapper pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{display:block}.task-list{padding-left:3.3rem}.mkstyle--ink .task-list,.mkstyle--swiss .task-list{padding-left:3.3rem !important}.mkstyle--upstandingcitizen .task-list,.mkstyle--github .task-list{padding-left:3.6rem !important}.mkstyle--manuscript .task-list{padding-left:2.4rem !important}.mkstyle--amblin .task-list{padding-left:2.1rem !important}.mkstyle--grump .task-list{padding-left:1rem !important}.mkstyle--grump .task-list .task-list-item-checkbox{left:0 !important}.task-list .task-list-item{list-style-type:none !important;left:auto}.task-list .task-list-item .task-list-item-checkbox{-webkit-appearance:none;position:relative;left:auto}.task-list .task-list-item .task-list-item-checkbox:before{border:solid 1px #aaa;border-radius:2px;color:white;content:' ';display:block;font-weight:bold;height:1em;left:-1rem;line-height:1;position:absolute;text-align:center;top:-.75em;width:1em}.task-list .gh-complete.task-list-item .task-list-item-checkbox:before{background:#838387;content:'\2713'}}
+#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc,#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-position:inside}#wrapper #generated-toc-clone li.missing,#wrapper #mkreplaced-toc li.missing{list-style-type: none!important}#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-type: upper-roman}#wrapper #generated-toc-clone>ul>li>ul,#wrapper #mkreplaced-toc>li>ul {list-style-type: decimal}#wrapper #generated-toc-clone>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul{list-style-type: decimal-leading-zero}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul{list-style-type: lower-greek}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul{list-style-type: disc}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul>li>ul{list-style-type: square}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{}
+</style>
+
+<style id="mkprintstyles">@media print{#wrapper #generated-toc-clone,#generated-toc{display:block!important}
+html,body,#wrapper{font-size:12pt!important}
+}
+</style>
+
+
+  </head>
+<body class="normal showpagebreaks">
+  <div id="wrapper">
+<h2 id="mkdocs-2urllinks">Mkdocs&#8211;2 URL Links</h2>
+
+<h3 id="sorting">Sorting</h3>
+
+<p><code>sort -u -o sort_url_list.md url_list.md</code></p>
+
+<h3 id="imageurls">Image URLS</h3>
+<pre class="mknohighlight"><code>![Apple](/img/AppleLogo.png)
+![ChronoSync](/img/CSLogo300.png)
+![Git Desk Top](/img/gitdesktop.png)
+![Linux](/img/LinuxLogo.jpeg)
+![Microsoft](/img/MicrosoftLogo.png)
+![Mug Shot](/img/mugShot.png)
+![Web Material](/img/material.png)
+![bugFixChart](/img/bugFixChart.jpg)
+![ialogo](/img/ialogo.png)
+![iterativedev](/img/iterativedev.png)
+![mdxLogo](/img/markdownlogo.png)
+![vscodelogo](/img/vscodelogo.png)</code></pre>
+
+<h3 id="linksurls">Links URLS</h3>
+<pre class="mknohighlight"><code>[ARM-based](https://en.wikipedia.org/wiki/ARM_architecture)
+[Apple](/img/AppleLogo.png)
+[Apple](https://www.apple.com)
+[CSS](https://developer.mozilla.org/oyn-US/docs/Web/CSS)
+[ChronoSync](#chronosync)
+[ChronoSync](/img/CSLogo300.png)
+[ChronoSync](https://www.econtechnologies.com/chronosync/overview.html)
+[Cloudflare](#deploy/cloudflare)
+[Cloudflare](https://www.cloudflare.com)
+[Commits](#commits)
+[Content Delivery Network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network)
+[Create a Site](creating site.md)
+[Defect Remediation Costs](defect_costs.md)
+[Development Frameworks](https://squidfunk.github.io/mkdocs-material/alternatives/)
+[Docusaurus](https://docusaurus.io/)
+[Fork a Repo](https://docs.github.com/en/enterprise-server@3.4/get-started/quickstart/fork-a-repo)
+[Git Branch](https://www.w3schools.com/git/git_branch.asp?remote=github)
+[Git Clone from GitHub](https://www.w3schools.com/git/git_clone.asp?remote=github)
+[Git Desk Top](/img/gitdesktop.png)
+[Git GitHub Fork](https://www.w3schools.com/git/git_remote_fork.asp?remote=github)
+[Git Tutorial](https://www.w3schools.com/git/default.asp?remote=github)
+[Git and GitHub Introduction](https://www.w3schools.com/git/git_intro.asp?remote=github)
+[Git version-control tools in Visual Studio Code](https://docs.microsoft.com/en-us/learn/modules/use-git-from-vs-code/)
+[GitHub Desktop](https://docs.github.com/en/desktop)
+[GitHub for Teams](https://github.com/team)
+[GitHub](#github)
+[GitHub](developmenttools#github)
+[GitHub](git-github#gitHub)
+[GitHub](git-github#github)
+[GitHub](https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/)
+[Git](#git)
+[Git](https://git-scm.com/book/en/v2)
+[Github](#github)
+[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[Linux](/img/LinuxLogo.jpeg)
+[Linux](https://www.linux.org/)
+[M1](https://en.wikipedia.org/wiki/Apple_M1)
+[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+[Microsoft](/img/MicrosoftLogo.png)
+[Microsoft](https://www.microsoft.com/en-us/)
+[Minimum Viable Product](siteoverview#minimum-viable-product)
+[MkDocs Marteral](https://squidfunk.github.io/mkdocs-material/)
+[MkDocs](https://www.mkdocs.org/)
+[Mug Shot](/img/mugShot.png)
+[PageSpeed Insights](https://pagespeed.web.dev/)
+[Philosophy](https://squidfunk.github.io/mkdocs-material/philosophy/)
+[Preview Deployments](glossary#preview-deployments)
+[Preview ](deploy#preview)
+[Preview](deploy#preview)
+[Private](deploy#preview)
+[Pull Request](git-github#pull-request)
+[Pulls](git-github#pull)
+[RISC-architecture](https://en.wikipedia.org/wiki/Reduced_instruction_set_computer)
+[React](https://reactjs.org/)
+[Troika](programming#troika)
+[VScode](#vscode)
+[VScode](developmenttools#vscode)
+[VScode](http://127.0.0.1:8000/developmenttools/#vscode)
+[VScode](https://code.visualstudio.com/)
+[Version Control System](https://www.w3docs.com/learn-git/introduction4.html)
+[Visual Studio Code](https://code.visualstudio.com)
+[Web Material](/img/material.png)
+[Website Development Stack](website-development-stack)
+[What is a static site generator?](https://www.cloudflare.com/learning/performance/static-site-generator/)
+[bugFixChart](/img/bugFixChart.jpg)
+[clone](glossary#clone)
+[forks](git-github#fork)
+[git](#git)
+[git](developmenttools#git)
+[git](git-github#git)
+[iA Writer](#ia-writer)
+[iA Writer](https://apps.apple.com/us/app/ia-writer/id775737590?mt=12)
+[iA Writer](https://ia.net/writer)
+[ialogo](/img/ialogo.png)
+[iterativedev](/img/iterativedev.png)
+[johntelford.com LLC](Company)
+[mdxLogo](/img/markdownlogo.png)
+[pull](#pull)
+[vscodelogo](/img/vscodelogo.png)</code></pre>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>
