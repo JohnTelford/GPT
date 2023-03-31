@@ -112,11 +112,8 @@ find . -name Files -type d -exec cp -R {} webarchive/Libs \;
 
 Use `broot` to read the concatenated libraries
 
-## iA Writer {#iawriter}
 
-### Create HTLM From Markdown {#createhtlmfrommarkdown}
+## Create Markdown File From HTML File {#createhtlmfrommarkdown}
 
-Open an iA Writer markdown file with `markd 2` then\
-`marked 2 > File > Export > HTML`
+`pandoc -f html-native_divs-native_spans -t markdown "html_file.html" -o "markdown_file".md` **or** `marked2 "markdown_file.md" > Export > HTML`
 
-\##
