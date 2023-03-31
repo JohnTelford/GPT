@@ -1,11 +1,7 @@
 
-# Document Refs {#jupyterlab--refs}
+---
 
-> Sep 14, 2022
-
-------------------------------------------------------------------------
-
-## Jupyter
+## Jupyter Data Analysis
 
 -   [28 Jupyter Notebook Tips, Tricks, and
     Shortcuts](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
@@ -77,30 +73,13 @@
 
 -   [Python Standard Library](https://docs.python.org/3/library/)
 
-### Data Analysis
+---
+
+## Data Analysis
 
 -   [Python for Data Analysis Book](https://wesmckinney.com/book/)
 
 -   [Data pydata-book GitHub](https://github.com/wesm/pydata-book)
-
-------------------------------------------------------------------------
-
-## Regex
-
--   [Regular expression
-    operations](https://docs.python.org/3/library/re.html)
-
--   [Regular Expressions
-    Tutorial](https://www.regular-expressions.info/tutorial.html)
-
-------------------------------------------------------------------------
-
-## Miniconda
-
--   [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-
--   [How To Use Miniconda With Python and
-    JupyterLab](https://betterprogramming.pub/how-to-use-miniconda-with-python-and-jupyterlab-5ce07845e818)
 
 ------------------------------------------------------------------------
 

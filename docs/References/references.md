@@ -1,6 +1,0 @@
-
----
-
-## References
-
-### [Jupyter - Pandas]()
