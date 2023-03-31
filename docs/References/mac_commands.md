@@ -115,5 +115,12 @@ Use `broot` to read the concatenated libraries
 
 ## Create Markdown File From HTML File {#createhtlmfrommarkdown}
 
-`pandoc -f html-native_divs-native_spans -t markdown "html_file.html" -o "markdown_file".md` **or** `marked2 "markdown_file.md" > Export > HTML`
+``` shell
+pandoc -f html-native_divs-native_spans -t markdown "html_file.html" -o "markdown_file".md`
+```
+ **or** 
+ 
+ ``` shell
+ marked2 "markdown_file.md" > Export > HTML
+ ```
 

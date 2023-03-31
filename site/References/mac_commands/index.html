@@ -1787,22 +1787,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#iawriter" class="md-nav__link">
-    iA Writer
-  </a>
-  
-    <nav class="md-nav" aria-label="iA Writer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#createhtlmfrommarkdown" class="md-nav__link">
-    Create HTLM From Markdown
+    Create Markdown File From HTML File
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1911,11 +1898,12 @@ Utilities</a></p>
 find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span>Files<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>cp<span class="w"> </span>-R<span class="w"> </span><span class="o">{}</span><span class="w"> </span>webarchive/Libs<span class="w"> </span><span class="se">\;</span>
 </code></pre></div>
 <p>Use <code>broot</code> to read the concatenated libraries</p>
-<h2 id="iawriter">iA Writer</h2>
-<h3 id="createhtlmfrommarkdown">Create HTLM From Markdown</h3>
-<p>Open an iA Writer markdown file with <code>markd 2</code> then\
-<code>marked 2 &gt; File &gt; Export &gt; HTML</code></p>
-<p>##</p>
+<h2 id="createhtlmfrommarkdown">Create Markdown File From HTML File</h2>
+<p><div class="highlight"><pre><span></span><code>pandoc<span class="w"> </span>-f<span class="w"> </span>html-native_divs-native_spans<span class="w"> </span>-t<span class="w"> </span>markdown<span class="w"> </span><span class="s2">&quot;html_file.html&quot;</span><span class="w"> </span>-o<span class="w"> </span><span class="s2">&quot;markdown_file&quot;</span>.md<span class="sb">`</span>
+</code></pre></div>
+ <strong>or</strong> </p>
+<div class="highlight"><pre><span></span><code>marked2<span class="w"> </span><span class="s2">&quot;markdown_file.md&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>Export<span class="w"> </span>&gt;<span class="w"> </span>HTML
+</code></pre></div>
 
   <hr>
 <div class="md-source-file">

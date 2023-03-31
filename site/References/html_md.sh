@@ -10,4 +10,4 @@
 # 
 # echo $output
 
-pandoc -f html-native_divs-native_spans -t markdown bash_scripting_cheatsheet.html -o bash_scripting_cheatsheet.md
+pandoc -f html-native_divs-native_spans -t markdown how_to.html -o how_to.md
