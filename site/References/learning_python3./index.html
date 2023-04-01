@@ -1,0 +1,2592 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
+    
+    
+      
+        <title>Learning python3. - John Telford - Topics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4a75a56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quick-note-about-jupyter-cells" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="John Telford - Topics" class="md-header__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            John Telford - Topics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Learning python3.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JohnTelford/gpt.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    gpt
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="John Telford - Topics" class="md-nav__button md-logo" aria-label="John Telford - Topics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    John Telford - Topics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JohnTelford/gpt.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    gpt
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hype_curve/" class="md-nav__link">
+        Hype Curve
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+          (AI)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          (AI)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/what_is_ai/" class="md-nav__link">
+        What is AI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/eliza/" class="md-nav__link">
+        ELIZA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/GPT/" class="md-nav__link">
+        GPT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/ai_hype_curve/" class="md-nav__link">
+        AI Hype Curve
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/llm/" class="md-nav__link">
+        Large Language Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/generalized_learning/" class="md-nav__link">
+        Generalized Learning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/generative_pre_learning_transform/" class="md-nav__link">
+        Generative Pre-Learning Transform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/neural_networks/" class="md-nav__link">
+        Neural Networks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/forward_propagation/" class="md-nav__link">
+        Forward Propagation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/loss_calculation/" class="md-nav__link">
+        Loss Calculation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/backward_propagation/" class="md-nav__link">
+        Back Propagation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/parameters/" class="md-nav__link">
+        Parameters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/ai_singularity/" class="md-nav__link">
+        Singularity
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+          (Astronomy)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          (Astronomy)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Astronomy/neutrino/" class="md-nav__link">
+        Neutrino
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Astronomy/sun/" class="md-nav__link">
+        Sun
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+          (Autonomous Vehicles)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          (Autonomous Vehicles)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Autonomous_Vehicles/self_driving_cars/" class="md-nav__link">
+        Autonomous Cars
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Autonomous_Vehicles/self_driving_trucks/" class="md-nav__link">
+        Autonomous Trucks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Autonomous_Vehicles/ev_video/" class="md-nav__link">
+        Autonomous Vehicles Video
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Autonomous_Vehicles/ev_black_box/" class="md-nav__link">
+        Autonomous Vehicles Black Box
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Autonomous_Vehicles/5g/" class="md-nav__link">
+        5G - Autonomous Vehicles
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+          (Electronics)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_6">
+          <span class="md-nav__icon md-icon"></span>
+          (Electronics)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Electronics/nonlinear_modulation/" class="md-nav__link">
+        Nonlinear Modulation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Electronics/software_defined_radio/" class="md-nav__link">
+        Software Defined Radio
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+          (Health)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_7">
+          <span class="md-nav__icon md-icon"></span>
+          (Health)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Health/yawn/" class="md-nav__link">
+        Why Do We Yawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Health/cellulitis/" class="md-nav__link">
+        What Is Cellulitis
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Health/pilonidal/" class="md-nav__link">
+        What is Pilonidal Cyst
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Health/quadriceps/" class="md-nav__link">
+        What is Quadriceps Rupture
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Meta/metaverse/" class="md-nav__link">
+        (Metaverse)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+          (Python)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_9">
+          <span class="md-nav__icon md-icon"></span>
+          (Python)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Python/python_pandas/" class="md-nav__link">
+        Python Pandas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/AI/tensor_flow/" class="md-nav__link">
+        Tensor Flow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Python/jupyter/" class="md-nav__link">
+        Jupyter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+          (Science / Physics)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_10">
+          <span class="md-nav__icon md-icon"></span>
+          (Science / Physics)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Science/Physics/physics_made_up/" class="md-nav__link">
+        Math
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Science/maxwell/" class="md-nav__link">
+        Maxwell Equations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Astronomy/neutrino/" class="md-nav__link">
+        Neutrino
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Science/theory_of_relativity/" class="md-nav__link">
+        Theory of Relativity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Science/space_time/" class="md-nav__link">
+        Space-Time
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_10_6" id="__nav_1_10_6_label" tabindex="0">
+          Quantum Mechanics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_10_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_10_6">
+          <span class="md-nav__icon md-icon"></span>
+          Quantum Mechanics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Science/Quantum_Mechanics/quantum/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Science/Quantum_Mechanics/quantum%20_computers/" class="md-nav__link">
+        Quantum Computers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Science/Quantum_Mechanics/quantum_field_theory/" class="md-nav__link">
+        Quantum Field Theory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Science/Quantum_Mechanics/boson/" class="md-nav__link">
+        Boson
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+          (Security)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_11">
+          <span class="md-nav__icon md-icon"></span>
+          (Security)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Security/2fa_totp/" class="md-nav__link">
+        2FA TOTP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Security/block_chain/" class="md-nav__link">
+        Block Chain
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Security/cloudflare_warp/" class="md-nav__link">
+        Cloudflare Warp
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+          (Software)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_12">
+          <span class="md-nav__icon md-icon"></span>
+          (Software)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Software/markdown/" class="md-nav__link">
+        Markdown Math processing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Software/nzb_files/" class="md-nav__link">
+        NZB Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Software/vscode/" class="md-nav__link">
+        VScode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_13" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_13" id="__nav_1_13_label" tabindex="0">
+          (Telecom)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_13">
+          <span class="md-nav__icon md-icon"></span>
+          (Telecom)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Telecom/cellular_networks/" class="md-nav__link">
+        Cellular Networks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Telecom/4g/" class="md-nav__link">
+        4G
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Telecom/5g/" class="md-nav__link">
+        5G
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Telecom/6g/" class="md-nav__link">
+        6G
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_14" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_14" id="__nav_1_14_label" tabindex="0">
+          (Web)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_14">
+          <span class="md-nav__icon md-icon"></span>
+          (Web)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Web/web_browser/" class="md-nav__link">
+        Browsers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Web/web_server/" class="md-nav__link">
+        Servers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Web/html/" class="md-nav__link">
+        HTML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Web/css/" class="md-nav__link">
+        CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Web/javascript/" class="md-nav__link">
+        JavaScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Web/react/" class="md-nav__link">
+        React
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Web/static_site_generators/" class="md-nav__link">
+        Static Site Generators
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_15" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_15" id="__nav_1_15_label" tabindex="0">
+          (UNIX)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_15">
+          <span class="md-nav__icon md-icon"></span>
+          (UNIX)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/UNIX/history/" class="md-nav__link">
+        UNIX History
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/UNIX/unix/" class="md-nav__link">
+        UNIX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/UNIX/usenet/" class="md-nav__link">
+        USENET
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/UNIX/macos/" class="md-nav__link">
+        macOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/UNIX/linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_16" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_16" id="__nav_1_16_label" tabindex="0">
+          (Utilities)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_16_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_16">
+          <span class="md-nav__icon md-icon"></span>
+          (Utilities)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Utilities/mac/" class="md-nav__link">
+        Mac
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topics/Utilities/rust/" class="md-nav__link">
+        Rust
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../refs/" class="md-nav__link">
+        References
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-note-about-jupyter-cells" class="md-nav__link">
+    Quick note about Jupyter cells
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick note about Jupyter cells">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-cells" class="md-nav__link">
+    Code cells
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markdown-cells" class="md-nav__link">
+    Markdown cells
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-jupyter-operations" class="md-nav__link">
+    Common Jupyter operations
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Jupyter operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inserting-and-removing-cells" class="md-nav__link">
+    Inserting and removing cells
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-the-output-of-all-cells" class="md-nav__link">
+    Clear the output of all cells
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-your-notebook-file-locally" class="md-nav__link">
+    Save your notebook file locally
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-objects-basic-types-and-variables" class="md-nav__link">
+    Python objects, basic types, and variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-operators" class="md-nav__link">
+    Basic operators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-containers" class="md-nav__link">
+    Basic containers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-data-in-containers" class="md-nav__link">
+    Accessing data in containers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-built-in-functions-and-callables" class="md-nav__link">
+    Python built-in functions and callables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-object-attributes-%28methods-and-properties%29" class="md-nav__link">
+    Python object attributes (methods and properties)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-methods-on-string-objects" class="md-nav__link">
+    Some methods on string objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-methods-on-list-objects" class="md-nav__link">
+    Some methods on list objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-a-new-class-called-thing-that-is-derived-from-the-base-python-object" class="md-nav__link">
+    Define a new class called Thing that is derived from the base Python object
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-a-new-class-called-dictthing-that-is-derived-from-the-dict-type" class="md-nav__link">
+    Define a new class called DictThing that is derived from the dict type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create--instances--of-our-new-classes" class="md-nav__link">
+    Create "instances" of our new classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interact-with-a-dictthing-instance-just-as-you-would-a-normal-dictionary" class="md-nav__link">
+    Interact with a DictThing instance just as you would a normal dictionary
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<p>Right-click -> "save link as"
+<a href="https://gist.githubusercontent.com/kenjyco/69eeb503125035f21a9d/raw/learning-python3.ipynb">https://gist.githubusercontent.com/kenjyco/69eeb503125035f21a9d/raw/learning-python3.ipynb</a>
+to get most up-to-date version of this notebook file.\
+Click ->
+<a href="https://mybinder.org/v2/gist/kenjyco/69eeb503125035f21a9d/HEAD?filepath=learning-python3.ipynb">https://mybinder.org/v2/gist/kenjyco/69eeb503125035f21a9d/HEAD?filepath=learning-python3.ipynb</a>
+to load this notebook in the browser via mybinder.org</p>
+<h2 id="quick-note-about-jupyter-cells">Quick note about Jupyter cells</h2>
+<p>When you are editing a cell in Jupyter notebook, you need to re-run the
+cell by pressing <strong><code>&lt;Shift&gt; + &lt;Enter&gt;</code></strong>. This will allow changes you
+made to be available to other cells.</p>
+<p>Use <strong><code>&lt;Enter&gt;</code></strong> to make new lines inside a cell you are editing.</p>
+<h4 id="code-cells">Code cells</h4>
+<p>Re-running will execute any statements you have written. To edit an
+existing code cell, click on it.</p>
+<h4 id="markdown-cells">Markdown cells</h4>
+<p>Re-running will render the markdown text. To edit an existing markdown
+cell, double-click on it.</p>
+<hr />
+<h2 id="common-jupyter-operations">Common Jupyter operations</h2>
+<p>Near the top of the Jupyter notebook window, there are a row of menu
+options (<code>File</code>, <code>Edit</code>, <code>View</code>, <code>Insert</code>, ...) and a row of tool bar
+icons (disk, plus sign, scissors, 2 files, clipboard and file, up arrow,
+...).</p>
+<h4 id="inserting-and-removing-cells">Inserting and removing cells</h4>
+<ul>
+<li>Use the "plus sign" icon to insert a cell below the currently
+    selected cell</li>
+<li>Use "Insert" -> "Insert Cell Above" from the menu to insert above</li>
+</ul>
+<h4 id="clear-the-output-of-all-cells">Clear the output of all cells</h4>
+<ul>
+<li>Use "Kernel" -> "Restart" from the menu to restart the kernel<ul>
+<li>click on "clear all outputs &amp; restart" to have all the output
+    cleared</li>
+</ul>
+</li>
+</ul>
+<h4 id="save-your-notebook-file-locally">Save your notebook file locally</h4>
+<ul>
+<li>Clear the output of all cells</li>
+<li>Use "File" -> "Download as" -> "IPython Notebook (.ipynb)" to
+    download a notebook file representing your <a href="https://mybinder.org">https://mybinder.org</a>
+    session</li>
+</ul>
+<hr />
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://jupyter-notebook.readthedocs.io/en/latest/notebook.html">https://jupyter-notebook.readthedocs.io/en/latest/notebook.html</a></li>
+<li><a href="https://mybinder.readthedocs.io/en/latest/introduction.html">https://mybinder.readthedocs.io/en/latest/introduction.html</a></li>
+<li><a href="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</a></li>
+<li><a href="https://docs.python.org/3/tutorial/introduction.html">https://docs.python.org/3/tutorial/introduction.html</a></li>
+<li><a href="https://daringfireball.net/projects/markdown/syntax">https://daringfireball.net/projects/markdown/syntax</a></li>
+</ul>
+<hr />
+<h2 id="python-objects-basic-types-and-variables">Python objects, basic types, and variables</h2>
+<p>Everything in Python is an <strong>object</strong> and every object in Python has a
+<strong>type</strong>. Some of the basic types include:</p>
+<ul>
+<li><strong><code>int</code></strong> (integer; a whole number with no decimal place)<ul>
+<li><code>10</code></li>
+<li><code>-3</code></li>
+</ul>
+</li>
+<li><strong><code>float</code></strong> (float; a number that has a decimal place)<ul>
+<li><code>7.41</code></li>
+<li><code>-0.006</code></li>
+</ul>
+</li>
+<li><strong><code>str</code></strong> (string; a sequence of characters enclosed in single
+    quotes, double quotes, or triple quotes)<ul>
+<li><code>'this is a string using single quotes'</code></li>
+<li><code>"this is a string using double quotes"</code></li>
+<li><code>'''this is a triple quoted string using single quotes'''</code></li>
+<li><code>"""this is a triple quoted string using double quotes"""</code></li>
+</ul>
+</li>
+<li><strong><code>bool</code></strong> (boolean; a binary value that is either true or false)<ul>
+<li><code>True</code></li>
+<li><code>False</code></li>
+</ul>
+</li>
+<li><strong><code>NoneType</code></strong> (a special type representing the absence of a value)<ul>
+<li><code>None</code></li>
+</ul>
+</li>
+</ul>
+<p>In Python, a <strong>variable</strong> is a name you specify in your code that maps
+to a particular <strong>object</strong>, object <strong>instance</strong>, or value.</p>
+<p>By defining variables, we can refer to things by names that make sense
+to us. Names for variables can only contain letters, underscores (<code>_</code>),
+or numbers (no spaces, dashes, or other characters). Variable names must
+start with a letter or underscore.</p>
+<hr />
+<h2 id="basic-operators">Basic operators</h2>
+<p>In Python, there are different types of <strong>operators</strong> (special symbols)
+that operate on different values. Some of the basic operators include:</p>
+<ul>
+<li>arithmetic operators<ul>
+<li><strong><code>+</code></strong> (addition)</li>
+<li><strong><code>-</code></strong> (subtraction)</li>
+<li><strong><code>*</code></strong> (multiplication)</li>
+<li><strong><code>/</code></strong> (division)</li>
+<li><strong><code>**</code></strong> (exponent)</li>
+</ul>
+</li>
+<li>assignment operators<ul>
+<li><strong><code>=</code></strong> (assign a value)</li>
+<li><strong><code>+=</code></strong> (add and re-assign; increment)</li>
+<li><strong><code>-=</code></strong> (subtract and re-assign; decrement)</li>
+<li><strong><code>*=</code></strong> (multiply and re-assign)</li>
+</ul>
+</li>
+<li>comparison operators (return either <code>True</code> or <code>False</code>)<ul>
+<li><strong><code>==</code></strong> (equal to)</li>
+<li><strong><code>!=</code></strong> (not equal to)</li>
+<li><strong><code>&lt;</code></strong> (less than)</li>
+<li><strong><code>&lt;=</code></strong> (less than or equal to)</li>
+<li><strong><code>&gt;</code></strong> (greater than)</li>
+<li><strong><code>&gt;=</code></strong> (greater than or equal to)</li>
+</ul>
+</li>
+</ul>
+<p>When multiple operators are used in a single expression, <strong>operator
+precedence</strong> determines which parts of the expression are evaluated in
+which order. Operators with higher precedence are evaluated first (like
+PEMDAS in math). Operators with the same precedence are evaluated from
+left to right.</p>
+<ul>
+<li><code>()</code> parentheses, for grouping</li>
+<li><code>**</code> exponent</li>
+<li><code>*</code>, <code>/</code> multiplication and division</li>
+<li><code>+</code>, <code>-</code> addition and subtraction</li>
+<li><code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code> comparisons</li>
+</ul>
+<blockquote>
+<p>See
+<a href="https://docs.python.org/3/reference/expressions.html#operator-precedence">https://docs.python.org/3/reference/expressions.html#operator-precedence</a></p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="c1"># Assigning some numbers to different variables</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="mf">7.41</span>
+<span class="n">num4</span> <span class="o">=</span> <span class="o">-</span><span class="mf">.6</span>
+<span class="n">num5</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">num6</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">num7</span> <span class="o">=</span> <span class="mf">11.11</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Addition</span>
+<span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Subtraction</span>
+<span class="n">num2</span> <span class="o">-</span> <span class="n">num3</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Multiplication</span>
+<span class="n">num3</span> <span class="o">*</span> <span class="n">num4</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Division</span>
+<span class="n">num4</span> <span class="o">/</span> <span class="n">num5</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Exponent</span>
+<span class="n">num5</span> <span class="o">**</span> <span class="n">num6</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Increment existing variable</span>
+<span class="n">num7</span> <span class="o">+=</span> <span class="mi">4</span>
+<span class="n">num7</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Decrement existing variable</span>
+<span class="n">num6</span> <span class="o">-=</span> <span class="mi">2</span>
+<span class="n">num6</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Multiply &amp; re-assign</span>
+<span class="n">num3</span> <span class="o">*=</span> <span class="mi">5</span>
+<span class="n">num3</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Assign the value of an expression to a variable</span>
+<span class="n">num8</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span> <span class="o">*</span> <span class="n">num3</span>
+<span class="n">num8</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Are these two expressions equal to each other?</span>
+<span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span> <span class="o">==</span> <span class="n">num5</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Are these two expressions not equal to each other?</span>
+<span class="n">num3</span> <span class="o">!=</span> <span class="n">num4</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Is the first expression less than the second expression?</span>
+<span class="n">num5</span> <span class="o">&lt;</span> <span class="n">num6</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Is this expression True?</span>
+<span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Is this expression True?</span>
+<span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Assign some strings to different variables</span>
+<span class="n">simple_string1</span> <span class="o">=</span> <span class="s1">&#39;an example&#39;</span>
+<span class="n">simple_string2</span> <span class="o">=</span> <span class="s2">&quot;oranges &quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Addition</span>
+<span class="n">simple_string1</span> <span class="o">+</span> <span class="s1">&#39; of using the + operator&#39;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Notice that the string was not modified</span>
+<span class="n">simple_string1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Multiplication</span>
+<span class="n">simple_string2</span> <span class="o">*</span> <span class="mi">4</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># This string wasn&#39;t modified either</span>
+<span class="n">simple_string2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Are these two expressions equal to each other?</span>
+<span class="n">simple_string1</span> <span class="o">==</span> <span class="n">simple_string2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Are these two expressions equal to each other?</span>
+<span class="n">simple_string1</span> <span class="o">==</span> <span class="s1">&#39;an example&#39;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Add and re-assign</span>
+<span class="n">simple_string1</span> <span class="o">+=</span> <span class="s1">&#39; that re-assigned the original string&#39;</span>
+<span class="n">simple_string1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Multiply and re-assign</span>
+<span class="n">simple_string2</span> <span class="o">*=</span> <span class="mi">3</span>
+<span class="n">simple_string2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Note: Subtraction, division, and decrement operators do not apply to strings.</span>
+</code></pre></div>
+<h2 id="basic-containers">Basic containers</h2>
+<blockquote>
+<p>Note: <strong>mutable</strong> objects can be modified after creation and
+<strong>immutable</strong> objects cannot.</p>
+</blockquote>
+<p>Containers are objects that can be used to group other objects together.
+The basic container types include:</p>
+<ul>
+<li><strong><code>str</code></strong> (string: immutable; indexed by integers; items are stored
+    in the order they were added)</li>
+<li><strong><code>list</code></strong> (list: mutable; indexed by integers; items are stored in
+    the order they were added)<ul>
+<li><code>[3, 5, 6, 3, 'dog', 'cat', False]</code></li>
+</ul>
+</li>
+<li><strong><code>tuple</code></strong> (tuple: immutable; indexed by integers; items are stored
+    in the order they were added)<ul>
+<li><code>(3, 5, 6, 3, 'dog', 'cat', False)</code></li>
+</ul>
+</li>
+<li><strong><code>set</code></strong> (set: mutable; not indexed at all; items are NOT stored in
+    the order they were added; can only contain immutable objects; does
+    NOT contain duplicate objects)<ul>
+<li><code>{3, 5, 6, 3, 'dog', 'cat', False}</code></li>
+</ul>
+</li>
+<li><strong><code>dict</code></strong> (dictionary: mutable; key-value pairs are indexed by
+    immutable keys; items are NOT stored in the order they were added)<ul>
+<li><code>{'name': 'Jane', 'age': 23, 'fav_foods': ['pizza', 'fruit', 'fish']}</code></li>
+</ul>
+</li>
+</ul>
+<p>When defining lists, tuples, or sets, use commas (,) to separate the
+individual items. When defining dicts, use a colon (:) to separate keys
+from values and commas (,) to separate the key-value pairs.</p>
+<p>Strings, lists, and tuples are all <strong>sequence types</strong> that can use the
+<code>+</code>, <code>*</code>, <code>+=</code>, and <code>*=</code> operators.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Assign some containers to different variables</span>
+<span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
+<span class="n">tuple1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">}</span>
+<span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Jane&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;fav_foods&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;pizza&#39;</span><span class="p">,</span> <span class="s1">&#39;fruit&#39;</span><span class="p">,</span> <span class="s1">&#39;fish&#39;</span><span class="p">]}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Items in the list object are stored in the order they were added</span>
+<span class="n">list1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Items in the tuple object are stored in the order they were added</span>
+<span class="n">tuple1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Items in the set object are not stored in the order they were added</span>
+<span class="c1"># Also, notice that the value 3 only appears once in this set object</span>
+<span class="n">set1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Items in the dict object are not stored in the order they were added</span>
+<span class="n">dict1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Add and re-assign</span>
+<span class="n">list1</span> <span class="o">+=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;grapes&#39;</span><span class="p">]</span>
+<span class="n">list1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Add and re-assign</span>
+<span class="n">tuple1</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;grapes&#39;</span><span class="p">)</span>
+<span class="n">tuple1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Multiply</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Multiply</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span>
+</code></pre></div>
+<h2 id="accessing-data-in-containers">Accessing data in containers</h2>
+<p>For strings, lists, tuples, and dicts, we can use <strong>subscript notation</strong>
+(square brackets) to access data at an index.</p>
+<ul>
+<li>strings, lists, and tuples are indexed by integers, <strong>starting at
+    0</strong> for first item<ul>
+<li>these sequence types also support accesing a range of items,
+    known as <strong>slicing</strong></li>
+<li>use <strong>negative indexing</strong> to start at the back of the sequence</li>
+</ul>
+</li>
+<li>dicts are indexed by their keys</li>
+</ul>
+<blockquote>
+<p>Note: sets are not indexed, so we cannot use subscript notation to
+access data elements.</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="c1"># Access the first item in a sequence</span>
+<span class="n">list1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Access the last item in a sequence</span>
+<span class="n">tuple1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Access a range of items in a sequence</span>
+<span class="n">simple_string1</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Access a range of items in a sequence</span>
+<span class="n">tuple1</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Access a range of items in a sequence</span>
+<span class="n">list1</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Access an item in a dictionary</span>
+<span class="n">dict1</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Access an element of a sequence in a dictionary</span>
+<span class="n">dict1</span><span class="p">[</span><span class="s1">&#39;fav_foods&#39;</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+</code></pre></div>
+<h2 id="python-built-in-functions-and-callables">Python built-in functions and callables</h2>
+<p>A <strong>function</strong> is a Python object that you can "call" to <strong>perform an
+action</strong> or compute and <strong>return another object</strong>. You call a function
+by placing parentheses to the right of the function name. Some functions
+allow you to pass <strong>arguments</strong> inside the parentheses (separating
+multiple arguments with a comma). Internal to the function, these
+arguments are treated like variables.</p>
+<p>Python has several useful built-in functions to help you work with
+different objects and/or your environment. Here is a small sample of
+them:</p>
+<ul>
+<li><strong><code>type(obj)</code></strong> to determine the type of an object</li>
+<li><strong><code>len(container)</code></strong> to determine how many items are in a container</li>
+<li><strong><code>callable(obj)</code></strong> to determine if an object is callable</li>
+<li><strong><code>sorted(container)</code></strong> to return a new list from a container, with
+    the items sorted</li>
+<li><strong><code>sum(container)</code></strong> to compute the sum of a container of numbers</li>
+<li><strong><code>min(container)</code></strong> to determine the smallest item in a container</li>
+<li><strong><code>max(container)</code></strong> to determine the largest item in a container</li>
+<li><strong><code>abs(number)</code></strong> to determine the absolute value of a number</li>
+<li><strong><code>repr(obj)</code></strong> to return a string representation of an object</li>
+</ul>
+<blockquote>
+<p>Complete list of built-in functions:
+<a href="https://docs.python.org/3/library/functions.html">https://docs.python.org/3/library/functions.html</a></p>
+</blockquote>
+<p>There are also different ways of defining your own functions and
+callable objects that we will explore later.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the type() function to determine the type of an object</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">simple_string1</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the len() function to determine how many items are in a container</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">dict1</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the len() function to determine how many items are in a container</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">simple_string2</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the callable() function to determine if an object is callable</span>
+<span class="n">callable</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the callable() function to determine if an object is callable</span>
+<span class="n">callable</span><span class="p">(</span><span class="n">dict1</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the sorted() function to return a new list from a container, with the items sorted</span>
+<span class="nb">sorted</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the sorted() function to return a new list from a container, with the items sorted</span>
+<span class="c1"># - notice that capitalized strings come first</span>
+<span class="nb">sorted</span><span class="p">([</span><span class="s1">&#39;dogs&#39;</span><span class="p">,</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;zebras&#39;</span><span class="p">,</span> <span class="s1">&#39;Chicago&#39;</span><span class="p">,</span> <span class="s1">&#39;California&#39;</span><span class="p">,</span> <span class="s1">&#39;ants&#39;</span><span class="p">,</span> <span class="s1">&#39;mice&#39;</span><span class="p">])</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the sum() function to compute the sum of a container of numbers</span>
+<span class="nb">sum</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the min() function to determine the smallest item in a container</span>
+<span class="nb">min</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the min() function to determine the smallest item in a container</span>
+<span class="nb">min</span><span class="p">([</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">])</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the max() function to determine the largest item in a container</span>
+<span class="nb">max</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the max() function to determine the largest item in a container</span>
+<span class="nb">max</span><span class="p">(</span><span class="s1">&#39;gibberish&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the abs() function to determine the absolute value of a number</span>
+<span class="nb">abs</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the abs() function to determine the absolute value of a number</span>
+<span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">12</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Use the repr() function to return a string representation of an object</span>
+<span class="nb">repr</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="python-object-attributes-%28methods-and-properties%29">Python object attributes (methods and properties)</h2>
+<p>Different types of objects in Python have different <strong>attributes</strong> that
+can be referred to by name (similar to a variable). To access an
+attribute of an object, use a dot (<code>.</code>) after the object, then specify
+the attribute (i.e. <code>obj.attribute</code>)</p>
+<p>When an attribute of an object is a callable, that attribute is called a
+<strong>method</strong>. It is the same as a function, only this function is bound to
+a particular object.</p>
+<p>When an attribute of an object is not a callable, that attribute is
+called a <strong>property</strong>. It is just a piece of data about the object, that
+is itself another object.</p>
+<p>The built-in <code>dir()</code> function can be used to return a list of an
+object's attributes.</p>
+<hr />
+<h2 id="some-methods-on-string-objects">Some methods on string objects</h2>
+<ul>
+<li><strong><code>.capitalize()</code></strong> to return a capitalized version of the string
+    (only first char uppercase)</li>
+<li><strong><code>.upper()</code></strong> to return an uppercase version of the string (all
+    chars uppercase)</li>
+<li><strong><code>.lower()</code></strong> to return an lowercase version of the string (all
+    chars lowercase)</li>
+<li><strong><code>.count(substring)</code></strong> to return the number of occurences of the
+    substring in the string</li>
+<li><strong><code>.startswith(substring)</code></strong> to determine if the string starts with
+    the substring</li>
+<li><strong><code>.endswith(substring)</code></strong> to determine if the string ends with the
+    substring</li>
+<li><strong><code>.replace(old, new)</code></strong> to return a copy of the string with
+    occurences of the "old" replaced by "new"</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Assign a string to a variable</span>
+<span class="n">a_string</span> <span class="o">=</span> <span class="s1">&#39;tHis is a sTriNg&#39;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Return a capitalized version of the string</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Return an uppercase version of the string</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Return a lowercase version of the string</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Notice that the methods called have not actually modified the string</span>
+<span class="n">a_string</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Count number of occurences of a substring in the string</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Count number of occurences of a substring in the string after a certain position</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Count number of occurences of a substring in the string</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;is&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Does the string start with &#39;this&#39;?</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;this&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Does the lowercase string start with &#39;this&#39;?</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;this&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Does the string end with &#39;Ng&#39;?</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;Ng&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Return a version of the string with a substring replaced with something else</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="s1">&#39;XYZ&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Return a version of the string with a substring replaced with something else</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;!&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Return a version of the string with the first 2 occurences a substring replaced with something else</span>
+<span class="n">a_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;!&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="some-methods-on-list-objects">Some methods on list objects</h2>
+<ul>
+<li><strong><code>.append(item)</code></strong> to add a single item to the list</li>
+<li><strong><code>.extend([item1, item2, ...])</code></strong> to add multiple items to the list</li>
+<li><strong><code>.remove(item)</code></strong> to remove a single item from the list</li>
+<li><strong><code>.pop()</code></strong> to remove and return the item at the end of the list</li>
+<li><strong><code>.pop(index)</code></strong> to remove and return an item at an index</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="err">```</span>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Some methods on set objects
+
+- **`.add(item)`** to add a single item to the set
+- **`.update([item1, item2, ...])`** to add multiple items to the set
+- **`.update(set2, set3, ...)`** to add items from all provided sets to the set
+- **`.remove(item)`** to remove a single item from the set
+- **`.pop()`** to remove and return a random item from the set
+- **`.difference(set2)`** to return items in the set that are not in another set
+- **`.intersection(set2)`** to return items in both sets
+- **`.union(set2)`** to return items that are in either set
+- **`.symmetric_difference(set2)`** to return items that are only in one set (not both)
+- **`.issuperset(set2)`** does the set contain everything in the other set?
+- **`.issubset(set2)`** is the set contained in the other set?
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Some methods on dict objects
+
+- **`.update([(key1, val1), (key2, val2), ...])`** to add multiple key-value pairs to the dict
+- **`.update(dict2)`** to add all keys and values from another dict to the dict
+- **`.pop(key)`** to remove key and return its value from the dict (error if key not found)
+- **`.pop(key, default_val)`** to remove key and return its value from the dict (or return default_val if key not found)
+- **`.get(key)`** to return the value at a specified key in the dict (or None if key not found)
+- **`.get(key, default_val)`** to return the value at a specified key in the dict (or default_val if key not found)
+- **`.keys()`** to return a list of keys in the dict
+- **`.values()`** to return a list of values in the dict
+- **`.items()`** to return a list of key-value pairs (tuples) in the dict
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Positional arguments and keyword arguments to callables
+
+You can call a function/method in a number of different ways:
+
+- `func()`: Call `func` with no arguments
+- `func(arg)`: Call `func` with one positional argument
+- `func(arg1, arg2)`: Call `func` with two positional arguments
+- `func(arg1, arg2, ..., argn)`: Call `func` with many positional arguments
+- `func(kwarg=value)`: Call `func` with one keyword argument 
+- `func(kwarg1=value1, kwarg2=value2)`: Call `func` with two keyword arguments
+- `func(kwarg1=value1, kwarg2=value2, ..., kwargn=valuen)`: Call `func` with many keyword arguments
+- `func(arg1, arg2, kwarg1=value1, kwarg2=value2)`: Call `func` with positonal arguments and keyword arguments
+- `obj.method()`: Same for `func`.. and every other `func` example
+
+When using **positional arguments**, you must provide them in the order that the function defined them (the function&#39;s **signature**).
+
+When using **keyword arguments**, you can provide the arguments you want, in any order you want, as long as you specify each argument&#39;s name.
+
+When using positional and keyword arguments, positional arguments must come first.
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Formatting strings and using placeholders
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Python &quot;for loops&quot;
+
+It is easy to **iterate** over a collection of items using a **for loop**. The strings, lists, tuples, sets, and dictionaries we defined are all **iterable** containers.
+
+The for loop will go through the specified container, one item at a time, and provide a temporary variable for the current item. You can use this temporary variable like a normal variable.
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Python &quot;if statements&quot; and &quot;while loops&quot;
+
+Conditional expressions can be used with these two **conditional statements**.
+
+The **if statement** allows you to test a condition and perform some actions if the condition evaluates to `True`. You can also provide `elif` and/or `else` clauses to an if statement to take alternative actions if the condition evaluates to `False`.
+
+The **while loop** will keep looping until its conditional expression evaluates to `False`.
+
+&gt; Note: It is possible to &quot;loop forever&quot; when using a while loop with a conditional expression that never evaluates to `False`.
+&gt;
+&gt; Note: Since the **for loop** will iterate over a container of items until there are no more, there is no need to specify a &quot;stop looping&quot; condition.
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## List, set, and dict comprehensions
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Creating objects from arguments or other objects
+
+The basic types and containers we have used so far all provide **type constructors**:
+
+- `int()`
+- `float()`
+- `str()`
+- `list()`
+- `tuple()`
+- `set()`
+- `dict()`
+
+Up to this point, we have been defining objects of these built-in types using some syntactic shortcuts, since they are so common.
+
+Sometimes, you will have an object of one type that you need to convert to another type. Use the **type constructor** for the type of object you want to have, and pass in the object you currently have.
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Importing modules
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Exceptions
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Classes: Creating your own objects
+</code></pre></div>
+<p>python</p>
+<h1 id="define-a-new-class-called-thing-that-is-derived-from-the-base-python-object">Define a new class called <code>Thing</code> that is derived from the base Python object</h1>
+<p>class Thing(object):\
+my_property = 'I am a "Thing"'</p>
+<h1 id="define-a-new-class-called-dictthing-that-is-derived-from-the-dict-type">Define a new class called <code>DictThing</code> that is derived from the <code>dict</code> type</h1>
+<p>class DictThing(dict):\
+my_property = 'I am a "DictThing"'</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python\
+print(Thing)\
+print(type(Thing))\
+print(DictThing)\
+print(type(DictThing))\
+print(issubclass(DictThing, dict))\
+print(issubclass(DictThing, object))</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<h1 id="create--instances--of-our-new-classes">Create "instances" of our new classes</h1>
+<p>t = Thing()\
+d = DictThing()\
+print(t)\
+print(type(t))\
+print(d)\
+print(type(d))</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<h1 id="interact-with-a-dictthing-instance-just-as-you-would-a-normal-dictionary">Interact with a DictThing instance just as you would a normal dictionary</h1>
+<p>d['name'] = 'Sally'\
+print(d)</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python\
+d.update({\
+'age': 13,\
+'fav_foods': ['pizza', 'sushi', 'pad thai', 'waffles'],\
+'fav_color': 'green',\
+})\
+print(d)</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python\
+print(d.my_property)</p>
+<div class="highlight"><pre><span></span><code>## Defining functions and methods
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Creating an initializer method for your classes
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Other &quot;magic methods&quot;
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>## Context managers and the &quot;with statement&quot;
+</code></pre></div>
+<p>python</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>python</p>
+<p>```</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 1, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 John Telford
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.instant", "navigation.tracking", "navigation.footer", "navigation:top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.efa0ade1.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

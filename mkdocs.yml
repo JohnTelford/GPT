@@ -134,8 +134,9 @@ nav:
       - Mac: Topics/Utilities/mac.md
       - Rust: Topics/Utilities/rust.md
 
-    - refs: References/tech_references.md
-        # references: References/tech_references.md
+    - References: References/refs.md
+      # - refs: References/refs.md
+        # references: References/technology_references.md
 
 plugins:
     - search:
