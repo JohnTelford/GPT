@@ -1,13 +1,11 @@
 #!/bin/bash
-# html_md.sh
+# pandoc html -> md
+pwd
 
-# echo "$1"
-# 
-# input="$1"
-# echo $input
+for i in *; do
+    input=$i
+    output=${input%%html}.md
+    echo "$input -> $output"
 
-# input=${input%%html}
-# 
-# echo $output
-
-pandoc -f html-native_divs-native_spans -t markdown how_to.html -o how_to.md
+    pandoc -f html-native_divs-native_spans -t markdown $input -o $output
+done

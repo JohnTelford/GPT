@@ -1,1 +1,0 @@
-/Volumes/Dev/GPT/docs/References/tech_references.md
