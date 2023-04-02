@@ -1,6 +1,4 @@
-# Jupyter - Python Refs {#jupyter-pythonrefs}
-
-> Sep 27, 2022
+# Jupyter - Python References
 
 ------------------------------------------------------------------------
 
@@ -49,12 +47,16 @@
 -   [Built-In Data Structures, Functions, and
     Files](https://wesmckinney.com/book/python-builtin.html)
 
-    -   [Data Cleaning and
-        Preparation](https://wesmckinney.com/book/data-cleaning.html)
+-   [Data Cleaning and
+    Preparation](https://wesmckinney.com/book/data-cleaning.html)
 
-        -   [regex](https://wesmckinney.com/book/data-cleaning.html#text_string_manip_re)
+-   [regex](https://wesmckinney.com/book/data-cleaning.html#text_string_manip_re)
+
 
 ### Pandas
+
+-   [Pandas Cheat Sheet for Data
+    Science](https://datascientyst.com/pandas-cheat-sheet-for-data-science/)
 
 -   [How to Add / Insert a Row into a Pandas
     DataFrame](https://datagy.io/pandas-add-row/)
@@ -71,6 +73,9 @@
 
 -   [User Guide
     Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
+
+-   [Pandas vs SQL Cheat
+    Sheet](https://datascientyst.com/pandas-vs-sql-cheat-sheet/)
 
 ### NumPy
 
@@ -116,12 +121,12 @@
 -   [System Shell
     Access](https://ipython.readthedocs.io/en/stable/interactive/reference.html#system-shell-access)
 
+-   [Python Regular Expression
+    Operations](https://docs.python.org/3/library/re.html)
+
 ------------------------------------------------------------------------
 
 ## Regex
-
--   [Regular Expression
-    Operations](https://docs.python.org/3/library/re.html)
 
 -   [Regular Expressions
     Tutorial](https://www.regular-expressions.info/tutorial.html)
@@ -160,15 +165,6 @@
 -   [Scikit-Learn Cheat
     Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
 
-### Data ScientYst {#datascientyst}
-
-------------------------------------------------------------------------
-
--   [Pandas Cheat Sheet for Data
-    Science](https://datascientyst.com/pandas-cheat-sheet-for-data-science/)
-
--   [Pandas vs SQL Cheat
-    Sheet](https://datascientyst.com/pandas-vs-sql-cheat-sheet/)
 
 ------------------------------------------------------------------------
 

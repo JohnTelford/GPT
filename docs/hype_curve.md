@@ -5,7 +5,7 @@
 
 ---
 
->The Hype Curve helps separate reality from fiction. Keep it in mind when reading Topics
+>The Hype Curve helps separate reality from fiction. Keep it in mind when reading this site
 
 ---
 

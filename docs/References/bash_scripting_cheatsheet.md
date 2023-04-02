@@ -103,8 +103,8 @@ echo {A,B}.js
 
 Expression Description
 
-- `{A,B}` Same as `A B`\
-- `{A,B}.js` Same as `A.js B.js`\
+- `{A,B}` Same as `A B`
+- `{A,B}.js` Same as `A.js B.js`
 - `{1..5}` Same as `1 2 3 4 5`
 - 
 See: [Brace
@@ -200,7 +200,7 @@ Expression Description
 
 Expression Description\
 
-`-  ${#foo}` Length of `$foo`
+- `${#foo}` Length of `$foo`
 
 ### Manipulation
 
@@ -218,10 +218,10 @@ echo "${str^^}"  #=> "HELLO WORLD!" (all uppercase)
 
 ### Expression Description
 
-`${foo:-val}` `$foo`, or `val` if unset (or null)\
-`${foo:=val}` Set `$foo` to `val` if unset (or null)\
-`${foo:+val}` `val` if `$foo` is set (and not null)\
-`${foo:?message}` Show error message and exit if `$foo` is unset (or
+- `${foo:-val}` `$foo`, or `val` if unset (or null)
+- `${foo:=val}` Set `$foo` to `val` if unset (or null)
+- `${foo:+val}` `val` if `$foo` is set (and not null)
+- `${foo:?message}` Show error message and exit if `$foo` is unset (or
 null)
 
 Omitting the `:` removes the (non)nullity checks, e.g. `${foo-val}`\
@@ -338,7 +338,7 @@ Expression Description
 - `$_` Last argument of the previous command
 
 **Note**: `$@` and `$*` must be quoted in order to perform as
-described.\
+described.
 Otherwise, they do exactly the same thing (arguments as separate\
 strings).
 
@@ -573,33 +573,31 @@ Expression Description
   
 ### Operations {#operations}
 
-Code Description\
-----------------------
------------------------------------------------------------------------\
-`!!` Execute last command again\
-`!!:s/<FROM>/<TO>/` Replace first occurrence of `<FROM>` to `<TO>` in
-most recent command\
-`!!:gs/<FROM>/<TO>/` Replace all occurrences of `<FROM>` to `<TO>` in
-most recent command\
-`!$:t` Expand only basename from last parameter of most recent command\
-`!$:h` Expand only directory from last parameter of most recent command
+#### Code Description
 
-`!!` and `!$` can be replaced with any valid expansion.
+- `!!` Execute last command again
+- `!!:s/<FROM>/<TO>/` Replace first occurrence of `<FROM>` to `<TO>` in
+most recent command
+- `!!:gs/<FROM>/<TO>/` Replace all occurrences of `<FROM>` to `<TO>` in
+most recent command
+- `!$:t` Expand only basename from last parameter of most recent command
+- `!$:h` Expand only directory from last parameter of most recent command
+
+- `!!` and `!$` can be replaced with any valid expansion.
 
 ### Slices
 
-Code Description\
-----------
-------------------------------------------------------------------------------------------\
-`!!:n` Expand only `n`th token from most recent command (command is `0`;
-first argument is `1`)\
-`!^` Expand first argument from most recent command\
-`!$` Expand last token from most recent command\
-`!!:n-m` Expand range of tokens from most recent command\
-`!!:n-$` Expand `n`th token to last from most recent command
+#### Code Description\
 
-`!!` can be replaced with any valid expansion i.e. `!cat`, `!-2`,
-`!42`,\
+- `!!:n` Expand only `n`th token from most recent command (command is `0`;
+first argument is `1`)
+- `!^` Expand first argument from most recent command
+- `!$` Expand last token from most recent command
+- `!!:n-m` Expand range of tokens from most recent command
+- `!!:n-$` Expand `n`th token to last from most recent command
+
+- `!!` can be replaced with any valid expansion i.e. `!cat`, `!-2`,
+- `!42`,
 etc.
 
 ## Miscellaneous
@@ -707,18 +705,18 @@ printf '%i+%i=%i\n' 1 2 3  4 5 9
 
 ### Transform strings {#transformstrings}
 
-Command option Description\
----------------- -----------------------------------------------------\
-`-c` Operations apply to characters not in the given set\
-`-d` Delete characters\
-`-s` Replaces repeated characters with single occurrence\
-`-t` Truncates\
-`[:upper:]` All upper case letters\
-`[:lower:]` All lower case letters\
-`[:digit:]` All digits\
-`[:space:]` All whitespace\
-`[:alpha:]` All letters\
-`[:alnum:]` All letters and digits
+#### Command option Description
+
+- `-c` Operations apply to characters not in the given set
+- `-d` Delete characters
+- `-s` Replaces repeated characters with single occurrence
+- `-t` Truncates
+- `[:upper:]` All upper case letters
+- `[:lower:]` All lower case letters
+- `[:digit:]` All digits
+- `[:space:]` All whitespace
+- `[:alpha:]` All letters
+- `[:alnum:]` All letters and digits
 
 #### Example {#example}
 
@@ -776,13 +774,13 @@ read -n 1 ans    # Just one character
 ### Special variables {#specialvariables}
 
 Expression Description\
--------------------- ----------------------------------------\
-`$?` Exit status of last task\
-`$!` PID of last background task\
-`$$` PID of shell\
-`$0` Filename of the shell script\
-`$_` Last argument of the previous command\
-`${PIPESTATUS[n]}` return value of piped commands (array)
+
+- `$?` Exit status of last task
+- `$!` PID of last background task
+- `$$` PID of shell
+- `$0` Filename of the shell script
+- `$_` Last argument of the previous command
+- `${PIPESTATUS[n]}` return value of piped commands (array)
 
 See [Special\
 parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables).

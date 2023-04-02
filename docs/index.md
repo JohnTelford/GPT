@@ -4,9 +4,9 @@
     
     Early Beta
     
-    [v0.0.10]
+    [ v0.0.11 ]
 
-    Last update: March 31, 2023
+    Last update: April 1, 2023
     
 The purpose of this website is quick access to topics of interest
 
@@ -22,7 +22,7 @@ Some [chatGPT-4](https://openai.com) limitations are:
 
 - Other topics are from pursuing what’s new and improved in the ever changing  Electronics, Internet, Science, and Software industries. Checking out what’s new or not, a pipe dream or not, or what’s new and improved
    
-- The [Hype Curve](hype_curve.md) helps separate reality from fiction. Keep it in mind when reading Topics
+>The [Hype Curve](hype_curve.md) helps separate reality from fiction. Keep it in mind when reading this website
 
 
 

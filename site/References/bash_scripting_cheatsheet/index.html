@@ -15,7 +15,7 @@
     
     
       
-        <title>Bash scripting cheatsheet. - John Telford - Topics</title>
+        <title>Bash scripting cheatsheet - John Telford - Topics</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bash-scripting-cheatsheet.h1" class="md-skip">
+        <a href="#getting-started.-three-column" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bash scripting cheatsheet.
+              Bash scripting cheatsheet
             
           </span>
         </div>
@@ -1622,10 +1622,58 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_17" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_17" id="__nav_1_17_label" tabindex="0">
+          (References)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_17_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_17">
+          <span class="md-nav__icon md-icon"></span>
+          (References)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../refs/" class="md-nav__link">
-        References
+      <a href="../bash/" class="md-nav__link">
+        Bash
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jupyter_refs/" class="md-nav__link">
+        Jupyter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1653,8 +1701,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1803,15 +1849,15 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#expression-description" class="md-nav__link">
+    Expression Description
+  </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#expression-description" class="md-nav__link">
-    Expression Description\
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2113,20 +2159,20 @@
     Operations
   </a>
   
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-description" class="md-nav__link">
+    Code Description
+  </a>
+  
 </li>
         
       </ul>
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#code-description" class="md-nav__link">
-    Code Description\
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Description\">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#slices" class="md-nav__link">
@@ -2142,7 +2188,7 @@
       
         <li class="md-nav__item">
   <a href="#code-description_1" class="md-nav__link">
-    Code Description\
+    #### Code Description\
   </a>
   
 </li>
@@ -2337,8 +2383,9 @@
   
 
 
+  <h1>Bash scripting cheatsheet</h1>
+
 <hr />
-<h1 id="bash-scripting-cheatsheet.h1">Bash scripting <em>cheatsheet</em></h1>
 <h2 id="getting-started.-three-column">Getting started</h2>
 <h3 id="introduction.-intro">Introduction</h3>
 <p>This is a quick reference to getting started with Bash scripting.</p>
@@ -2389,7 +2436,6 @@ git<span class="w"> </span>commit<span class="w"> </span><span class="o">||</spa
 
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;You are </span><span class="k">$(</span>get_name<span class="k">)</span><span class="s2">&quot;</span>
 </code></pre></div>
-<p>See: <a href="#functions">Functions</a></p>
 <h3 id="conditionals-example">Conditionals</h3>
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span>-z<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
 <span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;String is empty&quot;</span>
@@ -2397,23 +2443,23 @@ git<span class="w"> </span>commit<span class="w"> </span><span class="o">||</spa
 <span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;String is not empty&quot;</span>
 <span class="k">fi</span>
 </code></pre></div>
-<p>See: <a href="#conditionals">Conditionals</a></p>
 <h3 id="strictmode">Strict mode</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">set</span><span class="w"> </span>-euo<span class="w"> </span>pipefail
 <span class="nv">IFS</span><span class="o">=</span><span class="s1">$&#39;\n\t&#39;</span>
 </code></pre></div>
-<p>See: <a href="http://redsymbol.net/articles/unofficial-bash-strict-mode/">Unofficial bash strict\
+<p>See: <a href="http://redsymbol.net/articles/unofficial-bash-strict-mode/">Unofficial bash strict
 mode</a></p>
 <h3 id="braceexpansion">Brace expansion</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="o">{</span>A,B<span class="o">}</span>.js
 </code></pre></div>
-<p>Expression Description\
------------- ---------------------\
-<code>{A,B}</code> Same as <code>A B</code>\
-<code>{A,B}.js</code> Same as <code>A.js B.js</code>\
-<code>{1..5}</code> Same as <code>1 2 3 4 5</code></p>
-<p>See: <a href="http://wiki.bash-hackers.org/syntax/expansion/brace">Brace\
-expansion</a></p>
+<p>Expression Description</p>
+<ul>
+<li><code>{A,B}</code> Same as <code>A B</code>\</li>
+<li><code>{A,B}.js</code> Same as <code>A.js B.js</code>\</li>
+<li><code>{1..5}</code> Same as <code>1 2 3 4 5</code></li>
+<li>See: <a href="http://wiki.bash-hackers.org/syntax/expansion/brace">Brace
+expansion</a></li>
+</ul>
 <h2 id="parameter-expansions.-three-column">Parameter expansions</h2>
 <h3 id="basics">Basics</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;John&quot;</span>
@@ -2452,18 +2498,19 @@ expansion</a></p>
 <span class="nv">dir</span><span class="o">=</span><span class="si">${</span><span class="nv">src</span><span class="p">%</span><span class="nv">$base</span><span class="si">}</span><span class="w">  </span><span class="c1">#=&gt; &quot;/path/to/&quot; (dirpath)</span>
 </code></pre></div>
 <h3 id="substitution">Substitution</h3>
-<p>Code Description\
-------------------- ---------------------\
-<code>${foo%suffix}</code> Remove suffix\
-<code>${foo#prefix}</code> Remove prefix\
-<code>${foo%%suffix}</code> Remove long suffix\
-<code>${foo/%suffix}</code> Remove long suffix\
-<code>${foo##prefix}</code> Remove long prefix\
-<code>${foo/#prefix}</code> Remove long prefix\
-<code>${foo/from/to}</code> Replace first match\
-<code>${foo//from/to}</code> Replace all\
-<code>${foo/%from/to}</code> Replace suffix\
-<code>${foo/#from/to}</code> Replace prefix</p>
+<p>Code Description</p>
+<ul>
+<li><code>${foo%suffix}</code> Remove suffix</li>
+<li><code>${foo#prefix}</code> Remove prefix</li>
+<li><code>${foo%%suffix}</code> Remove long suffix</li>
+<li><code>${foo/%suffix}</code> Remove long suffix</li>
+<li><code>${foo##prefix}</code> Remove long prefix</li>
+<li><code>${foo/#prefix}</code> Remove long prefix</li>
+<li><code>${foo/from/to}</code> Replace first match</li>
+<li><code>${foo//from/to}</code> Replace all</li>
+<li><code>${foo/%from/to}</code> Replace suffix</li>
+<li><code>${foo/#from/to}</code> Replace prefix</li>
+</ul>
 <h3 id="comments">Comments</h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Single line comment</span>
 </code></pre></div>
@@ -2474,14 +2521,14 @@ expansion</a></p>
 <span class="s1">&#39;</span>
 </code></pre></div>
 <h3 id="substrings">Substrings</h3>
-<p>Expression Description\
------------------ --------------------------------\
-<code>${foo:0:3}</code> Substring <em>(position, length)</em>\
-<code>${foo:(-3):3}</code> Substring from the right</p>
+<p>Expression Description</p>
+<ul>
+<li><code>${foo:0:3}</code> Substring <em>(position, length)</em></li>
+<li><code>${foo:(-3):3}</code> Substring from the right</li>
+</ul>
 <h3 id="length">Length</h3>
-<p>Expression Description\
------------- ------------------\
-<code>${#foo}</code> Length of <code>$foo</code></p>
+<p>Expression Description\</p>
+<p><code>-  ${#foo}</code> Length of <code>$foo</code></p>
 <h3 id="manipulation">Manipulation</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">str</span><span class="o">=</span><span class="s2">&quot;HELLO WORLD!&quot;</span>
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">str</span><span class="p">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="w">   </span><span class="c1">#=&gt; &quot;hELLO WORLD!&quot; (lowercase 1st letter)</span>
@@ -2492,9 +2539,8 @@ expansion</a></p>
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">str</span><span class="p">^^</span><span class="si">}</span><span class="s2">&quot;</span><span class="w">  </span><span class="c1">#=&gt; &quot;HELLO WORLD!&quot; (all uppercase)</span>
 </code></pre></div>
 <h3 id="defaultvalues">Default values</h3>
-<h2 id="expression-description">Expression Description\</h2>
-<p>----------------------------------------------------------\
-<code>${foo:-val}</code> <code>$foo</code>, or <code>val</code> if unset (or null)\
+<h3 id="expression-description">Expression Description</h3>
+<p><code>${foo:-val}</code> <code>$foo</code>, or <code>val</code> if unset (or null)\
 <code>${foo:=val}</code> Set <code>$foo</code> to <code>val</code> if unset (or null)\
 <code>${foo:+val}</code> <code>val</code> if <code>$foo</code> is set (and not null)\
 <code>${foo:?message}</code> Show error message and exit if <code>$foo</code> is unset (or
@@ -2565,18 +2611,19 @@ expands to <code>val</code> if unset otherwise <code>$foo</code>.</p>
 <span class="k">fi</span>
 </code></pre></div>
 <h3 id="arguments">Arguments</h3>
-<p>Expression Description\
------------- ------------------------------------------------\
-<code>$#</code> Number of arguments\
-<code>$*</code> All positional arguments (as a single word)\
-<code>$@</code> All positional arguments (as separate strings)\
-<code>$1</code> First argument\
-<code>$_</code> Last argument of the previous command</p>
+<p>Expression Description</p>
+<ul>
+<li><code>$#</code> Number of arguments</li>
+<li><code>$*</code> All positional arguments (as a single word)</li>
+<li><code>$@</code> All positional arguments (as separate strings)\</li>
+<li><code>$1</code> First argument\</li>
+<li><code>$_</code> Last argument of the previous command</li>
+</ul>
 <p><strong>Note</strong>: <code>$@</code> and <code>$*</code> must be quoted in order to perform as
 described.\
 Otherwise, they do exactly the same thing (arguments as separate\
 strings).</p>
-<p>See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables">Special\
+<p>See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables">Special
 parameters</a>.</p>
 <h2 id="conditionals.-three-column">Conditionals</h2>
 <h3 id="conditions">Conditions</h3>
@@ -2584,41 +2631,44 @@ parameters</a>.</p>
 (true) or <code>1</code> (false). Any program that obeys the same logic (like all\
 base utils, such as <code>grep(1)</code> or <code>ping(1)</code>) can be used as condition,\
 see examples.</p>
-<p>Condition Description\
--------------------------- -----------------------\
-<code>[[ -z STRING ]]</code> Empty string\
-<code>[[ -n STRING ]]</code> Not empty string\
-<code>[[ STRING == STRING ]]</code> Equal\
-<code>[[ STRING != STRING ]]</code> Not Equal\
-<code>[[ NUM -eq NUM ]]</code> Equal\
-<code>[[ NUM -ne NUM ]]</code> Not equal\
-<code>[[ NUM -lt NUM ]]</code> Less than\
-<code>[[ NUM -le NUM ]]</code> Less than or equal\
-<code>[[ NUM -gt NUM ]]</code> Greater than\
-<code>[[ NUM -ge NUM ]]</code> Greater than or equal\
-<code>[[ STRING =~ STRING ]]</code> Regexp\
-<code>(( NUM &lt; NUM ))</code> Numeric conditions</p>
+<p>Condition Description </p>
+<ul>
+<li><code>[[ -z STRING ]]</code> Empty string</li>
+<li><code>[[ -n STRING ]]</code> Not empty string</li>
+<li><code>[[ STRING == STRING ]]</code> Equal</li>
+<li><code>[[ STRING != STRING ]]</code> Not Equal</li>
+<li><code>[[ NUM -eq NUM ]]</code> Equal</li>
+<li><code>[[ NUM -ne NUM ]]</code> Not equal</li>
+<li><code>[[ NUM -lt NUM ]]</code> Less than</li>
+<li><code>[[ NUM -le NUM ]]</code> Less than or equal</li>
+<li><code>[[ NUM -gt NUM ]]</code> Greater than</li>
+<li><code>[[ NUM -ge NUM ]]</code> Greater than or equal</li>
+<li><code>[[ STRING =~ STRING ]]</code> Regexp</li>
+<li><code>(( NUM &lt; NUM ))</code> Numeric conditions</li>
+</ul>
 <h4 id="moreconditions">More conditions</h4>
-<p>Condition Description\
----------------------- --------------------------\
-<code>[[ -o noclobber ]]</code> If OPTIONNAME is enabled\
-<code>[[ ! EXPR ]]</code> Not\
-<code>[[ X &amp;&amp; Y ]]</code> And\
-<code>[[ X || Y ]]</code> Or</p>
+<p>Condition Description</p>
+<ul>
+<li><code>[[ -o noclobber ]]</code> If OPTIONNAME is enabled</li>
+<li><code>[[ ! EXPR ]]</code> Not</li>
+<li><code>[[ X &amp;&amp; Y ]]</code> And</li>
+<li><code>[[ X || Y ]]</code> Or</li>
+</ul>
 <h3 id="fileconditions">File conditions</h3>
-<p>Condition Description\
-------------------------- -------------------------\
-<code>[[ -e FILE ]]</code> Exists\
-<code>[[ -r FILE ]]</code> Readable\
-<code>[[ -h FILE ]]</code> Symlink\
-<code>[[ -d FILE ]]</code> Directory\
-<code>[[ -w FILE ]]</code> Writable\
-<code>[[ -s FILE ]]</code> Size is > 0 bytes\
-<code>[[ -f FILE ]]</code> File\
-<code>[[ -x FILE ]]</code> Executable\
-<code>[[ FILE1 -nt FILE2 ]]</code> 1 is more recent than 2\
-<code>[[ FILE1 -ot FILE2 ]]</code> 2 is more recent than 1\
-<code>[[ FILE1 -ef FILE2 ]]</code> Same files</p>
+<p>Condition Description</p>
+<ul>
+<li><code>[[ -e FILE ]]</code> Exists</li>
+<li><code>[[ -r FILE ]]</code> Readable</li>
+<li><code>[[ -h FILE ]]</code> Symlink</li>
+<li><code>[[ -d FILE ]]</code> Director</li>
+<li><code>[[ -w FILE ]]</code> Writable</li>
+<li><code>[[ -s FILE ]]</code> Size is > 0 bytes</li>
+<li><code>[[ -f FILE ]]</code> File</li>
+<li><code>[[ -x FILE ]]</code> Executable</li>
+<li><code>[[ FILE1 -nt FILE2 ]]</code> 1 is more recent than 2</li>
+<li><code>[[ FILE1 -ot FILE2 ]]</code> 2 is more recent than 1</li>
+<li><code>[[ FILE1 -ef FILE2 ]]</code> Same files</li>
+</ul>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># String</span>
 <span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span>-z<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$string</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
@@ -2726,31 +2776,38 @@ sounds<span class="o">[</span>wolf<span class="o">]=</span><span class="s2">&quo
 from glob matches.</p>
 <h2 id="history">History</h2>
 <h3 id="commands">Commands</h3>
-<p>Command Description\
------------------------ -------------------------------------------\
-<code>history</code> Show history\
-<code>shopt -s histverify</code> Don't execute expanded result immediately</p>
+<p>Command Description</p>
+<ul>
+<li><code>history</code> Show history</li>
+<li><code>shopt -s histverify</code> Don't execute expanded result immediately</li>
+</ul>
 <h3 id="expansions">Expansions</h3>
-<p>Expression Description\
--------------- ------------------------------------------------------\
-<code>!$</code> Expand last parameter of most recent command\
-<code>!*</code> Expand all parameters of most recent command\
-<code>!-n</code> Expand <code>n</code>th most recent command\
-<code>!n</code> Expand <code>n</code>th command in history\
-<code>!&lt;command&gt;</code> Expand most recent invocation of command <code>&lt;command&gt;</code></p>
+<p>Expression Description</p>
+<ul>
+<li><code>!$</code> Expand last parameter of most recent command</li>
+<li><code>!*</code> Expand all parameters of most recent command</li>
+<li><code>!-n</code> Expand <code>n</code>th most recent command</li>
+<li><code>!n</code> Expand <code>n</code>th command in history</li>
+<li><code>!&lt;command&gt;</code> Expand most recent invocation of command <code>&lt;command&gt;</code></li>
+</ul>
 <h3 id="operations">Operations</h3>
-<h2 id="code-description">Code Description\</h2>
-<p>-----------------------------------------------------------------------\
-<code>!!</code> Execute last command again\
-<code>!!:s/&lt;FROM&gt;/&lt;TO&gt;/</code> Replace first occurrence of <code>&lt;FROM&gt;</code> to <code>&lt;TO&gt;</code> in
-most recent command\
-<code>!!:gs/&lt;FROM&gt;/&lt;TO&gt;/</code> Replace all occurrences of <code>&lt;FROM&gt;</code> to <code>&lt;TO&gt;</code> in
-most recent command\
-<code>!$:t</code> Expand only basename from last parameter of most recent command\
-<code>!$:h</code> Expand only directory from last parameter of most recent command</p>
+<h4 id="code-description">Code Description</h4>
+<ul>
+<li><code>!!</code> Execute last command again</li>
+<li><code>!!:s/&lt;FROM&gt;/&lt;TO&gt;/</code> Replace first occurrence of <code>&lt;FROM&gt;</code> to <code>&lt;TO&gt;</code> in
+most recent command</li>
+<li><code>!!:gs/&lt;FROM&gt;/&lt;TO&gt;/</code> Replace all occurrences of <code>&lt;FROM&gt;</code> to <code>&lt;TO&gt;</code> in
+most recent command</li>
+<li><code>!$:t</code> Expand only basename from last parameter of most recent command</li>
+<li>
+<p><code>!$:h</code> Expand only directory from last parameter of most recent command</p>
+</li>
+<li>
 <p><code>!!</code> and <code>!$</code> can be replaced with any valid expansion.</p>
+</li>
+</ul>
 <h3 id="slices">Slices</h3>
-<h2 id="code-description_1">Code Description\</h2>
+<h2 id="code-description_1">#### Code Description\</h2>
 <p>------------------------------------------------------------------------------------------\
 <code>!!:n</code> Expand only <code>n</code>th token from most recent command (command is <code>0</code>;
 first argument is <code>1</code>)\
