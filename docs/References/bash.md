@@ -5,20 +5,20 @@
 
 Bash (short for Bourne-Again SHell) is a Unix shell, which is a command-line interface for interacting with the operating system. Bash commands are used to execute various tasks on a Unix-based system. Here are some common Bash commands and their explanations:
 
-- cd: Change directory. This command is used to change the current working directory.
-- ls: List. This command is used to list the contents of a directory.
-- mkdir: Make directory. This command is used to create a new directory.
-- touch: Create file. This command is used to create a new empty file.
-- rm: Remove. This command is used to remove a file or directory.
-- cp: Copy. This command is used to copy a file or directory.
-- mv: Move. This command is used to move a file or directory.
-- cat: Concatenate. This command is used to display the contents of a file.
-- grep: Global regular expression print. This command is used to search for a pattern in a file.
-- echo: Echo. This command is used to display text on the terminal.
+- `cd`: Change directory. This command is used to change the current working directory.
+- `ls`: List. This command is used to list the contents of a directory.
+- `mkdir`: Make directory. This command is used to create a new directory.
+- `touch`: Create file. This command is used to create a new empty file.
+- `rm`: Remove. This command is used to remove a file or directory.
+- `cp`: Copy. This command is used to copy a file or directory.
+- `mv`: Move. This command is used to move a file or directory.
+- `cat`: Concatenate. This command is used to display the contents of a file.
+- `grep`: Global regular expression print. This command is used to search for a pattern in a file.
+- `echo`: Echo. This command is used to display text on the terminal.
 
 These are just a few examples of Bash commands, but there are many more available depending on the specific task you need to perform
 
-Check out there [Bash References](#bash-references)
+Check out [Bash References](#bash-references)
 
 ---
 

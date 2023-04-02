@@ -14,11 +14,11 @@
 -   [Jupyter Discourse
     Forum](https://discourse.jupyter.org/c/jupyterlab/17)
 
--   [Jupyter
-    Widgets](https://ipywidgets.readthedocs.io/en/latest/index.html)
-
 -   [Jupyter Notebook keyboard
     shortcuts](https://defkey.com/jupyter-notebook-shortcuts)
+
+-   [Jupyter
+    Widgets](https://ipywidgets.readthedocs.io/en/latest/index.html)
 
 -   [List of Useful Magic Commands in
     Jupyter](https://coderzcolumn.com/tutorials/python/list-of-useful-magic-commands-in-jupyter-notebook-lab)
