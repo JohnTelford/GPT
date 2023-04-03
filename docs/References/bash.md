@@ -31,6 +31,8 @@ name="John"
 echo "Hello $name!"
 ```
 
+---
+
 ### Variables
 
 ``` bash
@@ -49,6 +51,8 @@ option="iv"
 cp -$options $wildcard /tmp
 ```
 
+---
+
 ### String quotes {#stringquotes}
 
 ``` bash
@@ -56,6 +60,8 @@ name="John"
 echo "Hi $name"  #=> Hi John
 echo 'Hi $name'  #=> Hi $name
 ```
+
+---
 
 ### Shell execution {#shellexecution}
 
@@ -68,12 +74,16 @@ echo "I'm in `pwd`"  # obsolescent
 See [Command\
 substitution](http://wiki.bash-hackers.org/syntax/expansion/cmdsubst)
 
+---
+
 ### Conditional execution {#conditionalexecution}
 
 ``` bash
 git commit && git push
 git commit || echo "Commit failed"
 ```
+
+---
 
 ### Functions {#functions-example}
 
@@ -85,6 +95,8 @@ get_name() {
 echo "You are $(get_name)"
 ```
 
+---
+
 ### Conditionals {#conditionals-example}
 
 ``` bash
@@ -94,6 +106,8 @@ elif [[ -n "$string" ]]; then
   echo "String is not empty"
 fi
 ```
+
+---
 
 ### Strict mode {#strictmode}
 
@@ -105,13 +119,17 @@ IFS=$'\n\t'
 See: [Unofficial bash strict
 mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/)
 
-### Brace expansion {#braceexpansion}
+---
+
+## Brace expansion {#braceexpansion}
 
 ``` bash
 echo {A,B}.js
 ```
 
-Expression Description
+---
+
+### Expression Description
 
 - `{A,B}` Same as `A B`
 - `{A,B}.js` Same as `A.js B.js`
@@ -119,6 +137,8 @@ Expression Description
   
 See: [Brace
 expansion](http://wiki.bash-hackers.org/syntax/expansion/brace)
+
+---
 
 ## Parameter expansions {#parameter-expansions.-three-column}
 
@@ -230,7 +250,9 @@ echo "${str^}"   #=> "Hello world!" (uppercase 1st letter)
 echo "${str^^}"  #=> "HELLO WORLD!" (all uppercase)
 ```
 
-### Default values {#defaultvalues}
+---
+
+## Default values {#defaultvalues}
 
 ### Expression Description
 
@@ -271,7 +293,7 @@ for i in {1..5}; do
 done
 ```
 
-#### With step size {#withstepsize}
+### With step size {#withstepsize}
 
 ``` bash
 for i in {5..50..5}; do
@@ -528,7 +550,7 @@ sounds[wolf]="howl"
 
 Declares `sound` as a Dictionary object (aka associative array).
 
-## Working with dictionaries {#workingwithdictionaries}
+### Working with dictionaries {#workingwithdictionaries}
 
 ``` bash
 echo "${sounds[dog]}" # Dog's sound
@@ -542,7 +564,7 @@ unset sounds[dog]     # Delete dog
 
 ## Iteration {#iteration}
 
-#### Iterate over values {#iterateovervalues}
+### Iterate over values {#iterateovervalues}
 
 ``` bash
 for val in "${sounds[@]}"; do
@@ -550,7 +572,7 @@ for val in "${sounds[@]}"; do
 done
 ```
 
-#### Iterate over keys {#iterateoverkeys}
+### Iterate over keys {#iterateoverkeys}
 
 ``` bash
 for key in "${!sounds[@]}"; do
@@ -599,7 +621,7 @@ Command Description
 
 ---
 
-### Expansions
+## Expansions
 
 Expression Description
 
@@ -611,9 +633,9 @@ Expression Description
   
 ---
 
-### Operations {#operations}
+## Operations {#operations}
 
-#### Code Description
+### Code Description
 
 - `!!` Execute last command again
 - `!!:s/<FROM>/<TO>/` Replace first occurrence of `<FROM>` to `<TO>` in
@@ -627,9 +649,9 @@ most recent command
 
 ---
 
-### Slices
+## Slices
 
-#### Code Description\
+### Code Description\
 
 - `!!:n` Expand only `n`th token from most recent command (command is `0`;
 first argument is `1`)
@@ -661,14 +683,18 @@ declare -i count  # Declare as type integer
 count+=1          # Increment
 ```
 
-### Subshells
+---
+
+## Subshells
 
 ``` bash
 (cd somedir; echo "I'm now in $PWD")
 pwd # still in first directory
 ```
 
-### Redirection
+---
+
+## Redirection
 
 ``` bash
 python hello.py > output.txt            # stdout to (file)
@@ -688,16 +714,16 @@ diff <(ls -r) <(ls)            # Compare two stdout without files
 
 ---
 
----
-
-### Inspecting commands {#inspectingcommands}
+## Inspecting commands {#inspectingcommands}
 
 ``` bash
 command -V cd
 #=> "cd is a function/alias/whatever"
 ```
 
-### Trap errors {#traperrors}
+---
+
+###Trap errors {#traperrors}
 
 ``` bash
 trap 'echo Error at about $LINENO' ERR
@@ -716,7 +742,7 @@ trap traperr ERR
 
 ---
 
-### Case/switch
+## Case/switch
 
 ``` bash
 case "$1" in
@@ -740,7 +766,7 @@ source "${0%/*}/../share/foo.sh"
 
 ---
 
-### printf
+## printf
 
 ``` bash
 printf "Hello %s, I'm %s" Sven Olga
@@ -759,9 +785,9 @@ printf '%i+%i=%i\n' 1 2 3  4 5 9
 
 ---
 
-### Transform strings {#transformstrings}
+## Transform strings {#transformstrings}
 
-#### Command option Description
+### Command option Description
 
 - `-c` Operations apply to characters not in the given set
 - `-d` Delete characters
@@ -783,7 +809,7 @@ WELCOME TO DEVHINTS
 
 ---
 
-### Directory of script {#directoryofscript}
+## Directory of script {#directoryofscript}
 
 ``` bash
 dir=${0%/*}
@@ -791,7 +817,7 @@ dir=${0%/*}
 
 ---
 
-### Getting options {#gettingoptions}
+## Getting options {#gettingoptions}
 
 ``` bash
 while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do case $1 in
@@ -811,7 +837,7 @@ if [[ "$1" == '--' ]]; then shift; fi
 
 ---
 
-### Heredoc
+## Heredoc
 
 ``` sh
 cat <<END
@@ -821,7 +847,7 @@ END
 
 ---
 
-### Reading input {#readinginput}
+## Reading input {#readinginput}
 
 ``` bash
 echo -n "Proceed? [y/n]: "
@@ -837,7 +863,7 @@ read -n 1 ans    # Just one character
 
 ---
 
-### Special variables {#specialvariables}
+## Special variables {#specialvariables}
 
 Expression Description\
 
@@ -853,7 +879,7 @@ parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and
 
 ---
 
-### Go to previous directory {#gotopreviousdirectory}
+## Go to previous directory {#gotopreviousdirectory}
 
 ``` bash
 pwd # /home/user/foo
@@ -865,7 +891,7 @@ pwd # /home/user/foo
 
 ---
 
-### Check for command's result {#checkforcommandsresult}
+## Check for command's result {#checkforcommandsresult}
 
 ``` bash
 if ping -c 1 google.com; then
@@ -875,7 +901,7 @@ fi
 
 ---
 
-### Grep check {#grepcheck}
+## Grep check {#grepcheck}
 
 ``` bash
 if grep -q 'foo' ~/.bash_history; then
