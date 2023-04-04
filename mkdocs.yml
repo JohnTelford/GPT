@@ -75,7 +75,16 @@ nav:
       - What is Pilonidal Cyst: Topics/Health/pilonidal.md
       - What is Quadriceps Rupture: Topics/Health/quadriceps.md
 
-    - (Metaverse): Topics/Meta/metaverse.md
+    - (Iterative Development): 
+      - Version Control: References/iterative_development/version_control.md
+      - Development Stack: References/iterative_development/dev_stack.md
+      - Teams: 
+          - Team Overview: References/iterative_development/team_overview.md
+          - Team Define: References/iterative_development/team_define.md
+          - Team Deploy: References/iterative_development/team_deploy.md
+          - Team Design: References/iterative_development/team_design.md
+          - Team Develop: References/iterative_development/team_develop.md
+
 
     - (Python):
       - Python Pandas: Topics/Python/python_pandas.md
@@ -137,9 +146,6 @@ nav:
     - (References): 
       - Bash: References/bash.md
       - Jupyter: References/jupyter_refs.md
-      - Iterative Development: 
-        - Development Stack: References/iterative_development/dev_stack.md
-        - Team Overview: References/iterative_development/team_overview.md
 plugins:
     - search:
     - git-revision-date-localized:

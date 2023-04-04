@@ -102,17 +102,9 @@ Occasionally deploy to private preview site for stakeholder feedback
 Open a Pull Request on forked repo for integrating local changes to central repo
 Team discusses, approves, and updates the Pull Request.---
 
-- Reference [GitHub Details](dev_stack_details#github_details)
-
 #### MkDocs Material - Static Site Generator
 
 [MkDocs Material](mkdocs.md)
-
-#### Content Delivery Network
-
-[Content Delivery Network](content_delivery_network.md)
-
-
 
   
 A "MkDocs Static Site Generator" tools are used to create the "Production Website" by the "CDN - Deploy Website to Web"
