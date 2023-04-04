@@ -110,7 +110,6 @@ nav:
       - Block Chain: Topics/Security/block_chain.md
       - Cloudflare Warp: Topics/Security/cloudflare_warp.md
 
-
     - (Software):
       # - Python: Topics/Software/python.md
       - Markdown Math processing: Topics/Software/markdown.md
