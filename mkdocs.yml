@@ -137,7 +137,9 @@ nav:
     - (References): 
       - Bash: References/bash.md
       - Jupyter: References/jupyter_refs.md
-
+      - Iterative Development: 
+        - Development Stack: References/iterative_development/dev_stack.md
+        - Team Overview: References/iterative_development/team_overview.md
 plugins:
     - search:
     - git-revision-date-localized:
