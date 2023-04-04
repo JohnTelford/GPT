@@ -75,9 +75,11 @@ nav:
       - What is Pilonidal Cyst: Topics/Health/pilonidal.md
       - What is Quadriceps Rupture: Topics/Health/quadriceps.md
 
-    - (Iterative Development): 
+    - (Iterative Development):
+      - Overview: References/iterative_development/overview.md
       - Version Control: References/iterative_development/version_control.md
       - Development Stack: References/iterative_development/dev_stack.md
+      - Static Site Generators: Topics/Web/static_site_generators.md
       - Teams: 
           - Team Overview: References/iterative_development/team_overview.md
           - Team Define: References/iterative_development/team_define.md
