@@ -15,7 +15,7 @@ In summary, SSGs are a useful tool for building fast, secure, and scalable websi
 
 ## Material for MkDocs
 
->This site is built and maintained using Material for MkDocs
+>This site is built and maintained using Material for MkDocs static site generator
 
 Material for MkDocs is a theme for the MkDocs static site generator that is based on Google's Material Design guidelines. It provides a modern, clean, and responsive design that is optimized for documentation websites.
 
