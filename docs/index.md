@@ -4,9 +4,8 @@
     
     Early Beta
     
-    [ v0.0.11 ]
+    [ v0.0.12 ] April 5, 2023
 
-    Last update: April 1, 2023
     
 The purpose of this website is quick access to topics of interest
 

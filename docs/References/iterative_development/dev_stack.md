@@ -64,12 +64,28 @@ flowchart TB
 <b>Iterative  Development Stack</b>
 </div>
 
-The iterative website development process uses these core technologies: Visual Studio Code, Git version control, GitHub as the Central Project Repository, Content Delivery Network, and MkDocs Static Site Generator.
+The iterative website development process uses core technologies:
+
+- Visual Studio Code - Command and Control
+- Git version control
+- GitHub hosts the Central Project Repository
+- MkDocs Static Site Generator creates local, private, and production websites
+- Content Delivery Network
 
 A clone of the central repository kept by each team member
-Cloudflare for content delivery network
-The process involves forking the central repository to individual team members' GitHub accounts and cloning it to workstations. Changes made to the cloned repositories cannot directly affect the central repository, which is managed by a gatekeeper team member. This helps maintain a unified source of truth for project history and files.
-Developers use VScode as their development environment, with access to their local website repository. They submit changes to the central website repository through GitHub and changes approved by the project gatekeeper are incorporated into the central repository. Developers can then update their local repositories.
+Cloudflare for content delivery network. The process involves:
+
+- Forking the central repository to individual team members' GitHub accounts 
+- Cloning it to workstations. 
+- Changes made to the cloned repositories cannot directly affect the central repository, which is managed by a gatekeeper team member. This helps maintain a unified source of truth for project history and files.
+- Developers use VScode as their development environment, with access to their local website repository
+- Developers submit their changes to the central website repository
+- Developers create private websites for stakeholders.
+- Developers request a GitHub pull request to merge their repository with the central project repository.
+- Pull requests approved by the project gatekeeper are incorporated into the central repository
+- Developers use a pull request to update their local repositories.
+- A production website is created by the project gatekeeper when the stakeholders agree
+
 ---
 
 #### GitHub
