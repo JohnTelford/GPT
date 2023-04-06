@@ -6,7 +6,7 @@
 
 Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded [git](git-github.md#git)
 
-### Git
+mkdocs### Git
 
 [Use Git version-control tools in Visual Studio Code](https://learn.microsoft.com/en-us/training/modules/use-git-from-vs-code/)
 
@@ -29,7 +29,6 @@ The development Command And Control tasks are:
 - Built-in command shell
   - Run [MkDocs](mkdocs.md) to create a local workstation website
 
-<!-- *DNC* -->
 - Use the Built-in command shell to create [preview](preview.md) to the Internet using  for Stakeholders
 - Deploy production website to the Internet
 - And **much** more

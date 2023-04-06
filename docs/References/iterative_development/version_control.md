@@ -7,7 +7,7 @@ Version control is the primary technology for Iterative Development
   
 - Private preview websites are deployed to allow stakeholders to monitor progress and provide feedback
 
-- Version control is handled by Git and Github
+- Version control is handled by [Git and Github](git_and_github.md)
   
 #### Git
 

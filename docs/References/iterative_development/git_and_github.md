@@ -1,5 +1,4 @@
----
-title: Git - Github
+
 ---
 
 Version control system records changes to files  over time so specific versions can be recalled later
@@ -9,8 +8,6 @@ When teams make changes to project files, the version control system tracks the 
 The version primary components are [GigHub](#GitHub), [Git](#git), and [VScode](vscode.md)
 
 ---
-
-## Version Control and Git
 
 ## GitHub
 

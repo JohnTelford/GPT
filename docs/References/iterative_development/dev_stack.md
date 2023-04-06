@@ -75,7 +75,7 @@ The iterative website development process uses core technologies:
 A clone of the central repository kept by each team member
 Cloudflare for content delivery network. The process involves:
 
-- Forking the central repository to individual team members' GitHub accounts 
+- [Forking](git_github#git\ fork) the central repository to individual team members' GitHub accounts 
 - Cloning it to workstations. 
 - Changes made to the cloned repositories cannot directly affect the central repository, which is managed by a gatekeeper team member. This helps maintain a unified source of truth for project history and files.
 - Developers use VScode as their development environment, with access to their local website repository
