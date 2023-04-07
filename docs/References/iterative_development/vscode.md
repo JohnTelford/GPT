@@ -1,4 +1,4 @@
-## VScode 
+<!-- ## VScode  -->
 
 ![vscodelogo](/img/vscodelogo.png){ width="75" }
 

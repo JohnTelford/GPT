@@ -52,11 +52,11 @@ Fork in not a git command. It is a GitHub process. See:
 
 `git push` updates the remote repository with any commits made locally to a branch.
 
-#### git status
+#### status
 
 `git status` shows the status of changes as untracked, modified, or staged.
 
-#### git switch
+#### switch
 
 `git switch` switch to a specified branch. The working tree and the index are updated to match the branch. All new commits will be added to the tip of this branch.
 
