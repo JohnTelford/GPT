@@ -91,9 +91,9 @@ Each team member has a GitHub account and [clone](git.md#clone) a copy fo the Ce
 
 - Developers [commit](git.md#commit) their changes to the central website repository
 
-- Developers request a GitHub  to merge their repository with the central project repository.
+- Developers request a GitHub [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) to merge their repository with the central project repository.
 
-- *Pull requests* approved by the project gatekeeper are incorporated into the central repository
+- **Pull requests** approved by the project gatekeeper are incorporated into the central repository
 
 - Developers use *pull* to update their local repositories.
 

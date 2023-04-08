@@ -9,9 +9,10 @@
 
 ---
 
-| ![Hype Curve](/img/hype_curve.png "Hype Curve")
-|:--:|
-| <b>Hype Curve</b>
+<figure markdown>
+  ![Hype Curve](/img/hype_curve.png){ align=center }
+<figcaption>Hype Curve</figcaption>
+</figure>
 
 ---
 
