@@ -65,7 +65,7 @@ Icons for Visual Studio Code
 
 Vscode built-in git commands :
 
- - Review diffs, 
+ - Review diffs
  - Stage files
  - Make commits
  - Push 
@@ -78,9 +78,7 @@ Vscode built-in git commands :
 
 Alternatives to using built-in VScode `git` commands is to use the built in terminal or [GitHub Desktop](https://docs.github.com/en/desktop) that abstract `gitHub` and with more `git` commands. It interacts with `GitHub` using a GUI instead of the command line or a web browser. 
 
-[GitHub Desktop and VSCode](http://www.rodanthi-alexiou.com/github-101-github-desktop-and-vscode/) documents how to use GitHub Desktop with VScode. 
-
-[GUI Clients](https://git-scm.com/downloads/guis)
+[Other Git GUI Clients](https://git-scm.com/downloads/guis)
 
 ---
 

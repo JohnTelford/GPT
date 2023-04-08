@@ -69,16 +69,11 @@ nav:
       - Nonlinear Modulation: Topics/Electronics/nonlinear_modulation.md
       - Software Defined Radio: Topics/Electronics/software_defined_radio.md
 
-    - (Health):
-      - Why Do We Yawn: Topics/Health/yawn.md
-      - What Is Cellulitis: Topics/Health/cellulitis.md
-      - What is Pilonidal Cyst: Topics/Health/pilonidal.md
-      - What is Quadriceps Rupture: Topics/Health/quadriceps.md
-
     - (Iterative Development):
       - Overview: References/iterative_development/overview.md
       - Version Control: References/iterative_development/version_control.md
       - Development Stack: References/iterative_development/dev_stack.md
+      - Content Delivery Networks: References/iterative_development/cdn_deploy.md
       - Static Site Generators: Topics/Web/static_site_generators.md
       - Teams: 
           - Team Overview: References/iterative_development/team_overview.md
@@ -153,6 +148,8 @@ plugins:
         type: date
       
 markdown_extensions:
+  - attr_list
+  - md_in_html
   - admonition
   - pymdownx.details
   - pymdownx.extra
@@ -180,6 +177,6 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-dev_addr: localhost:8002
+dev_addr: localhost:8001
 
 copyright: Copyright &copy; 2023 John Telford

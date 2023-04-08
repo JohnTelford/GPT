@@ -6,8 +6,8 @@
 ---
 
 ## Dev Stack
-<div style="text-align: center;">
 
+<div style="text-align: center;">
 
 ``` mermaid
 flowchart TB
@@ -66,33 +66,32 @@ flowchart TB
 
 The iterative website development process uses core technologies:
 
-- [Visual Studio Code](vscode.md)Command and Control
-
-- [Git](git.md) version control
+- [Visual Studio Code](vscode.md) is the Team Developers Command and Control center	for developing software
+  
+- [Git](git.md) is the most widely used modern version control system in the world today
 
 - [GitHub](github.md) hosts the Central Project Repository
 
 - [Mkdocs Static Site Generator](mkdocs.md) creates local, private, and production websites
 
-- Content Delivery Network
+- [Content Delivery Network](deploy.md) is used by:
+  - Developers by to create Stakeholders Private Preview Website
+  - 
 
 ---
-A clone of the central repository kept by each team member
-Cloudflare for content delivery network. The process involves:
----
 
-- The central repository to individual team members' GitHub accounts 
-- *clone* it to workstations.
+Each team member has a GitHub account and [clone](git.md#clone) a copy fo the Central Project Repository to their workstation
 
-  >Changes made to the cloned repositories cannot directly affect the central repository, which is managed by a gatekeeper team member. This helps maintain a unified source of truth for project history and files.
+
+  >Changes made to the cloned repositories cannot directly affect the central repository, which is managed by a gatekeeper team member. It requires a [Pull Request Review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) This helps maintain a unified source of truth for project history and files.
 
 - Developers use VScode as their development environment, with access to their local website repository
   
-- Developers create private websites for stakeholders using [mkdocs](mkdocs.md).
+- Developers using [mkdocs](mkdocs.md) to create [Private Websites Preview](preview.md) for stakeholders.
 
-- Developers *submit* their changes to the central website repository
+- Developers [commit](git.md#commit) their changes to the central website repository
 
-- Developers request a GitHub *pull request* to merge their repository with the central project repository.
+- Developers request a GitHub  to merge their repository with the central project repository.
 
 - *Pull requests* approved by the project gatekeeper are incorporated into the central repository
 

@@ -10,7 +10,7 @@ In addition to being distributed, Git has been designed with performance, securi
 
 [Basic Git Commands](https://docs.github.com/en/get-started/using-git/about-git#basic-git-commands)
 
-To use Git, developers use specific commands to copy, create, change, and combine code. These commands can be executed directly from the command line or by using an application like GitHub Desktop. Here are some common commands for using Git:
+To use Git, developers use specific commands to copy, create, change, and combine code. These commands can be executed directly from the command line or by using an application like GitHub Desktop. Here are some common commands for using Git: -->
 
 #### init
 
@@ -60,7 +60,7 @@ Fork in not a git command. It is a GitHub process. See:
 
 `git switch` switch to a specified branch. The working tree and the index are updated to match the branch. All new commits will be added to the tip of this branch.
 
-## Git References
+<!-- ## Git References
 
 ### Git Book
 
@@ -84,4 +84,4 @@ Everything You need to know
 ### Importing a Git repository using the command line
 
 [Importing a Git repository using the command line](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-git-repository-using-the-command-line)
-
+ --> -->
