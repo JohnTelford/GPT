@@ -72,11 +72,9 @@ The iterative website development process uses core technologies:
 
 - [GitHub](github.md) hosts the Central Project Repository
 
-- [Mkdocs Static Site Generator](mkdocs.md) creates local, private, and production websites
+- [Mkdocs Static Site Generator](mkdocs.md) is used to create local, private, and production websites
 
-- [Content Delivery Network](deploy.md) is used by:
-  - Developers by to create Stakeholders Private Preview Website
-  - 
+- [Content Delivery Network](deploy.md) is used by developers by to create local and Stakeholders [Private Preview Website](preview.md)
 
 ---
 
@@ -85,7 +83,7 @@ Each team member has a GitHub account and [clone](git.md#clone) a copy fo the Ce
 
   >Changes made to the cloned repositories cannot directly affect the central repository, which is managed by a gatekeeper team member. It requires a [Pull Request Review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) This helps maintain a unified source of truth for project history and files.
 
-- Developers use VScode as their development environment, with access to their local website repository
+- Developers use [Visual Studio Code](vscode.md) as their development environment
   
 - Developers using [mkdocs](mkdocs.md) to create [Private Websites Preview](preview.md) for stakeholders.
 
