@@ -1,0 +1,15 @@
+### Troika 
+
+
+Troika is a team of three web website programming languages that have become standard for creating web pages, [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).  They are interpreted  by web browsers to rendering website pages.
+
+
+The job of website development frameworks is to compile the troika and non troika programming languages, such as MDX and JSX, into a combination the standard troika languages to be executed in web browsers.
+
+---
+
+[Private Preview Website](preview.md)
+
+---
+
+[MkDocs](mkdocs.md)

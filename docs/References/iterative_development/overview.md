@@ -9,7 +9,7 @@ The highest cost over the life time of website projects is remediating defects. 
 
  An Iterative Development Projects is a website development process involves designing, coding, and testing pieces of the application. This style of development helps speed up the development process by breaking down large, complex problems into smaller tasks that can be worked on in parallel. 
  
-Developers frequently create [Private Preview Website](preview.md) of their work for stakeholders review, rather than waiting until the end of development to find any problems. 
+Developers frequently create  of their work for stakeholders review, rather than waiting [Private Preview Website](preview.md)until the end of development to find any problems. 
 
 Other defect detection mechanisms built into Iterative Development are:
 
