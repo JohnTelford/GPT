@@ -6,6 +6,22 @@
 </figure>
 
 
+> Markdown can be used for everything. People use it to create websites, documents, notes, books, presentations, email messages, and technical documentation.
+
+> Markdown is portable. Files containing Markdown-formatted text can be opened using virtually any application. 
+
+> Markdown is platform independent
+ 
+> Markdown's syntax is comprised entirely of punctuation characters
+
+> Markdown-formatted text can be created on any device running any operating system
+
+> HTML can be embedded in Markdown. There's no need to preface it or delimit it to indicate that you're switching from Markdown to HTML
+
+> Material MkDocs has configuration options to support CCS and JavaScript.
+
+---
+
 Markdown is the programming language [MkDocs](mkdocs.md) uses for creating websites, not the standard browser HTML,CSS, and JavaScript languages. These programming languages are strict foreign language requiring developers to know the languages and are able to use them. Markdown is written using spoken languages
 
 HTML can be embedded in Markdown. There's no need to preface it or delimit it to indicate that you're switching from Markdown to HTML.  [MkDocs](mkdocs.md) also has configuration options to support CCS and JavaScript.
