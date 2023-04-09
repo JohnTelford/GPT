@@ -1,12 +1,9 @@
+!!! note "Early Beta"
+    [ v0.0.13 ] April 8, 2023
+
+    
 # Welcome to Topics
 
-!!! note
-    
-    Early Beta
-    
-    [ v0.0.12 ] April 5, 2023
-
-    
 The purpose of this website is quick access to topics of interest
 
 Some topics are edited transcripts of conversations with the [OpenAI](https://openai.com) [chatGPT-4](https://chat.openai.com) product

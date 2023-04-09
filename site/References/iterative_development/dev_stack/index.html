@@ -1961,7 +1961,6 @@
 <h2 id="dev-stack">Dev Stack</h2>
 <div style="text-align: center;">
 
-
 <pre class="mermaid"><code>flowchart TB
 
     crepo --- cdn
@@ -2036,31 +2035,25 @@
 <li></li>
 </ul>
 <hr />
-<p>A clone of the central repository kept by each team member
-Cloudflare for content delivery network. The process involves:</p>
-<hr />
-<ul>
-<li>The central repository to individual team members' GitHub accounts </li>
-<li><em>clone</em> it to workstations.</li>
-</ul>
+<p>Each team member has a GitHub account and <a href="../git/#clone">clone</a> a copy fo the Central Project Repository to their workstation</p>
 <blockquote>
-<p>Changes made to the cloned repositories cannot directly affect the central repository, which is managed by a gatekeeper team member. This helps maintain a unified source of truth for project history and files.</p>
+<p>Changes made to the cloned repositories cannot directly affect the central repository, which is managed by a gatekeeper team member. It requires a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews">Pull Request Review</a> This helps maintain a unified source of truth for project history and files.</p>
 </blockquote>
 <ul>
 <li>
 <p>Developers use VScode as their development environment, with access to their local website repository</p>
 </li>
 <li>
-<p>Developers create private websites for stakeholders using <a href="../mkdocs/">mkdocs</a>.</p>
+<p>Developers using <a href="../mkdocs/">mkdocs</a> to create <a href="../preview/">Private Websites Preview</a> for stakeholders.</p>
 </li>
 <li>
-<p>Developers <em>submit</em> their changes to the central website repository</p>
+<p>Developers <a href="../git/#commit">commit</a> their changes to the central website repository</p>
 </li>
 <li>
-<p>Developers request a GitHub <em>pull request</em> to merge their repository with the central project repository.</p>
+<p>Developers request a GitHub <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews">Pull Request</a> to merge their repository with the central project repository.</p>
 </li>
 <li>
-<p><em>Pull requests</em> approved by the project gatekeeper are incorporated into the central repository</p>
+<p><strong>Pull requests</strong> approved by the project gatekeeper are incorporated into the central repository</p>
 </li>
 <li>
 <p>Developers use <em>pull</em> to update their local repositories.</p>
@@ -2113,7 +2106,7 @@ Team discusses, approves, and updates the Pull Request.---</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 7, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 8, 2023</span>
       
     
   </small>

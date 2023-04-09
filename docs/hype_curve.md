@@ -108,8 +108,10 @@ Regardless of what the self-driving car industry carnie barkers are shouting, th
 
 Metaverse is the sum of all virtual spaces such as [Virtual Reality](https://en.wikipedia.org/w/index.php?title=Virtual_reality) and [Augmented Reality](https://en.wikipedia.org/w/index.php?title=Virtual_reality).
 
->Facebook, oops [Meta](https://about.facebook.com/meta/), is saying "The metaverse is the next evolution of social connection. Our company's vision is to help bring the metaverse to life, so we are changing our name to reflect our commitment to this future. The metaverse will be social 3D spaces in the metaverse will let you socialize, learn, collaborate and play in ways that go beyond what we can imagine." 
+>Facebook, oops [Meta](https://about.facebook.com/meta/), was saying "The Metaverse is the next evolution of social connection. Our company's vision is to help bring the Metaverse to life, so we are changing our name to reflect our commitment to this future. The Metaverse will be social 3D spaces in the Metaverse will let you socialize, learn, collaborate and play in ways that go beyond what we can imagine." 
 
-Is that hype or what? I think metaverse is just starting its roller coaster Hype Curve ride starting at the *Technology Trigger* point. Who knows, it could make it to the *Plateau of Productivity* in some form or other. I doubt it though, because of the many unknown thrills and spills awaiting it on its Hype Curve roller coaster ride.
+>Meta recently announced that Artificial Intelligence is now their prime pursuit so they can refactor it in to Metaverse and other products.
+
+Is that hype or what? I think Metaverse restarted its roller coaster Hype Curve ride starting at the *Technology Trigger* point again. Who knows, maybe their Artificial Intelligence could make it to the *Plateau of Productivity* in some form or other, followed by the Metaverse. I doubt it though, because of the many unknown thrills and spills awaiting it on its restarted Hype Curve roller coaster ride.
 
 ---
