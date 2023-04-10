@@ -54,7 +54,7 @@ The compiling process can also be done by a Content Delivery Network using MkDoc
 
 What the developer sees on the workstation is exactly what the Content Delivery Network delivers to the Internet.
 
-Configuring the Content Delivery Network enables developers to frequently deploy their work to Private [Previews](preview.md) website for Stakeholders, interested parties, and other Teams to see their work and provide feedback.
+Configuring the Content Delivery Network enables developers to frequently deploy their work to Private [Private Preview Websites](preview.md) website for Stakeholders, interested parties, and other Teams to see their work and provide feedback.
 
 ---
 

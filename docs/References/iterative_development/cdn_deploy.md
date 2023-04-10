@@ -35,7 +35,7 @@ Features this author like are:
 - Zero Trust Security  
   [What is Zero Trust security?](https://developers.cloudflare.com/cloudflare-one/)
 
-- Automatic website deployment after a [push](developmenttools/#push) to the GitHub repository branch. Team members may periodically [Preview](#preview) local repository to a private and secure website where stockholders view their work and give feedback. 
+- Automatic website deployment after a [push](developmenttools/#push) to the [GitHub](github.md) repository branch. Team members may periodically [Private Preview Website](#preview) local repository to a private and secure website where stockholders view their work and give feedback. 
 - Website builds are quick
 - Previous deployments can be quickly redeploy
 
@@ -43,10 +43,10 @@ Features this author like are:
 
 ## Preview 
 
-As team members makes changes to their repository clone, they may deploy their local cloned repository to a private [Preview](#preview) Internet website for stakeholders to quickly view and give feedback.
+As team members makes changes to their repository clone, they may deploy their local cloned repository to a private [Private Preview Website](#preview) Internet website for stakeholders to quickly view and give feedback.
 
-The repository guardian and other team members evaluating pull requests may deploy them to a private Internet website for stakeholders to preview and give feedback.
+The repository guardian and other team members evaluating pull requests may deploy them to a private Internet website for stakeholders to Private Preview Website and give feedback.
 
-When the pull request team and stakeholders are satisfied the updated production changes are ready for deployment, the repository guardian deploys the updated production version of the website to a private [preview](#preview) Internet website for stakeholders to preview and give feedback. When the stakeholders are satisfied with the updated production version, the repository guardian deploys the updated production version of the website to the Internet
+When the pull request team and stakeholders are satisfied the updated production changes are ready for deployment, the repository guardian deploys the updated production version of the website to a private [Private Preview Website](#preview) Internet website for stakeholders to preview and give feedback. When the stakeholders are satisfied with the updated production version, the repository guardian deploys the updated production version of the website to the Internet
 
 

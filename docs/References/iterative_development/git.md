@@ -1,16 +1,16 @@
 
-Git is the most widely used modern version control system in the world today. Git is mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel. A staggering number of software projects rely on Git for version control, including commercial projects as well as open source. Developers who have worked with Git are well represented in the pool of available software development talent and it works well on a wide range of operating systems and Integrated Development Environments such as VScode.
+[Git](git.md) is the most widely used modern version control system in the world today. [Git](git.md) is mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel. A staggering number of software projects rely on [Git](git.md) for version control, including commercial projects as well as open source. Developers who have worked with [Git](git.md) are well represented in the pool of available software development talent and it works well on a wide range of operating systems and Integrated Development Environments such as VScode.
 
-Git Distributed Version Control System. Rather than have only one single place for the full version history of the software as in Git, every developer's working copy of the code is also a repository that can contain the full history of all changes.
+Git Distributed Version Control System. Rather than have only one single place for the full version history of the software as in [Git](git.md), every developer's working copy of the code is also a repository that can contain the full history of all changes.
 
-In addition to being distributed, Git has been designed with performance, security and flexibility in mind.
+In addition to being distributed, [Git](git.md) has been designed with performance, security and flexibility in mind.
 
 
 ## Basic Git Commands
 
 [Basic Git Commands](https://docs.github.com/en/get-started/using-git/about-git#basic-git-commands)
 
-To use Git, developers use specific commands to copy, create, change, and combine code. These commands can be executed directly from the command line or by using an application like GitHub Desktop. Here are some common commands for using Git: -->
+To use [Git](git.md), developers use specific commands to copy, create, change, and combine code. These commands can be executed directly from the command line or by using an application like GitHub Desktop. Here are some common commands for using [Git](git.md): -->
 
 #### init
 
@@ -34,7 +34,7 @@ To use Git, developers use specific commands to copy, create, change, and combin
 
 #### fork
 
-Fork in not a git command. It is a GitHub process. See:   
+Fork in not a git command. It is a [GitHub](github.md) process. See:   
 
 - GitGub documentation [About forks](https://docs.github.com/en/get-started/quickstart/fork-a-repo#about-forks)
 
@@ -60,7 +60,7 @@ Fork in not a git command. It is a GitHub process. See:
 
 `git switch` switch to a specified branch. The working tree and the index are updated to match the branch. All new commits will be added to the tip of this branch.
 
-<!-- ## Git References
+## Git References
 
 ### Git Book
 
@@ -84,4 +84,5 @@ Everything You need to know
 ### Importing a Git repository using the command line
 
 [Importing a Git repository using the command line](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-git-repository-using-the-command-line)
- --> -->
+
+

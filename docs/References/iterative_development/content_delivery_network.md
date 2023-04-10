@@ -27,7 +27,7 @@ Cloudflare is a content delivery network (CDN) and security provider that helps 
 
 [Branch build controls](https://developers.cloudflare.com/pages/platform/branch-build-controls/)
 
-When connected to your git source, Pages allows you to control which environments and branches you would like to automatically build. By default, Pages will trigger a build any time you commit to either your production or preview environment. However, with branch build controls, you can configure automatic deployments to suit your preference on a per project basis.
+When connected to your [Git](git.md) source, Pages allows you to control which environments and branches you would like to automatically build. By default, Pages will trigger a build any time you commit to either your production or preview environment. However, with branch build controls, you can configure automatic deployments to suit your preference on a per project basis.
 
 ### Skip builds
 
@@ -94,5 +94,5 @@ Preview deployments allow you to preview new versions of your project without de
 
 [Preview aliases](https://developers.cloudflare.com/pages/platform/preview-deployments/#preview-aliases)
 
-When a preview deployment is published, it is given a unique, hash-based address — for example, <hash>.<project>.pages.dev. These are atomic and may always be visited in the future. However, Pages also creates an alias for git branch’s name and updates it so that the alias always maps to the latest commit of that branch.
+When a preview deployment is published, it is given a unique, hash-based address — for example, <hash>.<project>.pages.dev. These are atomic and may always be visited in the future. However, Pages also creates an alias for [Git](git.md) branch’s name and updates it so that the alias always maps to the latest commit of that branch.
 

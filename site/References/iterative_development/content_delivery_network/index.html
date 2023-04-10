@@ -1978,7 +1978,7 @@
 <p>Cloudflare is a content delivery network (CDN) and security provider that helps speed up websites and protect them from malicious threats. It uses a distributed network of caching servers across the world to cache websites and minimize loading times, while also providing a range of security features such as DDoS protection and Web Application Firewall (WAF).</p>
 <h2 id="branch-build-controls">Branch build controls</h2>
 <p><a href="https://developers.cloudflare.com/pages/platform/branch-build-controls/">Branch build controls</a></p>
-<p>When connected to your git source, Pages allows you to control which environments and branches you would like to automatically build. By default, Pages will trigger a build any time you commit to either your production or preview environment. However, with branch build controls, you can configure automatic deployments to suit your preference on a per project basis.</p>
+<p>When connected to your <a href="../git/">Git</a> source, Pages allows you to control which environments and branches you would like to automatically build. By default, Pages will trigger a build any time you commit to either your production or preview environment. However, with branch build controls, you can configure automatic deployments to suit your preference on a per project basis.</p>
 <h3 id="skip-builds">Skip builds</h3>
 <p><a href="https://developers.cloudflare.com/pages/platform/branch-build-controls/#skip-builds">Skip builds</a></p>
 <p>Without any configuration required, you can choose to skip a build and deployment on an adhoc basis. By adding the [CI Skip], [CI-Skip], [Skip CI], [Skip-CI] or [CF-Pages-Skip] flag as a prefix in your commit message, Pages will omit that build/deployment. The prefixes are case insensitive.</p>
@@ -2024,7 +2024,7 @@
 <p>You can use Cloudflare AccessOpen external link to manage access to your deployment previews. By default, these deployment URLs are public. Enabling the access policy will restrict viewing project deployments to your Cloudflare account.</p>
 <h3 id="preview-aliases">Preview aliases</h3>
 <p><a href="https://developers.cloudflare.com/pages/platform/preview-deployments/#preview-aliases">Preview aliases</a></p>
-<p>When a preview deployment is published, it is given a unique, hash-based address — for example, <hash>.<project>.pages.dev. These are atomic and may always be visited in the future. However, Pages also creates an alias for git branch’s name and updates it so that the alias always maps to the latest commit of that branch.</p>
+<p>When a preview deployment is published, it is given a unique, hash-based address — for example, <hash>.<project>.pages.dev. These are atomic and may always be visited in the future. However, Pages also creates an alias for <a href="../git/">Git</a> branch’s name and updates it so that the alias always maps to the latest commit of that branch.</p>
 
   <hr>
 <div class="md-source-file">
