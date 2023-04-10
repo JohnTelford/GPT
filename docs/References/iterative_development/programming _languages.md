@@ -14,7 +14,7 @@ The job of website development frameworks is to compile the troika and non troik
 
 The [The Markdown Guide](https://www.markdownguide.org) explains how to use Markdown, the simple and easy-to-use markup language you can use to format virtually any document, not just website files.
 
-Markdown is the programming language [MkDocs](mkdocs.md) uses for creating websites, not the standard browser HTML,CSS, and JavaScript languages. These programming languages are strict foreign language requiring developers to know the languages and are able to use them. Markdown is written using spoken languages
+Markdown is the programming language [[MkDocs](mkdocs.md)](https://www.mkdocs.org) uses for creating websites, not the standard browser HTML,CSS, and JavaScript languages. These programming languages are strict foreign language requiring developers to know the languages and are able to use them. Markdown is written using spoken languages
 
 <figure markdown>
   ![Markdown](/img/markdownlogo.png){ width="300" }
@@ -34,11 +34,11 @@ Markdown is the programming language [MkDocs](mkdocs.md) uses for creating websi
 
 > HTML can be embedded in Markdown. There's no need to preface it or delimit it to indicate that you're switching from Markdown to HTML
 
-> Material MkDocs has configuration options to support CCS and JavaScript.
+> [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) has configuration options to support CCS and JavaScript.
 
 ---
 
-HTML can be embedded in Markdown. There's no need to preface it or delimit it to indicate that you're switching from Markdown to HTML.  [MkDocs](mkdocs.md) also has configuration options to support CCS and JavaScript.
+HTML can be embedded in Markdown. There's no need to preface it or delimit it to indicate that you're switching from Markdown to HTML.  [Mkdocs](https://www.mkdocs.org) also has configuration options to support CCS and JavaScript.
 
 Using Markdown is different then using a word processing editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. 
 
@@ -50,7 +50,7 @@ Markdown is intended to be as easy-to-read and easy-to-write. Readability is emp
 
 ---
 
-The compiling process can also be done by a Content Delivery Network using MkDocs to compile the Markdown files and places them on an internal MkDocs web server. The Content Delivery Network deploys the MkDocs web server to the Internet.
+The compiling process can also be done by a Content Delivery Network using [Mkdocs](https://www.mkdocs.org) to compile the Markdown files and places them on an internal [MkDocs](mkdocs.md) web server. The Content Delivery Network deploys the [MkDocs](mkdocs.md) web server to the Internet.
 
 What the developer sees on the workstation is exactly what the Content Delivery Network delivers to the Internet.
 

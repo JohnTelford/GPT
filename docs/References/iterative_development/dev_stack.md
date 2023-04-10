@@ -72,7 +72,7 @@ The iterative website development process uses core technologies:
 
 - [GitHub](github.md) hosts the Central Project Repository
 
-- [Mkdocs Static Site Generator](mkdocs.md) is used to create local, private, and production websites
+- [MkDocs](mkdocs.md) static Site Generator is used to create local, private, and production websites
 
 - [Content Delivery Network](deploy.md) is used by developers by to create local and Stakeholders [Private Preview Website](preview.md)
 
@@ -85,7 +85,7 @@ Each team member has a GitHub account and [clone](git.md#clone) a copy fo the Ce
 
 - Developers use [Visual Studio Code](vscode.md) as their development environment
   
-- Developers using [mkdocs](mkdocs.md) to create [Private Websites Preview](preview.md) for stakeholders.
+- Developers using [Mkdocs](https://www.mkdocs.org) to create [Private Websites Preview](preview.md) for stakeholders.
 
 - Developers [commit](git.md#commit) their changes to the central website repository
 
@@ -122,7 +122,7 @@ Team members fork a copy of the central repo to their [GitHub](github.md) accoun
 
 #### GitHub Central Repository.  
 
-Iterative website development in teams uses Git, [GitHub](github.md), and a central repository controlled by the project gatekeeper. The team members use the website development stack to develop, deploy, and maintain websites. Team members make changes to their local repository clone, commit changes to their local repository, and may deploy their local repository to a [Private Websites Preview](preview.md) to get stakeholder feedback. A [GitHub](github.md) pull request is made when stakeholders determine the changes are ready, which is examined and tested before being committed to the central repository by the gatekeeper. Developers then pull the central repository changes and commit them to their local repository copy of the central project. After sufficient development and testing iterations, the gatekeeper deploys the central project repository to the public internet.
+Iterative website development in teams uses Git, [GitHub](github.md), and a central repository controlled by the project gatekeeper. The team members use the website development stack to develop, deploy, and maintain websites. Team members make changes to their local repository clone, commit changes to their local repository, and may deploy their local repository to a [Private Websites Preview](preview.md) to get stakeholder feedback. A [GitHub](github.md) pull request is made when stakeholders determine the changes are ready, which is examined and tested before being committed to the central [Mkdocs](https://www.mkdocs.org) repository by the gatekeeper. Developers then pull the central repository changes and commit them to their local repository copy of the central project. After sufficient development and testing iterations, the gatekeeper deploys the central project repository to the public internet.
 
 ---
 
@@ -142,9 +142,9 @@ Team discusses, approves, and updates the Pull Request.---
 
 #### MkDocs Material - Static Site Generator
 
-[MkDocs Material](mkdocs.md)
+[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 
   
-A "MkDocs Static Site Generator" tools are used to create the "Production Website" by the "CDN - Deploy Website to Web"
+A [Mkdocs](https://www.mkdocs.org) static site generator tools are used to create the "Production Website" by the "CDN - Deploy Website to Web"
 
 
