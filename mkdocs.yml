@@ -71,6 +71,7 @@ nav:
 
     - (Iterative Development):
       - Overview: References/iterative_development/overview.md
+      - Workstations: References/iterative_development/workstations.md
       - Version Control: References/iterative_development/version_control.md
       - Programming Languages: References/iterative_development/programming _languages.md
       - Development Stack: References/iterative_development/dev_stack.md
