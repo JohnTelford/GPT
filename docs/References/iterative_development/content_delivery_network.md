@@ -1,6 +1,6 @@
 
-### CDN
-
+<!--content_delivery_network-->
+<!--cdn_branches-->
 ---
 
 ## Cloudflare
