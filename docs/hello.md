@@ -1,3 +1,4 @@
+# Hello Duane
  
  I think this may sums up what I have been trying to communicate to the HOA and Kappes-Miller for the last 3 years. 
   
@@ -11,7 +12,8 @@ The official legal documentation is The Washington County record CCR BOOK 1060, 
 
 We are Unit 43. The yellow outline is what the HOA and Kappes-Miller have  maintained is *Common Area* for the last 3 years. This claim disputes the official legal documentation in The Washington County record CCR BOOK 1060, PAGE 566.
 
-Our unit 43 total backyard area must equal unit44 and properly fenced like Unit 44
+Our unit 43 total backyard needs to be equal unit44 and properly fenced. 
+
 
 Thank you for your help
 
