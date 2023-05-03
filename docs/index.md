@@ -6,9 +6,9 @@
 
 The purpose of this website is quick access to topics of interest
 
-Some topics are edited transcripts of conversations with the [OpenAI](https://openai.com) [chatGPT-4](https://chat.openai.com) product
+Some topics are edited transcripts of conversations with the [OpenAI](https://openai.com) [chatGPT-3.5](https://chat.openai.com) product
 
-Some [chatGPT-4](https://openai.com) limitations are:
+Some [chatGPT-3.5](https://openai.com) limitations are:
 
     - May occasionally generate incorrect information
   
