@@ -74,7 +74,7 @@ The iterative website development process uses core technologies:
 
 - [MkDocs](mkdocs.md) static Site Generator is used to create local, private, and production websites
 
-- [Content Delivery Network](deploy.md) is used by developers by to create local and Stakeholders [Private Preview Website](preview.md)
+- [Content Delivery Network](content_delivery_network.md) is used by developers by to create local and Stakeholders [Private Preview Website](preview.md)
 
 ---
 

@@ -4,7 +4,7 @@
 
 [Visual Studio Code](https://code.visualstudio.com) (VScode) is a Microsoft product and commonly referred to as VScode. It is a code editor redefined and optimized for building and debugging modern software projects. VCcode is free and available on  Linux, macOS, and Windows platforms. Developer surveys show VScode is ranked the most popular developer environment tool 
 
-Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded [git](git-github.md#git)
+Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded [git](git.md)
 
 ### Git
 

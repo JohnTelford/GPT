@@ -1,8 +1,9 @@
 # Rust Commands {#rustcommands}
 
--   [Rust Utils](#rustutils){.wiki-link}
+-   [Rust Utils](https://lib.rs/command-line-utilities)
+-   
 -   [rualdi - Rust Aliasing
-    Directory](#rualdi-rustaliasingdirectory){.wiki-link}
+    Directory](https://lib.rs/crates/rualdi)
 
 ## [Rust Utils](https://lib.rs) {#rustutils}
 
