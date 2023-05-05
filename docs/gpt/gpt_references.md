@@ -1,32 +1,37 @@
 ### Some GPT References
 
-[GPT-4 has a trillion parameters - Report](https://the-decoder.com/gpt-4-has-a-trillion-parameters/)
-[Probability distribution - Wikipedia](https://en.wikipedia.org/wiki/Probability_distribution)
-[Generative pre-trained transformer - Wikipedia](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)
-[Parameter - Wikipedia](https://en.wikipedia.org/wiki/Parameter?wprov=srpw1_5)
-[gpt parameters - Search results - Wikipedia](https://en.wikipedia.org/w/index.php?search=gpt+parameters&title=Special%3ASearch&ns0=1)
-(no title)](https://en.wikipedia.org/w/index.php?search=gpt+parameters&title=Special%3ASearch&wprov=acrw1_-1)
-[GPT-1 to GPT-4: Each of OpenAl's GPT Models Explained and Compared](https://www.makeuseof.com/gpt-models-explained-and-compared/)
-[chatGPT Wikipedia](https://en.wikipedia.org/wiki/ChatGPT#)
-[chatGPT - Wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
-[microsoft spent hundreds of millions of...n a ChatGPT supercomputer The Verge](https://www.theverge.com/2023/3/13/23637675/mic…..chatgpt-bing-millions-dollars-supercomputer-openai)
-Nvidia reveals H100 GPU Al for Al and teas...' fastest Al supercomputer' - The Verge](https://www.theverge.com/2022/3/22/22989182/nvid...-hopper-architecture-h100-gpu-eos-supercomputer)
-ChatGPT - Wikipedia](https://en.wikipedia.org/wiki/ChatGPT#cite_note-12)
-GPT Wikipedia](https://en.wikipedia.org/wiki/GPT)
-Wikipedia](https://www.wikipedia.org/)
-File: The-Transformer-model-architecture.png-Wikipedia](https://en.wikipedia.org/wiki/File:The-Transformer-model-architecture.png)
-[Pocket - Transformer (machine learning model)](https://getpocket.com/read/2746634512)
-[Packet](https://getpocket.com/saves/search?query=gpt-4)
-[Packet](https://getpocket.com/saves/search?query=gpt%204)
-[Packet](https://getpocket.com/saves/search?query=transformer)
-[Packet - How ChatGPT and Other LLMs Work-and Where They Could Go Next](https://getpocket.com/read/3856515404)
-[Packet - OpenAl's CEO Says the Age of Giant Al Models Is Already Over](https://getpocket.com/read/3848205153)
-[Packet](https://getpocket.com/saves/search?query=chat)
-[Packet - ChatGPT 101: What Is Generative Al (and How to Use It)](https://getpocket.com/read/3798518608)
-[Packet - 3 Reasons to How ChatGPT Became the Fastest Growing App of All Time](https://getpocket.com/read/3802586609)
-[Packet - The future of generative Al is niche, not generalized](https://getpocket.com/read/3854821612)
-[Packet - Want More Out of Generative Al? Here Are 9 Useful Resources](https://getpocket.com/read/385074.3711)
-[Packet - What's AGI, and Why Are Al Experts Skeptical?](https://getpocket.com/read/3857348554)
-[Packet](https://getpocket.com/saves?src=navbar)
-[Collections for Your Pocket](https://getpocket.com/collections?src=navbar)
-[Packet](https://getpocket.com/home)
+  
+
+* [3 Reasons to How ChatGPT Became the Fastest Growing App of All Time](https://www.makeuseof.com/how-chatgpt-became-fastest-growing-app/)
+
+* [chatGPT - Wikipedia](https://en.wikipedia.org/wiki/ChatGPT)
+
+* [ChatGPT 101: What Is Generative Al (and How to Use It)](https://www.coursera.org/articles/chatgpt)
+
+* [ChatGPT Cheatsheet](https://quickref.me/chatgpt)
+
+* [Generative pre-trained transformer - Wikipedia](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)
+
+* [GPT Wikipedia](https://en.wikipedia.org/wiki/GPT)
+
+* [GPT-1 to GPT-4: Each of OpenAl's GPT Models Explained and Compared](https://www.makeuseof.com/gpt-models-explained-and-compared/)
+
+* [GPT-4 has a trillion parameters - Report](https://the-decoder.com/gpt-4-has-a-trillion-parameters/)
+
+* [How ChatGPT and Other LLMs Work-and Where They Could Go Next](https://www.wired.com/story/how-chatgpt-works-large-language-model/)
+
+* [Microsoft spent hundreds of millions of...n a ChatGPT supercomputer The Verge](https://www.theverge.com/2023/3/13/23637675/microsoft-chatgpt-bing-millions-dollars-supercomputer-openai)
+
+* [Nvidia reveals H100 GPU for AI](https://www.theverge.com/2022/3/22/22989182/nvidia-hopper-architecture-h100-gpu-eos-supercomputer)
+
+* [OpenAl's CEO Says the Age of Giant Al Models Is Already Over](https://www.wired.com/story/openai-ceo-sam-altman-the-age-of-giant-ai-models-is-already-over/)
+
+* [Parameter - Wikipedia](https://en.wikipedia.org/wiki/Parameter?wprov=srpw1_5)
+
+* [Probability distribution - Wikipedia](https://en.wikipedia.org/wiki/Probability_distribution)
+
+* [The Art of ChatGPT Prompting](https://fka.gumroad.com/l/art-of-chatgpt-prompting)
+
+* [The future of generative Al is niche, not generalized](https://www.technologyreview.com/2023/04/27/1072102/the-future-of-generative-ai-is-niche-not-generalized)
+
+* [What's AGI, and Why Are Al Experts Skeptical?](https://www.wired.com/story/what-is-artificial-general-intelligence-agi-explained/?redirectURL=https%3A%2F%2Fwww.wired.com%2Fstory%2Fwhat-is-artificial-general-intelligence-agi-explained%2F)
