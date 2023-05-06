@@ -47,3 +47,5 @@
 * [You won’t believe how much ChatGPT costs to operate](https://www.digitaltrends.com/computing/chatgpt-cost-to-operate/)
 
 * [What's AGI, and Why Are Al Experts Skeptical?](https://www.wired.com/story/what-is-artificial-general-intelligence-agi-explained/?redirectURL=https%3A%2F%2Fwww.wired.com%2Fstory%2Fwhat-is-artificial-general-intelligence-agi-explained%2F)
+
+* [What Are Large Language Models (LLMs) and How Do They Work?](https://www.makeuseof.com/what-are-large-langauge-models-how-do-they-work/)
