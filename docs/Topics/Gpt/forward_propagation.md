@@ -41,51 +41,66 @@ We define the sigmoid function as our activation function and use it to perform 
 
 ### Example
 
-GPT-3 responded to this question:
+GPT-3 responded to this question: Example for forward propagation:
 
-<blockquote>
-Example for forward propagation:
-<br><br>
+/// define
+
 Suppose we have a neural network with one input layer (2 nodes), one hidden layer (3 nodes), and one output layer (1 node) which we want to use to predict the price of a house based on its size in square feet and the number of bedrooms.
 <br><br>
+
 Our input variables are x1 (size in sq ft) and x2 (number of bedrooms) and we want to predict the price of a house y.
 <br><br>
+
 The weights connecting the input layer to the hidden layer are w1 = 0.8, w2 = -0.5, w3 = 0.2, w4 = 1.0, w5 = 0.4, w6 = -0.6 and the bias terms for the hidden layer nodes are b1 = 0.3, b2 = -0.1, b3 = 0.9.
 <br><br>
+
 The weights connecting the hidden layer to the output layer are w7 = 0.5, w8 = -1.0, w9 = 0.3 and the bias term for the output layer node is b4 = 0.2.
 <br><br>
+
 The equations for computing the activation values for the hidden layer nodes are:
 <br><br>
+
 z1 = x1 * w1 + x2 * w2 + b1
 a1 = sigmoid(z1)
 <br><br>
+
 z2 = x1 * w3 + x2 * w4 + b2
 a2 = relu(z2)
 <br><br>
+
 z3 = x1 * w5 + x2 * w6 + b3
 a3 = tanh(z3)
 <br><br>
+
 where sigmoid, relu, and tanh are the activation functions applied to the weighted sum inputs.
 <br><br>
+
 The equation for computing the activation value for the output layer node is:
 <br><br>
+
 z4 = a1 * w7 + a2 * w8 + a3 * w9 + b4
 y = z4
 <br><br>
+
 We can now plug in some numerical values for the input features and compute the predicted price using forward propagation. For example, if the size of our house is 2000 sq ft and it has 3 bedrooms, then we have:
 <br><br>
+
 z1 = 2000 * 0.8 + 3 * (-0.5) + 0.3 = 1600.3
 a1 = sigmoid(z1) = 0.999
 <br><br>
+
 z2 = 2000 * 0.2 + 3 * 1.0 + (-0.1) = 599.9
 a2 = relu(z2) = max(0, 599.9) = 599.9
 <br><br>
+
 z3 = 2000 * 0.4 + 3 * (-0.6) + 0.9 = 888.9
 a3 = tanh(z3) = tanh(888.9) = 1.0
 <br><br>
+
 z4 = 0.999 * 0.5 + 599.9 * (-1.0) + 1.0 * 0.3 + 0.2 = -598.3
 y = z4 = -598.3
 <br><br>
+
 So, the predicted price for this house is negative, which doesn't make much sense. This could be due to issues with the neural network architecture, the choice of activation functions, or the training data. We would need to investigate further and potentially adjust our model to improve its predictions.
 
-</blockquote>
+///
