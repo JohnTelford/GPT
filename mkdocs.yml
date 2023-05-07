@@ -70,8 +70,8 @@ nav:
       - Software Defined Radio: Topics/Electronics/software_defined_radio.md
 
     - (GPT):
-        - Overview: Topics/Gpt/gpt_overview.md
-        - References: Topics/Gpt/gpt_references.md
+        - GPT Overview: Topics/Gpt/gpt_overview.md
+        - GPT References: Topics/Gpt/gpt_references.md
 
     - (Iterative Development):
       - Overview: References/iterative_development/overview.md
