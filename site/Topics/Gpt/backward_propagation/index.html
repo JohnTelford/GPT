@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../ai_hype_curve/">
+        <link rel="prev" href="../loss_calculation/">
       
       
-        <link rel="next" href="../generalized_learning/">
+        <link rel="next" href="../parameters/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
-        <title>Large Language Model - John Telford - Topics</title>
+        <title>Back Propagation - John Telford - Topics</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#large-language-models" class="md-skip">
+        <a href="#backward-propagation" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Large Language Model
+              Back Propagation
             
           </span>
         </div>
@@ -269,16 +269,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
       
       
       
@@ -287,7 +285,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_3">
           <span class="md-nav__icon md-icon"></span>
           (AI)
@@ -300,7 +298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what_is_ai/" class="md-nav__link">
+      <a href="../../AI/what_is_ai/" class="md-nav__link">
         What is AI
       </a>
     </li>
@@ -314,8 +312,86 @@
   
   
     <li class="md-nav__item">
-      <a href="../eliza/" class="md-nav__link">
+      <a href="../../AI/ai_hype_curve/" class="md-nav__link">
+        AI Hype Curve
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AI/ai_singularity/" class="md-nav__link">
+        AI Singularity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AI/eliza/" class="md-nav__link">
         ELIZA
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+          (GPT)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          (GPT)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gpt_overview/" class="md-nav__link">
+        GPT Overview
       </a>
     </li>
   
@@ -342,60 +418,9 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai_hype_curve/" class="md-nav__link">
-        AI Hype Curve
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Large Language Model
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../llm/" class="md-nav__link">
         Large Language Model
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#large-language-models" class="md-nav__link">
-    Large Language Models
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -475,11 +500,61 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../backward_propagation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Back Propagation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Back Propagation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#backward-propagation" class="md-nav__link">
+    Backward Propagation
+  </a>
+  
+    <nav class="md-nav" aria-label="Backward Propagation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -505,8 +580,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai_singularity/" class="md-nav__link">
-        Singularity
+      <a href="../gpt_references/" class="md-nav__link">
+        GPT References
       </a>
     </li>
   
@@ -531,17 +606,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
       
       
       
-        <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
           (Astronomy)
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_1_4">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_5">
           <span class="md-nav__icon md-icon"></span>
           (Astronomy)
         </label>
@@ -593,17 +668,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
       
       
       
-        <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
           (Autonomous Vehicles)
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_1_5">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_6">
           <span class="md-nav__icon md-icon"></span>
           (Autonomous Vehicles)
         </label>
@@ -697,17 +772,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
       
       
       
-        <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
           (Electronics)
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_1_6">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_7">
           <span class="md-nav__icon md-icon"></span>
           (Electronics)
         </label>
@@ -735,68 +810,6 @@
     <li class="md-nav__item">
       <a href="../../Electronics/software_defined_radio/" class="md-nav__link">
         Software Defined Radio
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
-          (GPT)
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_1_7">
-          <span class="md-nav__icon md-icon"></span>
-          (GPT)
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Gpt/gpt_overview/" class="md-nav__link">
-        GPT Overview
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Gpt/gpt_references/" class="md-nav__link">
-        GPT References
       </a>
     </li>
   
@@ -1093,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tensor_flow/" class="md-nav__link">
+      <a href="../../AI/tensor_flow/" class="md-nav__link">
         Tensor Flow
       </a>
     </li>
@@ -1949,9 +1962,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#large-language-models" class="md-nav__link">
-    Large Language Models
+  <a href="#backward-propagation" class="md-nav__link">
+    Backward Propagation
   </a>
+  
+    <nav class="md-nav" aria-label="Backward Propagation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1973,22 +1999,83 @@
   
 
 
-  <h1>Large Language Model</h1>
+  <h1>Back Propagation</h1>
 
 <hr />
-<h2 id="large-language-models">Large Language Models</h2>
-<p>Large language models are a type of artificial intelligence (AI) model that is designed to generate human-like language. These models are built using deep learning techniques, specifically a type of neural network called a transformer, which has been shown to be particularly effective in natural language processing tasks.</p>
-<p>The basic idea behind a large language model is to train a neural network on a large corpus of text data, such as books, articles, and web pages. The network learns the statistical patterns and structures of the language, allowing it to generate text that is similar in style and content to the training data. The resulting model can then be used for a variety of natural language processing tasks, such as text generation, language translation, and sentiment analysis.</p>
-<p>Some of the most well-known large language models include OpenAI's GPT (Generative Pre-trained Transformer) series, Google's BERT (Bidirectional Encoder Representations from Transformers), and Facebook's RoBERTa (Robustly Optimized BERT approach). These models are typically trained on massive amounts of text data, often in the order of billions of words, and can consist of hundreds of millions or even billions of parameters.</p>
-<p>While large language models have shown impressive results in natural language processing tasks, they also raise concerns about issues such as data privacy, bias, and their potential to automate jobs that were traditionally performed by humans. Nevertheless, the development of large language models continues to be a significant area of research and development in the field of AI.</p>
-<hr />
+<h2 id="backward-propagation">Backward Propagation</h2>
+<h3 id="example">Example</h3>
+<p>Backward propagation, also known as backpropagation or simply "backprop," is an algorithm used in deep learning to train neural networks by adjusting the weights and biases of the neurons. It is called "backward" because it begins at the output layer and works backwards through the layers until it reaches the input layer.</p>
+<p>Here's a simple example to illustrate how backward propagation works:</p>
+<p>Suppose we have a neural network with one hidden layer that takes two inputs, x1 and x2, and produces one output, y. The network has the following weights and biases:</p>
+<ul>
+<li>w1 = 0.5</li>
+<li>w2 = -0.3</li>
+<li>b1 = 0.4</li>
+<li>w3 = 0.2</li>
+<li>b2 = 0.1</li>
+</ul>
+<p>We use this neural network to predict the output of a certain input (x1=1, x2=0). Suppose the actual output is y_true = 1.0.</p>
+<p>Forward Propagation:<br />
+To make a prediction, we start with the first layer and calculate the weighted sum and apply the activation function (ReLU) to obtain the hidden layer outputs. Then, we do the same for the output layer to get the predicted value <code>y_pred</code>.</p>
+<div class="highlight"><pre><span></span><code>z1 = x1*w1 + x2*w2 + b1
+h1 = ReLU(z1)
+z2 = h1*w3 + b2
+y_pred = z2
+</code></pre></div>
+<p>where <code>ReLU</code> is the rectified linear unit activation function defined as <code>max(0,x)</code>.</p>
+<p>This gives us:</p>
+<ul>
+<li>z1 = 0.5*1 + (-0.3)*0 + 0.4 = 0.9</li>
+<li>h1 = max(0, z1) = 0.9</li>
+<li>z2 = 0.9*0.2 + 0.1 = 0.28</li>
+<li>y_pred = z2 = 0.28</li>
+</ul>
+<p>Calculate the Loss:<br />
+To determine how good our prediction is, we need to define a loss function to measure the error between the predicted value and the true value. Here we use the mean squared error (MSE) loss function:</p>
+<div class="highlight"><pre><span></span><code>J = (y_pred - y_true)**2
+</code></pre></div>
+<p>So, in this case, the loss would be:</p>
+<ul>
+<li>J = (0.28 - 1.0)^2 = 0.5184</li>
+</ul>
+<p>Update Weights Using Backward Propagation:<br />
+To improve the performance of the neural network, we need to adjust the weights and biases so that the predicted output is closer to the true output. To do this, we use gradient descent to update the weights and biases based on the calculated the gradient of the loss function i.e. partial derivatives of the loss function with respect to each weight and bias parameter.</p>
+<p>Firstly, let's calculate the gradients step-by-step.</p>
+<p>Partial derivative of <code>J</code> with respect to <code>z2</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/dz2 = 2*(y_pred - y_true) * 1 = 2*(-0.72) = -1.44
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>w3</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_w3 = dJ/d_z2 * dz2/d_w3 = dJ/d_z2 * h1 = -1.20648
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>b2</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/db2 = dJ/d_z2 * dz2/db2 = dJ/d_z2 * 1 = -1.44
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>h1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_h1 = dJ/d_z2 * dz2/d_h1 = dJ/d_z2 * w3 = -0.288
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>z1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_z1 = dJ/d_h1 * dh1/d_z1 = dJ/d_h1 if z1&gt;0 else 0 = -0.288
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>w1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_w1 = dJ/d_z1 * dz1/d_w1 = dJ/d_z1 * x1 = -0.288
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>w2</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/d_w2 = dJ/d_z1 * dz1/d_w2 = dJ/d_z1 * x2 = 0
+</code></pre></div>
+<p>Partial derivative of <code>J</code> with respect to <code>b1</code>:</p>
+<div class="highlight"><pre><span></span><code>dJ/db1 = dJ/d_z1 * dz1/db1 = dJ/d_z1 * 1 = -0.288
+</code></pre></div>
+<p>Now we can update the weights and biases using the following formulas:</p>
+<div class="highlight"><pre><span></span><code>New weight_i = Old weight_i - Learning_rate * (gradient of loss function with respect to weight_i)
+New 
+</code></pre></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2023</span>
       
     
   </small>
@@ -2014,7 +2101,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../ai_hype_curve/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AI Hype Curve" rel="prev">
+          <a href="../loss_calculation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loss Calculation" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -2023,20 +2110,20 @@
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                AI Hype Curve
+                Loss Calculation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../generalized_learning/" class="md-footer__link md-footer__link--next" aria-label="Next: Generalized Learning" rel="next">
+          <a href="../parameters/" class="md-footer__link md-footer__link--next" aria-label="Next: Parameters" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Generalized Learning
+                Parameters
               </div>
             </div>
             <div class="md-footer__button md-icon">

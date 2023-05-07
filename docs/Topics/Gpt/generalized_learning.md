@@ -1,7 +1,7 @@
 
 ---
 
-## Generalized Learning
+<!-- ## Generalized Learning -->
 
 Generalized Learning refers to the ability of a machine learning model to apply what it has learned from the training data to new, unseen data accurately.
 

@@ -1,7 +1,7 @@
 
 ---
 
-## Backward Propagation
+<!-- ## Backward Propagation -->
 
 ### Example
 

@@ -1,7 +1,7 @@
 
 ---
 
-## How Do Neural Networks Work
+<!-- ## How Do Neural Networks Work -->
 
 Neural Networks are a set of algorithms designed to recognize patterns. They are inspired by the structure and functioning of the human brain. Neural networks consist of multiple layers of interconnected nodes (artificial neurons) that process and transmit information. Each layer extracts features from the input data, and the output of one layer becomes the input of the next layer until the final output is produced.
 
