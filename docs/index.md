@@ -1,5 +1,5 @@
 !!! note "Early Beta"
-    [ v0.0.01 ] May 6, 2023
+    [ v0.0.01 ] May 7, 2023
 
     
 # Welcome to Topics
