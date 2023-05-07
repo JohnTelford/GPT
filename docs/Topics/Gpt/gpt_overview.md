@@ -16,10 +16,11 @@ Deep Neural Network
 
 Large Language Model
 : > LLM is a massive database of text data that can be referenced to generate human-like responses to your prompts. The text comes from a range of sources and can amount to billions of words. 
-* Literature
-* Online content
-* News and current affairs
-* Social media
+
+    * Literature
+    * Online content
+    * News and current affairs
+    * Social media
 
 Generative Pre-Trained Transformers (GPTs)
 : > Generative Pre-trained Transformers (GPTs) are a type of machine learning model used for natural language processing tasks. These models are pre-trained on Large Language Model massive amounts of data, to generate contextually relevant and semantically coherent language
@@ -39,11 +40,6 @@ Bias
 
 Weights
 : > Weights and parameters of a neural network are the values that determine how the neurons in the network interact with each other. They control the strength of the connections between neurons, as well as the activation functions used for each layer of the network. The weights and parameters are usually initialized randomly, then adjusted during the training process to optimize the performance of the network
-
-
-
-
-
 
 
 <!-- >* OpenAI stated that GPT-4 is "more reliable, creative, and able to handle much more nuanced instructions than GPT-3.5. They produced two versions of GPT-4, with context windows of 8,192 and 32,768 tokens, a significant improvement over GPT-3.5 and GPT-3, which were limited to 4,096 and 2,049 tokens respectively.
@@ -67,19 +63,7 @@ Weights
 <figcaption>GPT Models</figcaption>
 </figure>
 
----
-
-##### GPT-4 Parameters
-
-<figure markdown>
-  ![GPT-4 Parameters](/img/gpt_4_parameters.png){ align=center }
-<figcaption>GPT-4 Parameters</figcaption>
-</figure>
-
----
-
-
-#### GPT-4 Update
+##### GPT-4 Update
 
 * Training Data:  
     * Literature
@@ -90,4 +74,15 @@ Weights
 
 * Number of Parameters: 1 trillion
 * Sequence Length: up to 32,000 tokens
+
+---
+
+##### GPT-4 Parameters
+
+<figure markdown>
+  ![GPT-4 Parameters](/img/gpt_4_parameters.png){ align=center }
+<figcaption>GPT-4 Parameters</figcaption>
+</figure>
+
+---
 
