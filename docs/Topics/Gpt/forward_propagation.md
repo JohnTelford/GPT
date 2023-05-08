@@ -39,7 +39,7 @@ We define the sigmoid function as our activation function and use it to perform 
 
 ---
 
-### Example
+### **Example**
 
 GPT-3 responded to this question: Example for forward propagation:
 

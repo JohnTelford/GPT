@@ -1,7 +1,7 @@
 !!! note "Early Beta"
     
     This overview is under construction - 
-    [ v0.0.2 ] May 7, 2023
+    [ v0.0.3 ] May 7, 2023
 
 ## Generative Pre-trained Transformer Overview (GPT)
 
