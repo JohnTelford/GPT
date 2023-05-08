@@ -1927,35 +1927,42 @@
   <h1>Loss Calculation</h1>
 
 <hr />
-<!-- ## Loss Calculation Example -->
+<!-- ##  -->
 
-<p>GPT-3 responded to this question:</p>
-<blockquote>
-
-Let's say we have a model that predicts housing prices based on features like the number of bedrooms, square footage, and location. We have a dataset of 1000 houses with their actual selling prices and corresponding features.
-<br><br>
-Our model is a simple linear regression that looks like this:
-<br><br>
-`predicted_price = w0 + w1*bedrooms + w2*square_footage + w3*location`
-<br><br>
-To train the model, we use the mean squared error (MSE) as our loss function:
-<br><br>
-`loss = (1/N) * ∑(i=1 to N) (actual_price_i - predicted_price_i)^2`
-<br><br>
-Where `N` is the number of houses in our dataset, `actual_price_i` is the actual selling price of the i-th house, and `predicted_price_i` is the predicted selling price of the i-th house using our model.
-<br><br>
-During training, we adjust the weights `w0`, `w1`, `w2`, and `w3` to minimize the loss function using an optimization algorithm like gradient descent.
-<br><br>
-Once the model is trained, we can evaluate its performance on a test set of houses by calculating the MSE between the actual selling prices and predicted selling prices on the test set. The lower the MSE, the better the performance of our model.
-
-</blockquote>
+<p>GPT-3 responded to this question: Loss Calculation Example</p>
+<ul>
+<li>
+<p>Let's say we have a model that predicts housing prices based on features like the number of bedrooms, square footage, and location. We have a dataset of 1000 houses with their actual selling prices and corresponding features.</p>
+</li>
+<li>
+<p>Our model is a simple linear regression that looks like this</p>
+<ul>
+<li><code>predicted_price = w0 + w1*bedrooms + w2*square_footage + w3*location</code></li>
+</ul>
+</li>
+<li>
+<p>To train the model, we use the mean squared error (MSE) as our loss function:</p>
+<ul>
+<li><code>loss = (1/N) * ∑(i=1 to N) (actual_price_i - predicted_price_i)^2</code></li>
+</ul>
+</li>
+<li>
+<p>Where <code>N</code> is the number of houses in our dataset, <code>actual_price_i</code> is the actual selling price of the i-th house, and <code>predicted_price_i</code> is the predicted selling price of the i-th house using our model.</p>
+</li>
+<li>
+<p>During training, we adjust the weights <code>w0</code>, <code>w1</code>, <code>w2</code>, and <code>w3</code> to minimize the loss function using an optimization algorithm like gradient descent.</p>
+</li>
+<li>
+<p>Once the model is trained, we can evaluate its performance on a test set of houses by calculating the MSE between the actual selling prices and predicted selling prices on the test set. The lower the MSE, the better the performance of our model.</p>
+</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2023</span>
       
     
   </small>

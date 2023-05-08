@@ -1979,8 +1979,11 @@
 <!-- ## Backward Propagation -->
 
 <h3 id="example">Example</h3>
-<p>Backward propagation, also known as backpropagation or simply "backprop," is an algorithm used in deep learning to train neural networks by adjusting the weights and biases of the neurons. It is called "backward" because it begins at the output layer and works backwards through the layers until it reaches the input layer.</p>
+<p>GPT-3 responded to the question: What is Backward Propagqtion?</p>
+<p><strong>Backward Propagation</strong></p>
+<p>Is also known as backpropagation or simply "backprop," is an algorithm used in deep learning to train neural networks by adjusting the weights and biases of the neurons. It is called "backward" because it begins at the output layer and works backwards through the layers until it reaches the input layer.</p>
 <p>Here's a simple example to illustrate how backward propagation works:</p>
+<p><strong>Example</strong></p>
 <p>Suppose we have a neural network with one hidden layer that takes two inputs, x1 and x2, and produces one output, y. The network has the following weights and biases:</p>
 <ul>
 <li>w1 = 0.5</li>
@@ -1990,8 +1993,8 @@
 <li>b2 = 0.1</li>
 </ul>
 <p>We use this neural network to predict the output of a certain input (x1=1, x2=0). Suppose the actual output is y_true = 1.0.</p>
-<p>Forward Propagation:<br />
-To make a prediction, we start with the first layer and calculate the weighted sum and apply the activation function (ReLU) to obtain the hidden layer outputs. Then, we do the same for the output layer to get the predicted value <code>y_pred</code>.</p>
+<p><strong>Forward Propagation</strong></p>
+<p>To make a prediction, we start with the first layer and calculate the weighted sum and apply the activation function (ReLU) to obtain the hidden layer outputs. Then, we do the same for the output layer to get the predicted value <code>y_pred</code>.</p>
 <div class="highlight"><pre><span></span><code>z1 = x1*w1 + x2*w2 + b1
 h1 = ReLU(z1)
 z2 = h1*w3 + b2
@@ -1999,47 +2002,62 @@ y_pred = z2
 </code></pre></div>
 <p>where <code>ReLU</code> is the rectified linear unit activation function defined as <code>max(0,x)</code>.</p>
 <p>This gives us:</p>
-<ul>
-<li>z1 = 0.5*1 + (-0.3)*0 + 0.4 = 0.9</li>
-<li>h1 = max(0, z1) = 0.9</li>
-<li>z2 = 0.9*0.2 + 0.1 = 0.28</li>
-<li>y_pred = z2 = 0.28</li>
-</ul>
-<p>Calculate the Loss:<br />
-To determine how good our prediction is, we need to define a loss function to measure the error between the predicted value and the true value. Here we use the mean squared error (MSE) loss function:</p>
+<div class="highlight"><pre><span></span><code>z1 = 0.5\*1 + (-0.3)\*0 + 0.4 = 0.9
+h1 = max(0, z1) = 0.9
+z2 = 0.9\*0.2 + 0.1 = 0.28
+y_pred = z2 = 0.28
+</code></pre></div>
+<p><strong>Calculate the Loss</strong></p>
+<p>To determine how good our prediction is, we need to define a loss function to measure the error between the predicted value and the true value. Here we use the mean squared error (MSE) loss function:</p>
 <div class="highlight"><pre><span></span><code>J = (y_pred - y_true)**2
 </code></pre></div>
 <p>So, in this case, the loss would be:</p>
-<ul>
-<li>J = (0.28 - 1.0)^2 = 0.5184</li>
-</ul>
-<p>Update Weights Using Backward Propagation:<br />
-To improve the performance of the neural network, we need to adjust the weights and biases so that the predicted output is closer to the true output. To do this, we use gradient descent to update the weights and biases based on the calculated the gradient of the loss function i.e. partial derivatives of the loss function with respect to each weight and bias parameter.</p>
+<div class="highlight"><pre><span></span><code>J = (0.28 - 1.0)^2 = 0.5184
+</code></pre></div>
+<p><strong>Update Weights Using Backward Propagation</strong></p>
+<p>To improve the performance of the neural network, we need to adjust the weights and biases so that the predicted output is closer to the true output. To do this, we use gradient descent to update the weights and biases based on the calculated the gradient of the loss function i.e. partial derivatives of the loss function with respect to each weight and bias parameter.</p>
 <p>Firstly, let's calculate the gradients step-by-step.</p>
-<p>Partial derivative of <code>J</code> with respect to <code>z2</code>:</p>
+<ul>
+<li>Partial derivative of <code>J</code> with respect to <code>z2</code>:</li>
+</ul>
 <div class="highlight"><pre><span></span><code>dJ/dz2 = 2*(y_pred - y_true) * 1 = 2*(-0.72) = -1.44
 </code></pre></div>
-<p>Partial derivative of <code>J</code> with respect to <code>w3</code>:</p>
+<ul>
+<li>Partial derivative of <code>J</code> with respect to <code>w3</code>:</li>
+</ul>
 <div class="highlight"><pre><span></span><code>dJ/d_w3 = dJ/d_z2 * dz2/d_w3 = dJ/d_z2 * h1 = -1.20648
 </code></pre></div>
-<p>Partial derivative of <code>J</code> with respect to <code>b2</code>:</p>
+<ul>
+<li>Partial derivative of <code>J</code> with respect to <code>b2</code>:</li>
+</ul>
 <div class="highlight"><pre><span></span><code>dJ/db2 = dJ/d_z2 * dz2/db2 = dJ/d_z2 * 1 = -1.44
 </code></pre></div>
-<p>Partial derivative of <code>J</code> with respect to <code>h1</code>:</p>
+<ul>
+<li>Partial derivative of <code>J</code> with respect to <code>h1</code>:</li>
+</ul>
 <div class="highlight"><pre><span></span><code>dJ/d_h1 = dJ/d_z2 * dz2/d_h1 = dJ/d_z2 * w3 = -0.288
 </code></pre></div>
-<p>Partial derivative of <code>J</code> with respect to <code>z1</code>:</p>
+<ul>
+<li>Partial derivative of <code>J</code> with respect to <code>z1</code>:</li>
+</ul>
 <div class="highlight"><pre><span></span><code>dJ/d_z1 = dJ/d_h1 * dh1/d_z1 = dJ/d_h1 if z1&gt;0 else 0 = -0.288
 </code></pre></div>
-<p>Partial derivative of <code>J</code> with respect to <code>w1</code>:</p>
+<ul>
+<li>Partial derivative of <code>J</code> with respect to <code>w1</code>:</li>
+</ul>
 <div class="highlight"><pre><span></span><code>dJ/d_w1 = dJ/d_z1 * dz1/d_w1 = dJ/d_z1 * x1 = -0.288
 </code></pre></div>
-<p>Partial derivative of <code>J</code> with respect to <code>w2</code>:</p>
+<ul>
+<li>Partial derivative of <code>J</code> with respect to <code>w2</code>:</li>
+</ul>
 <div class="highlight"><pre><span></span><code>dJ/d_w2 = dJ/d_z1 * dz1/d_w2 = dJ/d_z1 * x2 = 0
 </code></pre></div>
-<p>Partial derivative of <code>J</code> with respect to <code>b1</code>:</p>
+<ul>
+<li>Partial derivative of <code>J</code> with respect to <code>b1</code>:</li>
+</ul>
 <div class="highlight"><pre><span></span><code>dJ/db1 = dJ/d_z1 * dz1/db1 = dJ/d_z1 * 1 = -0.288
 </code></pre></div>
+<p><strong>Update The Weights And Biases</strong></p>
 <p>Now we can update the weights and biases using the following formulas:</p>
 <div class="highlight"><pre><span></span><code>New weight_i = Old weight_i - Learning_rate * (gradient of loss function with respect to weight_i)
 New 
@@ -2050,7 +2068,7 @@ New
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 7, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2023</span>
       
     
   </small>

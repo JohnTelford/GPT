@@ -13,4 +13,4 @@ The repository guardian and other team members evaluating Central Website Reposi
 
 ## Repository Guardian Preview
 
-When the repository guardian and other team members evaluating Central Website Repository update requests changes are ready for deployment, the repository guardian deploys the updated production version of the website to a [Private Preview Website](preview.md) for Stakeholders to preview and give feedback. When the Stakeholders are satisfied with the updated preview production version, the repository guardian deploys the updated production version of the website to the Internet
+When the repository guardian and other team members evaluating Central Website Repository update requests changes are ready for deployment, the repository guardian deploys the updated production version of the website to a Private Preview Website for Stakeholders to preview and give feedback. When the Stakeholders are satisfied with the updated preview production version, the repository guardian deploys the updated production version of the website to the Internet

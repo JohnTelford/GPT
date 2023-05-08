@@ -79,12 +79,6 @@ nav:
 
     - (Iterative Development):
       - Overview: References/iterative_development/overview.md
-      - Workstations: References/iterative_development/workstations.md
-      - Version Control: References/iterative_development/version_control.md
-      - Programming Languages: References/iterative_development/programming _languages.md
-      - Development Stack: References/iterative_development/dev_stack.md
-      - Content Delivery Networks: References/iterative_development/cdn_deploy.md
-      - Static Site Generators: Topics/Web/static_site_generators.md
       - Teams: 
           - Team Overview: References/iterative_development/team_overview.md
           - Team Define: References/iterative_development/team_define.md
@@ -92,6 +86,12 @@ nav:
           - Team Design: References/iterative_development/team_design.md
           - Team Develop: References/iterative_development/team_develop.md
 
+      - Workstations: References/iterative_development/workstations.md
+      - Version Control: References/iterative_development/version_control.md
+      - Programming Languages: References/iterative_development/programming _languages.md
+      - Development Stack: References/iterative_development/dev_stack.md
+      - Content Delivery Networks: References/iterative_development/cdn_deploy.md
+      - Static Site Generators: Topics/Web/static_site_generators.md
     - (Python):
       - Python Pandas: Topics/Python/python_pandas.md
       - Tensor Flow: Topics/AI/tensor_flow.md

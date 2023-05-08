@@ -1,7 +1,6 @@
-!!! note "Early Beta"
+!!! note Under Construction
     
-    This overview is under construction - 
-    [ v0.0.3 ] May 7, 2023
+    This page is under construction - 
 
 ## Generative Pre-trained Transformer Overview (GPT)
 
@@ -24,11 +23,13 @@ Deep Neural Network are computing systems inspired by the biological neural netw
 
 LLM is a massive database of text data that can be referenced to generate human-like responses to your prompts. The text comes from a range of sources and can amount to billions of words. 
 
-* Literature
-* Online content
-* News and current affairs
-* Social media
-<br><br>
+<ul>
+  <li>Literature</li>
+  <li>Online content
+  <li>News and current affairs
+  <li>Social media
+</ul>
+<br>
 
 **Generative Pre-Trained Transformers (GPTs)**
 
