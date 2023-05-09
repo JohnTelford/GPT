@@ -1,6 +1,6 @@
-!!! note Under Construction
+!!! note "Under Construction"
     
-    This page is under construction - 
+    This page is under construction
 
 ## Generative Pre-trained Transformer Overview (GPT)
 

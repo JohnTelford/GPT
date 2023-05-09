@@ -49,3 +49,9 @@
 * [What's AGI, and Why Are Al Experts Skeptical?](https://www.wired.com/story/what-is-artificial-general-intelligence-agi-explained/?redirectURL=https%3A%2F%2Fwww.wired.com%2Fstory%2Fwhat-is-artificial-general-intelligence-agi-explained%2F)
 
 * [What Are Large Language Models (LLMs) and How Do They Work?](https://www.makeuseof.com/what-are-large-langauge-models-how-do-they-work/)
+
+* [Andrej Karpathy - Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
+
+* [Andrej Karpathy - Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+
+* [Transformers, explained: Understand the model behind GPT, BERT, and T5](https://www.youtube.com/watch?v=SZorAJ4I-sA)
