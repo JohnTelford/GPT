@@ -50,8 +50,46 @@
 
 * [What Are Large Language Models (LLMs) and How Do They Work?](https://www.makeuseof.com/what-are-large-langauge-models-how-do-they-work/)
 
+---
+
+#### Andrej Karpathy
+
 * [Andrej Karpathy - Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
 
 * [Andrej Karpathy - Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+
+- karpathy / nanoGPT: https://github.com/karpathy/nanoGPT/blob/master/model.py
+
+- karpathy / lectures/micrograd : https://github.com/karpathy/nn-zero-to-hero/tree/master/lectures/micrograd
+
+##### Links
+
+Links:
+- Google colab for the video: https://colab.research.google.com/dri...
+- GitHub repo for the video: https://github.com/karpathy/ng-video-...
+- Playlist of the whole Zero to Hero series so far:   
+
+ • The spelled-out i...  
+- nanoGPT repo: https://github.com/karpathy/nanoGPTx
+- my website: https://karpathy.ai
+- my twitter: https://twitter.com/karpathy
+- our Discord channel: https://discord.gg/3zy8kqD9Cp
+
+Supplementary links:
+- Attention is All You Need paper: https://arxiv.org/abs/1706.03762
+  - https://arxiv.org/pdf/1706.03762.pdf
+  
+- OpenAI GPT-3 paper: https://arxiv.org/abs/2005.14165 
+  - https://arxiv.org/pdf/2005.14165.pdf
+
+- OpenAI ChatGPT blog post: https://openai.com/blog/chatgpt/
+  - Language models can explain neurons in language models: https://openai.com/research/language-models-can-explain-neurons-in-language-models
+  - Training language models to follow instructions with human feedback: https://arxiv.org/pdf/2203.02155.pdf
+
+  - InstructGPT: Training Language Models to Follow Instructions with Human Feedback  https://github.com/openai/following-instructions-human-feedback#instructgpt-training-language-models-to-follow-instructions-with-human-feedback
+
+- The GPU I'm training the model on is from Lambda GPU Cloud, I think the best and easiest way to spin up an on-demand GPU instance in the cloud that you can ssh to: https://lambdalabs.com . If you prefer to work in notebooks, I think the easiest path today is Google Colab.
+
+---
 
 * [Transformers, explained: Understand the model behind GPT, BERT, and T5](https://www.youtube.com/watch?v=SZorAJ4I-sA)
