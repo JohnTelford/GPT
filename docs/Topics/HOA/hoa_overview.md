@@ -84,7 +84,6 @@ We want this fence dividing our **Entitled Percentage Ownership In The General C
 
 # Replace
 
-
 <figure markdown>
   ![Proper HOA Fence and Gate](/img/FullSizeRender.png)
 <figcaption>SW Corner of Unit for
