@@ -37,120 +37,123 @@ nav:
 #
   - Home: 
     - Welcome: index.md
-    - Hype Curve: hype_curve.md
+      #  - Hype Curve: hype_curve.md
+    - HOA:
+      - Overview: Topics/HOA/hoa_overview.md
+# 
+#     - (AI):
+#       - What is AI: Topics/AI/what_is_ai.md
+#       - AI Hype Curve: Topics/AI/ai_hype_curve.md
+#       - AI Singularity: Topics/AI/ai_singularity.md
+#       - ELIZA: Topics/AI/eliza.md
+#       
+#     - (GPT):
+#       - GPT Overview: Topics/Gpt/gpt_overview.md
+#       - GPT: Topics/Gpt/GPT.md
+#       - Large Language Model: Topics/Gpt/llm.md
+#       - Generalized Learning: Topics/Gpt/generalized_learning.md
+#       - Generative Pre-Learning Transform: Topics/Gpt/generative_pre_learning_transform.md
+#       - Neural Networks: Topics/Gpt/neural_networks.md
+#       - Forward Propagation: Topics/Gpt/forward_propagation.md
+#       - Loss Calculation: Topics/Gpt/loss_calculation.md
+#       - Back Propagation: Topics/Gpt/backward_propagation.md
+#       - Parameters: Topics/Gpt/parameters.md
+#       - GPT References: Topics/Gpt/gpt_references.md
+# 
+#     - (Astronomy):
+#       - Neutrino: Topics/Astronomy/neutrino.md
+#       - Sun: Topics/Astronomy/sun.md
+# 
+#     - (Autonomous Vehicles): 
+#       - Autonomous Cars: Topics/Autonomous_Vehicles/self_driving_cars.md
+#       - Autonomous Trucks: Topics/Autonomous_Vehicles/self_driving_trucks.md
+#       - Autonomous Vehicles Video: Topics/Autonomous_Vehicles/ev_video.md
+#       - Autonomous Vehicles Black Box: Topics/Autonomous_Vehicles/ev_black_box.md
+#       - 5G - Autonomous Vehicles: Topics/Autonomous_Vehicles/5g.md
+# 
+#     - (Electronics):
+#       - Nonlinear Modulation: Topics/Electronics/nonlinear_modulation.md
+#       - Software Defined Radio: Topics/Electronics/software_defined_radio.md
+# 
+#     # - (GPTQ):
+#     #     - GPT Overview: Topics/Gpt/gpt_overview.md
+#     #     - GPT References: Topics/Gpt/gpt_references.md
+# 
+#     - (Iterative Development):
+#       - Overview: References/iterative_development/overview.md
+#       - Teams: 
+#           - Team Overview: References/iterative_development/team_overview.md
+#           - Team Define: References/iterative_development/team_define.md
+#           - Team Deploy: References/iterative_development/team_deploy.md
+#           - Team Design: References/iterative_development/team_design.md
+#           - Team Develop: References/iterative_development/team_develop.md
+# 
+#       - Workstations: References/iterative_development/workstations.md
+#       - Version Control: References/iterative_development/version_control.md
+#       - Programming Languages: References/iterative_development/programming _languages.md
+#       - Development Stack: References/iterative_development/dev_stack.md
+#       - Content Delivery Networks: References/iterative_development/cdn_deploy.md
+#       - Static Site Generators: Topics/Web/static_site_generators.md
+#     - (Python):
+#       - Python Pandas: Topics/Python/python_pandas.md
+#       - Tensor Flow: Topics/AI/tensor_flow.md
+#       - Jupyter : Topics/Python/jupyter.md
+# 
+    # - (Science / Physics):
+#       - Math: Topics/Science/Physics/physics_made_up.md
+#       - Maxwell Equations: Topics/Science/maxwell.md
+#       - Neutrino: Topics/Astronomy/neutrino.md
+#       - Theory of Relativity: Topics/Science/theory_of_relativity.md
+#       - Space-Time: Topics/Science/space_time.md 
+#       - Quantum Mechanics: 
+#         - Introduction: Topics/Science/Quantum_Mechanics/quantum.md
+#         - Quantum Computers: Topics/Science/Quantum_Mechanics/quantum _computers.md
+#         - Quantum Field Theory: Topics/Science/Quantum_Mechanics/quantum_field_theory.md
+#         - Boson: Topics/Science/Quantum_Mechanics/boson.md
+#      
+#     - (Security): 
+#       - 2FA TOTP: Topics/Security/2fa_totp.md
+#       - Block Chain: Topics/Security/block_chain.md
+#       - Cloudflare Warp: Topics/Security/cloudflare_warp.md
+# 
+#     - (Software):
+#       # - Python: Topics/Software/python.md
+#       - Markdown Math processing: Topics/Software/markdown.md
+#       - NZB Files: Topics/Software/nzb_files.md
+#       - VScode: Topics/Software/vscode.md
+#       # - Material for MkDocs: Topics/Software/material_for_mkdocs.md
+#       # - Web Languages: Topics/Software/web_languages.md
+#       
+#     - (Telecom):
+#       - Cellular Networks: Topics/Telecom/cellular_networks.md
+#       - 4G: Topics/Telecom/4g.md
+#       - 5G: Topics/Telecom/5g.md
+#       - 6G: Topics/Telecom/6g.md
+# 
+#     - (Web): 
+#       - Browsers: Topics/Web/web_browser.md
+#       - Servers: Topics/Web/web_server.md
+#       - HTML: Topics/Web/html.md
+#       - CSS: Topics/Web/css.md
+#       - JavaScript: Topics/Web/javascript.md
+#       - React: Topics/Web/react.md
+#       - Static Site Generators: Topics/Web/static_site_generators.md
+# 
+#     - (UNIX):
+#       - UNIX History: Topics/UNIX/history.md
+#       - UNIX: Topics/UNIX/unix.md
+#       - USENET: Topics/UNIX/usenet.md
+#       - macOS: Topics/UNIX/macos.md
+#       - Linux: Topics/UNIX/linux.md
+# 
+#     - (Utilities):
+#       - Mac: Topics/Utilities/mac.md
+#       - Rust: Topics/Utilities/rust.md
+# 
+#     - (References): 
+#       - Bash: References/bash.md
+#       - Jupyter: References/jupyter_refs.md
 
-    - (AI):
-      - What is AI: Topics/AI/what_is_ai.md
-      - AI Hype Curve: Topics/AI/ai_hype_curve.md
-      - AI Singularity: Topics/AI/ai_singularity.md
-      - ELIZA: Topics/AI/eliza.md
-      
-    - (GPT):
-      - GPT Overview: Topics/Gpt/gpt_overview.md
-      - GPT: Topics/Gpt/GPT.md
-      - Large Language Model: Topics/Gpt/llm.md
-      - Generalized Learning: Topics/Gpt/generalized_learning.md
-      - Generative Pre-Learning Transform: Topics/Gpt/generative_pre_learning_transform.md
-      - Neural Networks: Topics/Gpt/neural_networks.md
-      - Forward Propagation: Topics/Gpt/forward_propagation.md
-      - Loss Calculation: Topics/Gpt/loss_calculation.md
-      - Back Propagation: Topics/Gpt/backward_propagation.md
-      - Parameters: Topics/Gpt/parameters.md
-      - GPT References: Topics/Gpt/gpt_references.md
-
-    - (Astronomy):
-      - Neutrino: Topics/Astronomy/neutrino.md
-      - Sun: Topics/Astronomy/sun.md
-
-    - (Autonomous Vehicles): 
-      - Autonomous Cars: Topics/Autonomous_Vehicles/self_driving_cars.md
-      - Autonomous Trucks: Topics/Autonomous_Vehicles/self_driving_trucks.md
-      - Autonomous Vehicles Video: Topics/Autonomous_Vehicles/ev_video.md
-      - Autonomous Vehicles Black Box: Topics/Autonomous_Vehicles/ev_black_box.md
-      - 5G - Autonomous Vehicles: Topics/Autonomous_Vehicles/5g.md
-
-    - (Electronics):
-      - Nonlinear Modulation: Topics/Electronics/nonlinear_modulation.md
-      - Software Defined Radio: Topics/Electronics/software_defined_radio.md
-
-    # - (GPTQ):
-    #     - GPT Overview: Topics/Gpt/gpt_overview.md
-    #     - GPT References: Topics/Gpt/gpt_references.md
-
-    - (Iterative Development):
-      - Overview: References/iterative_development/overview.md
-      - Teams: 
-          - Team Overview: References/iterative_development/team_overview.md
-          - Team Define: References/iterative_development/team_define.md
-          - Team Deploy: References/iterative_development/team_deploy.md
-          - Team Design: References/iterative_development/team_design.md
-          - Team Develop: References/iterative_development/team_develop.md
-
-      - Workstations: References/iterative_development/workstations.md
-      - Version Control: References/iterative_development/version_control.md
-      - Programming Languages: References/iterative_development/programming _languages.md
-      - Development Stack: References/iterative_development/dev_stack.md
-      - Content Delivery Networks: References/iterative_development/cdn_deploy.md
-      - Static Site Generators: Topics/Web/static_site_generators.md
-    - (Python):
-      - Python Pandas: Topics/Python/python_pandas.md
-      - Tensor Flow: Topics/AI/tensor_flow.md
-      - Jupyter : Topics/Python/jupyter.md
-
-    - (Science / Physics):
-      - Math: Topics/Science/Physics/physics_made_up.md
-      - Maxwell Equations: Topics/Science/maxwell.md
-      - Neutrino: Topics/Astronomy/neutrino.md
-      - Theory of Relativity: Topics/Science/theory_of_relativity.md
-      - Space-Time: Topics/Science/space_time.md 
-      - Quantum Mechanics: 
-        - Introduction: Topics/Science/Quantum_Mechanics/quantum.md
-        - Quantum Computers: Topics/Science/Quantum_Mechanics/quantum _computers.md
-        - Quantum Field Theory: Topics/Science/Quantum_Mechanics/quantum_field_theory.md
-        - Boson: Topics/Science/Quantum_Mechanics/boson.md
-     
-    - (Security): 
-      - 2FA TOTP: Topics/Security/2fa_totp.md
-      - Block Chain: Topics/Security/block_chain.md
-      - Cloudflare Warp: Topics/Security/cloudflare_warp.md
-
-    - (Software):
-      # - Python: Topics/Software/python.md
-      - Markdown Math processing: Topics/Software/markdown.md
-      - NZB Files: Topics/Software/nzb_files.md
-      - VScode: Topics/Software/vscode.md
-      # - Material for MkDocs: Topics/Software/material_for_mkdocs.md
-      # - Web Languages: Topics/Software/web_languages.md
-      
-    - (Telecom):
-      - Cellular Networks: Topics/Telecom/cellular_networks.md
-      - 4G: Topics/Telecom/4g.md
-      - 5G: Topics/Telecom/5g.md
-      - 6G: Topics/Telecom/6g.md
-
-    - (Web): 
-      - Browsers: Topics/Web/web_browser.md
-      - Servers: Topics/Web/web_server.md
-      - HTML: Topics/Web/html.md
-      - CSS: Topics/Web/css.md
-      - JavaScript: Topics/Web/javascript.md
-      - React: Topics/Web/react.md
-      - Static Site Generators: Topics/Web/static_site_generators.md
-
-    - (UNIX):
-      - UNIX History: Topics/UNIX/history.md
-      - UNIX: Topics/UNIX/unix.md
-      - USENET: Topics/UNIX/usenet.md
-      - macOS: Topics/UNIX/macos.md
-      - Linux: Topics/UNIX/linux.md
-
-    - (Utilities):
-      - Mac: Topics/Utilities/mac.md
-      - Rust: Topics/Utilities/rust.md
-
-    - (References): 
-      - Bash: References/bash.md
-      - Jupyter: References/jupyter_refs.md
 plugins:
     - search:
     - git-revision-date-localized:
@@ -166,8 +169,6 @@ markdown_extensions:
   - pymdownx.blocks.definition
   - pymdownx.tasklist:
       clickable_checkbox: true
-  - attr_list
-  - md_in_html
   - def_list
 
   # - toc:
