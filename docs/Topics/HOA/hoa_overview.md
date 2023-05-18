@@ -59,7 +59,7 @@ The HOA Board and Architectural Committee said they investigated the unit proper
 
 I appealed the decision and requested a explanation including the the site map. I did not receive a reply
 
-This “common area” was news to us. During inspection of Unit 44 we asked the buyer and seller realtors about the dividing fence separating areas of the backyard. They did not know. The HOA board member we talked who did not know why it was a “common area”and mentioned it was the realtors responsibility to have informed us.
+This “common area” was news to us. During inspection of Unit 43 we asked the buyer and seller realtors about the dividing fence separating areas of the backyard. They did not know. The HOA board member we talked who did not know why it was a “common area”and mentioned it was the realtors responsibility to have informed us.
 
 There seems to be no contradictions to The Washington County record CCR BOOK 1060, PAGE 566-571. How could the realtors or title company inform us? 
 
