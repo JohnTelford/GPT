@@ -70,9 +70,9 @@ There seems to be no contradictions to The Washington County record CCR BOOK 106
 
 The HOA and Kappes-Miller asked if I had any proof that the previous owners used the area.
 
-I sent them this arial photo showing the previous owners did use the area.
+I sent them this arial photo showing the previous owners did use the area.I did not receive a response. 
 
-I did not receive a response.
+We asked the selling realtor to remove these items in the arial photo and more items
 
 <figure markdown>
   ![Use of Area](/img/Fence-2-Cropped.png)
