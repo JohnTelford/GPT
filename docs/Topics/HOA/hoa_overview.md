@@ -15,13 +15,13 @@ I think this may sum up what we have been trying to communicate to the HOA and K
 
 >Lawyers Title company supplied links to the all Townhome Village @ Cedar Hills Washington County records 
 
-The Washington County record CCR BOOK 1060, PAGE 566 specifies unit 43 and unit 44 have the same amount of Interest in General Common Elements. There seems to be no contradictions to The Washington County record CCR BOOK 1060, PAGE 566-571 are at the end of this document.
+The Washington County record CCR BOOK 1060, PAGE 566 specifies unit 43 and unit 44 have the same amount of Interest in General Common Elements.  The Washington County record CCR BOOK 1060, PAGE 566-571 are at the end of this document. There seems to be no contradictions on file to this data.
 
 
 **Section 3.3 Unit Designation** table, page 569, shows units 43 and 44 have 1,252 sq.ft of floor space and with 1.8765 Percentage of Interest in General Common Elements. That equals 1,252 X 1.8765 = 2,350 sq.ft ownership in the General Common area. My measurements agree with this number.
 
 **General Common Elements** page 570 states:
->Each unit shall be **entitled to percentage ownership in the general common elements** as set forth above in Section 3.3 and shall be liable for the general common expenses in the game proportion.
+>Each unit shall be **entitled to percentage ownership in the general common elements** as set forth above in Section 3.3 and shall be liable for the general common expenses in the same proportion.
 
 We are unit 43. This arial view shows that units 43 and 44 do not have the same amount of Interest in General Common Elements. The HOA and Kappes-Miller for the last 3 years have maintained the that the 40% of our backyard outlined in yellow is General Common Elements that we are no allow to use
 
@@ -55,7 +55,7 @@ I have asked this question to HOA and Kappes-Miller over the years. The few time
 
 We submitted an ARCHITECTURAL & DESIGN APPLICATION FORM to the HOA and Kappes-Miller on April 15, 2020 requesting a freestanding garden shed to be placed near our bedroom  wall, with clearance for building, maintenance, and winter weatherization. It was **DENIED**. 
 
-The HOA Board and Architectural Committee said they investigated the unit property lines July 14, 2020 using a site map after reviewing the architectural request. They determined that the area in question is considered a “common area,” and is not part of our property, and thus cannot be built upon.
+The HOA Board and Architectural Committee said they investigated the unit property lines July 14, 2020 using a site map after reviewing the architectural request. They determined that we are not **entitled to percentage ownership in the general common elements**“, and is not part of our property, and thus cannot be built upon.
 
 I appealed the decision and requested a explanation including the the site map. I did not receive a reply
 
@@ -109,7 +109,7 @@ We want this fence dividing our **Entitled Percentage Ownership In The General C
 
 ---
 
-Replaced dividing fence with a prober HOA fence and gate at the south end of our **Entitled Percentage Ownership In The General Common Elements** area
+Replace dividing fence with a prober HOA fence and gate at the south end of our **Entitled Percentage Ownership In The General Common Elements** area
 
 We will then be conforming to the uniformity of Townhome Village style.
 
