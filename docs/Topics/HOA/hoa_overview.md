@@ -11,11 +11,11 @@
 
 I think this may sum up what we have been trying to communicate to the HOA and Kappes-Miller for the last 3 years. 
   
-## Washington County Information
+### Washington County Information
 
 >Lawyers Title company supplied links to the all Townhome Village @ Cedar Hills Washington County records 
 
-The Washington County record CCR BOOK 1060, PAGE 566 specifies unit 43 and unit 44 have the same amount of Interest in General Common Elements. There seems to be no contradictions to The Washington County record CCR BOOK 1060, PAGE 566-571 that are attached.
+The Washington County record CCR BOOK 1060, PAGE 566 specifies unit 43 and unit 44 have the same amount of Interest in General Common Elements. There seems to be no contradictions to The Washington County record CCR BOOK 1060, PAGE 566-571 are at the end of this document.
 
 
 **Section 3.3 Unit Designation** table, page 569, shows units 43 and 44 have 1,252 sq.ft of floor space and with 1.8765 Percentage of Interest in General Common Elements. That equals 1,252 X 1.8765 = 2,350 sq.ft ownership in the General Common area. My measurements agree with this number.
@@ -39,7 +39,7 @@ We are unit 43. This arial view shows that units 43 and 44 do not have the same 
 
 ---
 
-### Responses
+### The HOA and Kappes-Miller Responses
 
 I have spent time over 3 years collecting and sharing information with HOA and Kappes-Miller hoping to resolve this problem.
 
@@ -47,7 +47,7 @@ I have spent time over 3 years collecting and sharing information with HOA and K
 
 I asked the HOA to join Mary and me to look at and discuss the problems. A board member accepted and we had a productive discussion ending with the board member saying it is Common Area. I asked why, the board member did not have an answer.
 
-I asked this question to HOA and Kappes-Miller over the years. The few times there was a response, the answer was the same.
+I have asked this question to HOA and Kappes-Miller over the years. The few times there was a response, the answer was the same.
 
 ### Kappes-Miller Response
 
@@ -59,9 +59,26 @@ The HOA Board and Architectural Committee said they investigated the unit proper
 
 I appealed the decision and requested a explanation including the the site map. I did not receive a reply
 
-This “common area” was news to us. During inspection of Unit 44 we asked the buyer and seller realtors about the dividing fence separating areas of the backyard. They did not know. The HOA board member we talked who did not know why it was a “common area”, mentioned it was the realtors responsibility to have informed us.
+This “common area” was news to us. During inspection of Unit 44 we asked the buyer and seller realtors about the dividing fence separating areas of the backyard. They did not know. The HOA board member we talked who did not know why it was a “common area”and mentioned it was the realtors responsibility to have informed us.
 
 There seems to be no contradictions to The Washington County record CCR BOOK 1060, PAGE 566-571. How could the realtors or title company inform us? 
+
+<div style="page-break-after: always"></div>
+
+
+#### Proof Pervious Owner Used The Area
+
+The HOA and Kappes-Miller asked if I had any proof that the previous owners used the area.
+
+I sent them this arial photo showing the previous owners did use the area.
+
+I did not receive a response.
+
+<figure markdown>
+  ![Use of Area](/img/Fence-2-Cropped.png)
+<figcaption>Previous Owner Use Of Area</figcaption>
+</figure>
+
 
 <div style="page-break-after: always"></div>
 
@@ -82,7 +99,7 @@ We want this fence dividing our **Entitled Percentage Ownership In The General C
 
 <div style="page-break-after: always"></div>
 
-# Replace
+## Replace Fence With Proper HOA Fence and Gate
 
 <figure markdown>
   ![Proper HOA Fence and Gate](/img/FullSizeRender.png)
