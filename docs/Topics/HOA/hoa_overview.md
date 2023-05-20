@@ -118,6 +118,33 @@ We will then be conforming to the uniformity of Townhome Village style.
 
 ---
 
+<!-- <div style="page-break-after: always"></div> -->
+
+![CRC Ref1](/img/CCR Book 1060, Page 566 (dragged).png)
+
+<div style="page-break-after: always"></div>
+
+![CRC Ref2](/img/CCR Book 1060, Page 566 (dragged) 2.png)
+
+<div style="page-break-after: always"></div>
+
+![CRC Ref3](/img/CCR Book 1060, Page 566 (dragged) 3.png)
+
+<div style="page-break-after: always"></div>
+
+![CRC Ref4](/img/CCR Book 1060, Page 566 (dragged) 4.png)
+
+<div style="page-break-after: always"></div>
+
+![CRC Ref5](/img/CCR Book 1060, Page 566 (dragged) 5.png)
+
+<div style="page-break-after: always"></div>
+
+![CRC Ref6](/img/CCR Book 1060, Page 566 (dragged) 6.png)
+
+<div style="page-break-after: always"></div>
+
+
 
 Thank you
 
