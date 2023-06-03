@@ -55,7 +55,7 @@ I have asked this question to HOA and Kappes-Miller over the years. The few time
 
 We submitted an ARCHITECTURAL & DESIGN APPLICATION FORM to the HOA and Kappes-Miller on April 15, 2020 requesting a freestanding garden shed to be placed near our bedroom  wall, with clearance for building, maintenance, and winter weatherization. It was **DENIED**. 
 
-The HOA Board and Architectural Committee said they investigated the unit property lines July 14, 2020 using a site map after reviewing the architectural request. They determined that we are not **Entitled To Percentage Ownership In The General Common Elements**“, and is not part of our property, and thus cannot be built upon.
+The HOA Board and Architectural Committee said they investigated the unit property lines July 14, 2020 using a site map after reviewing the architectural request. They determined that we are not fully **Entitled To Percentage Ownership In The General Common Elements**“, and it is not part of our property, and thus cannot be built upon.
 
 I appealed the decision and requested a explanation including the the site map. I did not receive a reply
 
